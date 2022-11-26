@@ -1,7 +1,46 @@
+/*
+ * https://every-layout.dev/layouts/stack/
+ */
+.h-stack, .wp-block-media-text .wp-block-media-text__content {
+  --stack-size: var(--wp--preset--spacing--regular);
+}
+.h-stack > *, .wp-block-media-text .wp-block-media-text__content > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.h-stack > * + *, .wp-block-media-text .wp-block-media-text__content > * + * {
+  margin-top: var(--stack-size);
+}
+.h-stack--xsmall > * + * {
+  --stack-size: var(--wp--preset--spacing--xsmall);
+}
+.h-stack--small > * + * {
+  --stack-size: var(--wp--preset--spacing--small);
+}
+.h-stack--medium > * + * {
+  --stack-size: var(--wp--preset--spacing--medium);
+}
+.h-stack--large > * + * {
+  --stack-size: var(--wp--preset--spacing--large);
+}
+.h-stack--xlarge > * + * {
+  --stack-size: var(--wp--preset--spacing--xlarge);
+}
+.h-stack--xxlarge > * + * {
+  --stack-size: var(--wp--preset--spacing--xxlarge);
+}
+
 h1 + .wp-block-media-text, h2 + .wp-block-media-text, h3 + .wp-block-media-text, h4 + .wp-block-media-text, h5 + .wp-block-media-text, h6 + .wp-block-media-text {
   margin-top: var(--c-block-margin-top-medium);
+}
+.has-background > .wp-block-media-text {
+  padding-top: calc(var(--wp--style--block-gap) * 2);
+  padding-bottom: calc(var(--wp--style--block-gap) * 2);
 }
 .wp-block-media-text .wp-block-media-text__content {
   padding: var(--wp--preset--spacing--medium) var(--wp--preset--spacing--regular);
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL21lZGlhLXRleHQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQztFQU1DOztBQUtBO0VBQ0MiLCJmaWxlIjoiYmxvY2tzL2NvcmUvbWVkaWEtdGV4dC5jc3MifQ== */
+.wp-block-post-content > .wp-block-media-text.alignwide:first-child {
+  max-width: calc(1470px + var(--wp--style--block-gap) * 4);
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fZWxlbWVudHMvX3N0YWNrLnNjc3MiLCJibG9ja3MvY29yZS9tZWRpYS10ZXh0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBSUE7RUFDQzs7QUFFQTtFQUNDO0VBQ0E7O0FBRUE7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7O0FDN0NGO0VBTUM7O0FBR0Q7RUFDQztFQUNBOztBQUtBO0VBQ0M7O0FBUUQ7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9tZWRpYS10ZXh0LmNzcyJ9 */

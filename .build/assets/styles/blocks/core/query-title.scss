@@ -3,4 +3,11 @@
 		display: block;
 		font-size: 0.5em;
 	}
+
+	.c-archive__titleprefix {
+		display: block;
+		font-size: var(--wp--preset--font-size--large);
+		font-weight: 500;
+		color: var(--wp--preset--color--gray);
+	}
 }

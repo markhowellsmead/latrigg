@@ -2,4 +2,8 @@
 
 .wp-block-post {
 	@extend .h-stack;
+
+	&.status-private {
+		opacity: 0.5;
+	}
 }

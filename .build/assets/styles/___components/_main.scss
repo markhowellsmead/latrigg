@@ -1,9 +1,11 @@
 .c-main {
-	flex: 1;
+	--main--offset: 3vw;
 
-	&__inner {
-		&--index {
-			@extend %h-guttered;
-		}
+	margin-top: calc(var(--masthead--height) + var(--main--offset)) !important;
+	flex: 1;
+	@extend %h-guttered;
+
+	body.post-template-single-cover & {
+		--main--offset: 0;
 	}
 }

@@ -1,0 +1,7 @@
+.wp-block-comment-template {
+  list-style: none;
+}
+.wp-block-comment-template .comment::before {
+  display: none;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2NvbW1lbnQtdGVtcGxhdGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOztBQUVBO0VBQ0MiLCJmaWxlIjoiYmxvY2tzL2NvcmUvY29tbWVudC10ZW1wbGF0ZS5jc3MifQ== */

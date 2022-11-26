@@ -1,0 +1,124 @@
+:root {
+	--grid500-unit: 0.5rem;
+	--grid500-unit-small: calc(var(--grid500-unit) / 2);
+}
+
+.c-grid500 {
+	flex-basis: 100%;
+	max-width: 100%;
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: calc(var(--grid500-unit-small) * -1);
+		margin-left: calc(var(--grid500-unit-small) * -1);
+		margin-right: calc(var(--grid500-unit-small) * -1);
+
+		&::after {
+			content: '';
+			flex-grow: 999999999;
+			min-width: 20%;
+			order: 999999999;
+		}
+	}
+
+	.alignfull > &,
+	.alignwide > & {
+		@include breakpoint(desktop) {
+			max-width: calc(100% + calc(var(--grid500-unit-small) * 2));
+		}
+	}
+
+	.alignfull > & {
+		margin-left: var(--grid500-unit);
+		margin-right: var(--grid500-unit);
+	}
+
+	&__image {
+		@include flood;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__item {
+		display: block;
+		flex-basis: calc(50% - var(--grid500-unit-small));
+		margin: var(--grid500-unit-small);
+		background-color: #f0f0f0;
+		position: relative;
+
+		@include breakpoint(tablet) {
+			flex-basis: calc(33.33333333% - var(--grid500-unit));
+		}
+
+		@include breakpoint(desktop) {
+			flex-basis: calc(25% - var(--grid500-unit));
+		}
+
+		&::before {
+			content: '';
+			display: none;
+		}
+
+		&:hover .c-grid500__caption {
+			opacity: 1;
+		}
+	}
+
+	&__uncollapse {
+		// Stop layout collapsing before the images have loaded
+		display: block;
+		background-color: #f0f0f0;
+		padding-bottom: 100%;
+		position: relative;
+		z-index: 0;
+	}
+
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent);
+		color: #fff;
+		opacity: 1;
+	}
+
+	&__figure {
+		position: absolute;
+		z-index: 1;
+		vertical-align: bottom;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__flood {
+		position: relative;
+		display: block;
+
+		&:focus {
+			.c-grid500____hovertext,
+			.c-grid500____uncollapse {
+				outline: none;
+			}
+		}
+
+		&:hover {
+			.c-grid500____hovertext {
+				opacity: 1;
+			}
+		}
+
+		&__hovertext {
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+		}
+	}
+}

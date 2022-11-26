@@ -1,0 +1,18 @@
+@supports (aspect-ratio: 3/2) {
+  .wp-block-post-featured-image {
+    aspect-ratio: 3/2;
+  }
+  body.single .wp-block-post-featured-image {
+    aspect-ratio: auto;
+  }
+  body.category-video .wp-block-post-featured-image {
+    aspect-ratio: 16/9;
+  }
+  .wp-block-post-featured-image a,
+.wp-block-post-featured-image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3Bvc3QtZmVhdHVyZWQtaW1hZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQztFQUREO0lBRUU7O0VBRUE7SUFDQzs7RUFHRDtJQUNDOztFQUdEO0FBQUE7SUFFQztJQUNBIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL3Bvc3QtZmVhdHVyZWQtaW1hZ2UuY3NzIn0= */

@@ -1,15 +1,52 @@
-body {
-	--c-masthead-height: #{rem-calc(85px)};
-	--c-masthead-padding-top: var(--wp--preset--spacing--medium);
-	--c-masthead-padding-bottom: var(--c-masthead-padding-top);
-
-	@include breakpoint(laptop) {
-		--c-masthead-height: #{rem-calc(104px)};
-	}
+:root {
+	--masthead--height: 80px;
 }
 
 .c-masthead {
-	padding-top: var(--c-masthead-padding-top);
-	padding-bottom: var(--c-masthead-padding-bottom);
-	@extend %h-guttered;
+	--masthead--background-color: var(--wp--preset--color--white);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	background-color: var(--masthead--background-color);
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+
+	@supports (backdrop-filter: blur(10px)) {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background: none;
+	}
+
+	body.admin-bar & {
+		top: var(--wp-admin--admin-bar--height);
+	}
+
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: block;
+		z-index: 0;
+		background-color: var(--masthead--background-color);
+		opacity: 0.9;
+
+		@supports (backdrop-filter: blur(10px)) {
+			opacity: 0.75;
+		}
+	}
 }

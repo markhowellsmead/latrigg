@@ -40,13 +40,21 @@ class Navigation
 	public function navMenuArgs($args)
 	{
 		$args['fallback_cb'] = false;
-		$args['menu_class'] = 'c-menu__entries c-menu__entries--'.$args['theme_location'];
+		$args['menu_class'] = 'c-menu__entries c-menu__entries--' . $args['theme_location'];
 		return $args;
 	}
 
 	public function menuItemClasses($classes, $item, $args)
 	{
-		$classes[] = 'c-menu__entry c-menu__entry--'.$args->theme_location;
+
+		$identifier = $args->theme_location;
+
+		if (empty($identifier)) {
+			$identifier = $args->menu;
+		}
+
+		$classes[] = 'c-menu__entry c-menu__entry--' . $identifier;
+
 		if ($item->current) {
 			$classes[] = 'c-menu__entry--current';
 		}
@@ -64,7 +72,7 @@ class Navigation
 		if (!isset($atts['class'])) {
 			$atts['class'] = '';
 		}
-		$atts['class'] = (!empty($atts['class']) ? ' ': '').'c-menu__entrylink';
+		$atts['class'] = (!empty($atts['class']) ? ' ' : '') . 'c-menu__entrylink';
 		return $atts;
 	}
 }

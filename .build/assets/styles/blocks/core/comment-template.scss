@@ -1,0 +1,7 @@
+.wp-block-comment-template {
+	list-style: none;
+
+	.comment::before {
+		display: none;
+	}
+}

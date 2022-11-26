@@ -2,4 +2,14 @@
 
 .wp-block-image {
 	@extend .h-stack--small;
+	text-align: center;
+	/* Make sure narrower images are centered */
+
+	img {
+		border-radius: var(--image-border-radius);
+	}
+
+	&:not(.is-style-rounded) img {
+		border-radius: var(--image-border-radius);
+	}
 }

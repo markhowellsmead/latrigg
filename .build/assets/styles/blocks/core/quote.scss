@@ -7,12 +7,19 @@ body {
 
 .wp-block-quote {
 	padding: var(--wp-block-quote-padding);
-	border-left: 0.25em solid var(--wp-block-quote-border-color);
-	background-color: var(--wp-block-quote-background-color);
+	box-shadow: 0.125em 0.125em var(--wp--preset--color--dark-gray);
+
+	&:not(.has-background) {
+		background-color: var(--wp--preset--color--white);
+	}
 
 	cite {
-		font-size: var(--wp--preset--font-size--small);
-		font-style: normal;
+		font-style: italic;
+
+		&::before {
+			content: '—';
+			margin-right: 1ch;
+		}
 	}
 
 	p {
@@ -23,6 +30,11 @@ body {
 	cite {
 		text-align: inherit;
 		color: currentColor;
+	}
+
+	&.is-style-plain {
+		border-width: 0 !important;
+		box-shadow: none;
 	}
 
 	&.is-style-large {
