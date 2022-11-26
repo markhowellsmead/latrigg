@@ -113,7 +113,7 @@ class Theme
 			}
 
 			if (property_exists(sht_theme()->{$class_set}, $class_short)) {
-				wp_die(sprintf(_x('Ein Problem ist geschehen im Theme. Nur eine PHP-Klasse namens «%1$s» darf dem Theme-Objekt «%2$s» zugewiesen werden.', 'Duplicate PHP class assignmment in Theme', 'sht'), $class_short, $class_set), 500);
+				wp_die(sprintf(_x('Ein Problem ist geschehen im Theme. Nur eine PHP-Klasse namens «%1$s» darf dem Theme-Objekt «%2$s» zugewiesen werden.', 'Duplicate PHP class assignmment in Theme', 'latrigg'), $class_short, $class_set), 500);
 			}
 
 			sht_theme()->{$class_set}->{$class_short} = new $class();
