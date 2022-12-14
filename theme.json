@@ -11,11 +11,11 @@
 			"background": true,
 			"custom": false,
 			"customDuotone": false,
-			"customGradient": false,
+			"customGradient": true,
 			"link": false,
 			"palette": [
 				{
-					"color": "#000",
+					"color": "#004ba6",
 					"name": "Primary",
 					"slug": "primary"
 				},
