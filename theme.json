@@ -1,14 +1,13 @@
 {
 	"settings": {
-		"appearanceTools": false,
+		"appearanceTools": true,
 		"border": {
 			"color": false,
 			"radius": false,
 			"style": false,
 			"width": false
 		},
-		"color": {
-			"background": true,
+		"color": {			"background": true,
 			"custom": false,
 			"customDuotone": false,
 			"customGradient": true,
@@ -70,44 +69,41 @@
 			"wideSize": "1470px"
 		},
 		"spacing": {
-			"blockGap": true,
-			"margin": true,
-			"padding": true,
 			"spacingSizes": [
 				{
+					"name": "XS",
 					"size": "0.25rem",
-					"slug": "xsmall",
-					"name": "XS"
+					"slug": "xsmall"
 				},
 				{
+					"name": "S",
 					"size": "0.5rem",
-					"slug": "small",
-					"name": "S"
+					"slug": "small"
 				},
 				{
+					"name": "R",
 					"size": "1rem",
-					"slug": "regular",
-					"name": "R"
+					"slug": "regular"
 				},
 				{
+					"name": "M",
 					"size": "2rem",
-					"slug": "medium",
-					"name": "M"
+					"slug": "medium"
 				},
 				{
+					"name": "L",
 					"size": "3rem",
-					"slug": "large",
-					"name": "L"
+					"slug": "large"
 				},
 				{
+					"name": "XL",
 					"size": "4rem",
-					"slug": "xlarge",
-					"name": "XL"
+					"slug": "xlarge"
 				},
 				{
+					"name": "XXL",
 					"size": "5rem",
-					"slug": "xxlarge",
-					"name": "XXL"
+					"slug": "xxlarge"
 				}
 			]
 		},
