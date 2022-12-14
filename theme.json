@@ -1,4 +1,41 @@
 {
+	"customTemplates": [
+		{
+			"name": "blank",
+			"postTypes": ["page", "post"],
+			"title": "Blank"
+		},
+		{
+			"name": "no-title",
+			"postTypes": ["page", "post"],
+			"title": "No Title"
+		},
+		{
+			"name": "page-cover",
+			"postTypes": ["page"],
+			"title": "Page (Cover Image)"
+		},
+		{
+			"name": "single-no-thumbnail",
+			"postTypes": ["post"],
+			"title": "Single Post (no thumbnail)"
+		},
+		{
+			"name": "single-square-tall",
+			"postTypes": ["post"],
+			"title": "Single Post (tall/square image)"
+		},
+		{
+			"name": "single-panorama",
+			"postTypes": ["post"],
+			"title": "Single Post (panorama image)"
+		},
+		{
+			"name": "single-cover",
+			"postTypes": ["post"],
+			"title": "Single Post (Cover Image)"
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"border": {
