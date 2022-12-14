@@ -7,7 +7,8 @@
 			"style": false,
 			"width": false
 		},
-		"color": {			"background": true,
+		"color": {
+			"background": true,
 			"custom": false,
 			"customDuotone": false,
 			"customGradient": true,
@@ -217,73 +218,73 @@
 			],
 			"fontSizes": [
 				{
+					"fluid": false,
 					"name": "Small",
 					"size": "14px",
-					"slug": "small",
-					"fluid": false
+					"slug": "small"
 				},
 				{
+					"fluid": {
+						"max": "1rem",
+						"min": "0.9375rem"
+					},
 					"name": "Smaller",
 					"size": "15px",
-					"slug": "small",
-					"fluid": {
-						"min": "0.9375rem",
-						"max": "1rem"
-					}
+					"slug": "smaller"
 				},
 				{
+					"fluid": {
+						"max": "1.125rem",
+						"min": "1rem"
+					},
 					"name": "Regular",
 					"size": "16px",
-					"slug": "regular",
-					"fluid": {
-						"min": "1rem",
-						"max": "1.125rem"
-					}
+					"slug": "regular"
 				},
 				{
+					"fluid": {
+						"max": "1.25rem",
+						"min": "1rem"
+					},
 					"name": "Medium",
 					"size": "18px",
-					"slug": "medium",
-					"fluid": {
-						"min": "1rem",
-						"max": "1.25rem"
-					}
+					"slug": "medium"
 				},
 				{
+					"fluid": {
+						"max": "1.5rem",
+						"min": "1.125rem"
+					},
 					"name": "Large",
 					"size": "24px",
-					"slug": "large",
-					"fluid": {
-						"min": "1.125rem",
-						"max": "1.5rem"
-					}
+					"slug": "large"
 				},
 				{
+					"fluid": {
+						"max": "1.75rem",
+						"min": "1.25rem"
+					},
 					"name": "Extra large",
 					"size": "28px",
-					"slug": "xlarge",
-					"fluid": {
-						"min": "1.25rem",
-						"max": "1.75rem"
-					}
+					"slug": "xlarge"
 				},
 				{
+					"fluid": {
+						"max": "2rem",
+						"min": "1.5rem"
+					},
 					"name": "Extra extra large",
 					"size": "32px",
-					"slug": "xxlarge",
-					"fluid": {
-						"min": "1.5rem",
-						"max": "2rem"
-					}
+					"slug": "xxlarge"
 				},
 				{
+					"fluid": {
+						"max": "2.25rem",
+						"min": "1.5rem"
+					},
 					"name": "Huge",
 					"size": "36px",
-					"slug": "huge",
-					"fluid": {
-						"min": "1.5rem",
-						"max": "2.25rem"
-					}
+					"slug": "huge"
 				}
 			],
 			"fontStyle": false,
@@ -299,6 +300,11 @@
 			"core/heading": {
 				"typography": {
 					"lineHeight": "1.2"
+				}
+			},
+			"core/post-title": {
+				"color": {
+					"text": "var:preset|color|black"
 				}
 			}
 		},
@@ -364,8 +370,8 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--primary)",
 			"fontSize": "var(--wp--preset--font-size--regular)",
-			"lineHeight": "1.5",
-			"letterSpacing": "0.01em"
+			"letterSpacing": "0.01em",
+			"lineHeight": "1.5"
 		}
 	},
 	"templateParts": [
@@ -380,5 +386,6 @@
 			"title": "Footer"
 		}
 	],
-	"version": 2
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.1/theme.json"
 }
