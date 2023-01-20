@@ -2,53 +2,37 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": [
-				"page",
-				"post"
-			],
+			"postTypes": ["page", "post"],
 			"title": "Blank"
 		},
 		{
 			"name": "no-title",
-			"postTypes": [
-				"page",
-				"post"
-			],
+			"postTypes": ["page", "post"],
 			"title": "No Title"
 		},
 		{
 			"name": "page-cover",
-			"postTypes": [
-				"page"
-			],
+			"postTypes": ["page"],
 			"title": "Page (Cover Image)"
 		},
 		{
 			"name": "single-no-thumbnail",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (no thumbnail)"
 		},
 		{
 			"name": "single-square-tall",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (tall/square image)"
 		},
 		{
 			"name": "single-panorama",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (panorama image)"
 		},
 		{
 			"name": "single-cover",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (Cover Image)"
 		}
 	],
@@ -88,6 +72,11 @@
 					"slug": "quarternary"
 				},
 				{
+					"color": "#0073aa",
+					"name": "WordPress blue",
+					"slug": "wordpress-blue"
+				},
+				{
 					"color": "#404040",
 					"name": "Dark gray",
 					"slug": "dark-gray"
@@ -106,6 +95,11 @@
 					"color": "#f0f0f0",
 					"name": "Extra-light gray",
 					"slug": "xlight-gray"
+				},
+				{
+					"color": "#eaeef1",
+					"name": "Very light primary",
+					"slug": "primary-verylight"
 				},
 				{
 					"color": "#f3f4f7",
