@@ -4,6 +4,10 @@ if (empty($menu = $args['attributes']['menu'] ?? '')) {
 	return;
 }
 
+if (!empty($align = $args['attributes']['align'] ?? '')) {
+	$align = " align{$align}";
+}
+
 $font_size_class = '';
 
 if (!empty($font_size = $args['attributes']['fontSize'] ?? '')) {
@@ -12,7 +16,7 @@ if (!empty($font_size = $args['attributes']['fontSize'] ?? '')) {
 
 ?>
 
-<div class="wp-block-sht-menu<?php echo $font_size_class; ?>">
+<div class="wp-block-sht-menu<?php echo $font_size_class . $align; ?>">
 	<?php
 	wp_nav_menu(
 		[
