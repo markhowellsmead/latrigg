@@ -12,7 +12,7 @@ class Language
 
 	public function run()
 	{
-		add_action('after_setup_theme', [ $this, 'loadTranslations' ]);
+		add_action('after_setup_theme', [$this, 'loadTranslations']);
 	}
 
 	/**
@@ -23,7 +23,7 @@ class Language
 	 */
 	public function loadTranslations()
 	{
-		load_theme_textdomain('sht', get_template_directory() . '/languages'); // Textdomain Frontend
+		load_theme_textdomain('latrigg', get_template_directory() . '/languages'); // Textdomain Frontend
 		load_theme_textdomain('sha', get_template_directory() . '/languages'); // Textdomain Admin
 	}
 }

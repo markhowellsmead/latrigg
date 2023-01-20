@@ -2,7 +2,7 @@ import gulp from 'gulp';
 
 const config = {
 	name: 'WordPress Theme by Say Hello',
-	key: 'sht',
+	key: 'latrigg',
 	themeDir: './',
 	assetsDir: './assets/',
 	gulpDir: './.build/gulp/',

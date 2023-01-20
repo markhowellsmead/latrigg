@@ -50,10 +50,10 @@ class Media
 	 */
 	public function selectableImageSizes($sizes)
 	{
-		$sizes['gutenberg_full'] = _x('Gestamte breite', 'Custom selectable image size', 'sht');
+		$sizes['gutenberg_full'] = _x('Gestamte breite', 'Custom selectable image size', 'latrigg');
 
 		if ((int) $this->wide_size) {
-			$sizes['gutenberg_wide'] = _x('Weite Breite', 'Custom selectable image size', 'sht');
+			$sizes['gutenberg_wide'] = _x('Weite Breite', 'Custom selectable image size', 'latrigg');
 		}
 
 		return $sizes;
