@@ -72,7 +72,7 @@ addFilter(
 					<BlockEdit {...props} />
 					<InspectorControls>
 						<PanelBody
-							title={__('Sichtbarkeit', 'sht')}
+							title={__('Sichtbarkeit', 'latrigg')}
 							initialOpen={true}
 						>
 							<ToggleControl

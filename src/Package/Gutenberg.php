@@ -109,7 +109,7 @@ class Gutenberg
 	 */
 	public function setScriptTranslations()
 	{
-		wp_set_script_translations('sht-gutenberg-script', 'sht', get_template_directory() . '/languages');
+		wp_set_script_translations('sht-gutenberg-script', 'latrigg', get_template_directory() . '/languages');
 	}
 
 	public function blockCategories($categories)
