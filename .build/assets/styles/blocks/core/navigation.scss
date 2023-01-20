@@ -1,4 +1,25 @@
+@import '../../../../../assets/settings.json';
+@import '../../_______tools/mixins/breakpoints';
+
 .wp-block-navigation {
+	.wp-block-navigation {
+		&__responsive-container {
+			bottom: auto;
+
+			&:is(.is-menu-open) {
+				.wp-block-navigation__responsive-dialog {
+					margin-top: 0;
+				}
+			}
+		}
+
+		&__responsive-container-content {
+			@include breakpoint(tablet down) {
+				--navigation-layout-justification-setting: flex-start;
+			}
+		}
+	}
+
 	&-item {
 		&.current-menu-item {
 			color: var(--wp--preset--color--primary);
