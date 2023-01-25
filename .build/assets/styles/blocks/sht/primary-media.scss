@@ -4,6 +4,17 @@
 	&__figure {
 		position: relative;
 
+		&--empty {
+			border-radius: var(--image-border-radius);
+			background: rgba(255, 255, 255, 0.8);
+
+			a {
+				display: block;
+				@include flood;
+				text-indent: -999rem;
+			}
+		}
+
 		&--video {
 			aspect-ratio: 16/9;
 		}
