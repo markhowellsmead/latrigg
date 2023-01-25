@@ -1,3 +1,21 @@
+/**
+ * Use in order to make a set of rules only apply above
+ * or below a certain breakpoint.
+ * Standard usage:
+
+ @include breakpoint(tablet){
+ 	// Applies to screen sizes tablet and LARGER
+ }
+
+ @include breakpoint(tablet up){
+ 	// Applies to screen sizes tablet and LARGER
+ }
+
+ @include breakpoint(tablet down){
+ 	// Applies to screen sizes tablet and SMALLER
+ }
+ *
+ **/
 /*
  * https://every-layout.dev/layouts/stack/
  */
@@ -33,14 +51,34 @@
 h1 + .wp-block-media-text, h2 + .wp-block-media-text, h3 + .wp-block-media-text, h4 + .wp-block-media-text, h5 + .wp-block-media-text, h6 + .wp-block-media-text {
   margin-top: var(--c-block-margin-top-medium);
 }
+.wp-block-media-text.is-stacked-on-mobile {
+  gap: var(--wp--preset--spacing--medium);
+}
+@media screen and (min-width: 37.5em) {
+  .wp-block-media-text.is-stacked-on-mobile {
+    gap: var(--wp--preset--spacing--regular);
+  }
+}
+.wp-block-media-text.has-background {
+  padding: var(--wp--preset--spacing--medium);
+}
+@media screen and (min-width: 37.5em) {
+  .wp-block-media-text.has-background .wp-block-media-text__content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.wp-block-media-text.has-background.has-media-on-the-right .wp-block-media-text__content {
+  padding-left: 0;
+}
+.wp-block-media-text.has-background.has-media-on-the-left .wp-block-media-text__content {
+  padding-right: 0;
+}
+.wp-block-media-text.has-background:not(.alignfull) {
+  border-radius: var(--image-border-radius);
+}
 .has-background > .wp-block-media-text {
   padding-top: calc(var(--wp--style--block-gap) * 2);
   padding-bottom: calc(var(--wp--style--block-gap) * 2);
 }
-.wp-block-media-text .wp-block-media-text__content {
-  padding: var(--wp--preset--spacing--medium) var(--wp--preset--spacing--regular);
-}
-.wp-block-post-content > .wp-block-media-text.alignwide:first-child {
-  max-width: calc(1470px + var(--wp--style--block-gap) * 4);
-}
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fZWxlbWVudHMvX3N0YWNrLnNjc3MiLCJibG9ja3MvY29yZS9tZWRpYS10ZXh0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBSUE7RUFDQzs7QUFFQTtFQUNDO0VBQ0E7O0FBRUE7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7O0FDN0NGO0VBTUM7O0FBR0Q7RUFDQztFQUNBOztBQUtBO0VBQ0M7O0FBUUQ7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9tZWRpYS10ZXh0LmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fX190b29scy9taXhpbnMvX2JyZWFrcG9pbnRzLnNjc3MiLCJfX19fX2VsZW1lbnRzL19zdGFjay5zY3NzIiwiYmxvY2tzL2NvcmUvbWVkaWEtdGV4dC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdLQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUNoS0E7QUFBQTtBQUFBO0FBSUE7RUFDQzs7QUFFQTtFQUNDO0VBQ0E7O0FBRUE7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7O0FDbENGO0VBTUM7O0FBR0Q7RUFDQzs7QUZTQztFRVZGO0lBR0U7OztBQUlGO0VBQ0M7O0FGRUM7RUVERDtJQUVFO0lBQ0E7OztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7QUFJRjtFQUNDOztBQUlGO0VBQ0M7RUFDQSIsImZpbGUiOiJibG9ja3MvY29yZS9tZWRpYS10ZXh0LmNzcyJ9 */
