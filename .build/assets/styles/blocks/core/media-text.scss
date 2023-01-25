@@ -1,3 +1,6 @@
+@import '../../../../../assets/settings.json';
+
+@import '../../_______tools/mixins/breakpoints';
 @import '../../_____elements/_stack.scss';
 
 .wp-block-media-text {
@@ -10,6 +13,39 @@
 		margin-top: var(--c-block-margin-top-medium);
 	}
 
+	&.is-stacked-on-mobile {
+		gap: var(--wp--preset--spacing--medium);
+		@include breakpoint(wordpress_small) {
+			gap: var(--wp--preset--spacing--regular);
+		}
+	}
+
+	&.has-background {
+		padding: var(--wp--preset--spacing--medium);
+		.wp-block-media-text__content {
+			@include breakpoint(wordpress_small) {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		&.has-media-on-the-right {
+			.wp-block-media-text__content {
+				padding-left: 0;
+			}
+		}
+
+		&.has-media-on-the-left {
+			.wp-block-media-text__content {
+				padding-right: 0;
+			}
+		}
+
+		&:not(.alignfull) {
+			border-radius: var(--image-border-radius);
+		}
+	}
+
 	.has-background > & {
 		padding-top: calc(var(--wp--style--block-gap) * 2);
 		padding-bottom: calc(var(--wp--style--block-gap) * 2);
@@ -18,16 +54,7 @@
 	// This block has too much CSS specificity in core
 	.wp-block-media-text {
 		&__content {
-			padding: var(--wp--preset--spacing--medium)
-				var(--wp--preset--spacing--regular);
-
 			@extend .h-stack;
-		}
-	}
-
-	.wp-block-post-content > & {
-		&.alignwide:first-child {
-			max-width: calc(1470px + var(--wp--style--block-gap) * 4);
 		}
 	}
 }
