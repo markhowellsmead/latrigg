@@ -274,6 +274,58 @@
 					"slug": "primary"
 				},
 				{
+					"fontFace": [
+						{
+							"fontFamily": "Metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/Metropolis-Light.woff2"
+							]
+						},
+						{
+							"fontFamily": "Metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Metropolis-Regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/Metropolis-Medium.woff2"
+							]
+						},
+						{
+							"fontFamily": "Metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Metropolis-Bold.woff2"
+							]
+						},
+						{
+							"fontFamily": "Metropolis",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/Metropolis-ExtraBold.woff2"
+							]
+						}
+					],
+					"fontFamily": "Metropolis, Archivo, sans-serif",
+					"name": "Metropolis",
+					"slug": "metropolis"
+				},
+				{
 					"fontFamily": "monospace",
 					"name": "Monospace",
 					"slug": "monospace"
@@ -306,8 +358,8 @@
 				},
 				{
 					"fluid": {
-						"max": "1.25rem",
-						"min": "1rem"
+						"max": "1.4375rem",
+						"min": "1.25rem"
 					},
 					"name": "Medium",
 					"size": "18px",
@@ -315,8 +367,8 @@
 				},
 				{
 					"fluid": {
-						"max": "1.5rem",
-						"min": "1.125rem"
+						"max": "1.875rem",
+						"min": "1.5rem"
 					},
 					"name": "Large",
 					"size": "24px",
@@ -324,8 +376,8 @@
 				},
 				{
 					"fluid": {
-						"max": "1.75rem",
-						"min": "1.25rem"
+						"max": "2rem",
+						"min": "1.65rem"
 					},
 					"name": "Extra large",
 					"size": "28px",
@@ -333,8 +385,8 @@
 				},
 				{
 					"fluid": {
-						"max": "2rem",
-						"min": "1.5rem"
+						"max": "2.25rem",
+						"min": "1.875rem"
 					},
 					"name": "Extra extra large",
 					"size": "32px",
@@ -342,11 +394,11 @@
 				},
 				{
 					"fluid": {
-						"max": "2.25rem",
-						"min": "1.5rem"
+						"max": "2.75rem",
+						"min": "1.875rem"
 					},
 					"name": "Huge",
-					"size": "36px",
+					"size": "40px",
 					"slug": "huge"
 				}
 			],
@@ -366,6 +418,11 @@
 				},
 				"color": {
 					"background": "var:preset|color|black"
+				}
+			},
+			"core/code": {
+				"color": {
+					"background": "var:preset|color|white"
 				}
 			},
 			"core/heading": {
@@ -392,43 +449,55 @@
 					"text": "var(--wp--preset--color--black)"
 				},
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
 					"fontSize": "var(--wp--preset--font-size--huge)",
-					"fontWeight": "600",
+					"fontWeight": "900",
+					"letterSpacing": "-.01em",
 					"lineHeight": "1.2"
 				}
 			},
 			"h2": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
 					"fontSize": "var(--wp--preset--font-size--xlarge)",
-					"fontWeight": "600",
+					"fontWeight": "700",
+					"letterSpacing": "-.01em",
 					"lineHeight": "1.2"
 				}
 			},
 			"h3": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
 					"fontSize": "var(--wp--preset--font-size--large)",
 					"fontWeight": "600",
+					"letterSpacing": "-.02em",
 					"lineHeight": "1.2"
 				}
 			},
 			"h4": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
 					"fontWeight": "600",
+					"letterSpacing": "-.02em",
 					"lineHeight": "1.2"
 				}
 			},
 			"h5": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
 					"fontSize": "var(--wp--preset--font-size--regular)",
 					"fontWeight": "600",
+					"letterSpacing": "-.02em",
 					"lineHeight": "1.2"
 				}
 			},
 			"h6": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--metropolis)",
 					"fontSize": "var(--wp--preset--font-size--small)",
 					"fontWeight": "600",
+					"letterSpacing": "-.02em",
 					"lineHeight": "1.2"
 				}
 			},
