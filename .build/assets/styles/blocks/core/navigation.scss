@@ -7,6 +7,8 @@
 			bottom: auto;
 
 			&:is(.is-menu-open) {
+				padding: var(--wp--preset--spacing--regular);
+
 				.wp-block-navigation__responsive-dialog {
 					margin-top: 0;
 				}
