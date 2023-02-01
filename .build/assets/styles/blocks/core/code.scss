@@ -5,13 +5,10 @@ body {
 .wp-block-code {
 	border: 1px solid var(--wp-block-code-border-color);
 
-	&:not(.has-background) {
-		background-color: var(--wp--preset--color--xlight-gray);
-	}
-
 	code {
 		max-width: 100%;
 		padding: var(--wp--preset--spacing--regular);
+		white-space: pre;
 		overflow-x: auto;
 	}
 }
