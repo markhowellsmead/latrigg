@@ -1,10 +1,6 @@
 @import '../../_____elements/_stack.scss';
 
 .wp-block-group {
-	&.has-background {
-		padding: var(--wp--preset--spacing--medium);
-	}
-
 	&.c-archive__header {
 		margin-bottom: calc(var(--wp--style--block-gap) * 2);
 	}
