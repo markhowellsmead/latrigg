@@ -21,7 +21,6 @@
 	}
 
 	&.has-background {
-		padding: var(--wp--preset--spacing--medium);
 		.wp-block-media-text__content {
 			@include breakpoint(wordpress_small) {
 				padding-top: 0;
