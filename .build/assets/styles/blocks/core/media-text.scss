@@ -39,10 +39,6 @@
 				padding-right: 0;
 			}
 		}
-
-		&:not(.alignfull) {
-			border-radius: var(--image-border-radius);
-		}
 	}
 
 	.has-background > & {
@@ -54,6 +50,10 @@
 	.wp-block-media-text {
 		&__content {
 			@extend .h-stack;
+		}
+
+		&__media {
+			border-radius: var(--image-border-radius);
 		}
 	}
 }
