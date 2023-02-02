@@ -1,6 +1,10 @@
 @import '../../_______tools/mixins/flood';
 
 .wp-block-sht-primary-media {
+	body.single & {
+		margin-block-end: var(--wp--preset--spacing--xlarge);
+	}
+
 	&__figure {
 		position: relative;
 
