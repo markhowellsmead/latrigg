@@ -1,5 +1,5 @@
 .c-main {
-	--main--offset: 3vw;
+	--main--offset: clamp(1rem, 0.296rem + 3.005vw, 3rem);
 
 	margin-top: calc(var(--masthead--height) + var(--main--offset)) !important;
 	flex: 1;
