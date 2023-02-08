@@ -22,6 +22,7 @@ const conditionalLoadScript = (filename, condition) => {
 	}
 };
 
+conditionalLoadScript('fancybox', true);
 conditionalLoadScript('svh', !CSS.supports || !CSS.supports('height', '1svh'));
 conditionalLoadScript(
 	'aria-toggler',

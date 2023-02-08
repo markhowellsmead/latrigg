@@ -35,20 +35,17 @@ export const task = (config) => {
 								loader: 'babel-loader',
 							},
 							{
-								test: /\.css$/i,
-								exclude: /node_modules/,
+								test: /\.s?css$/i,
+								//exclude: /node_modules/,
 								use: [
 									{
 										loader: 'style-loader',
-										options: {
-											sourceMap: false,
-										},
 									},
 									{
 										loader: 'css-loader',
-										options: {
-											sourceMap: false,
-										},
+									},
+									{
+										loader: 'sass-loader',
 									},
 								],
 							},
