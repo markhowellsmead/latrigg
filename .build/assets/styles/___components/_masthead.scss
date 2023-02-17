@@ -3,7 +3,8 @@
 }
 
 .c-masthead {
-	--masthead--background-color: var(--wp--preset--color--white);
+	// --masthead--background-color: var(--wp--preset--color--white);
+	--masthead--background-color: var(--wp--preset--color--xlight-primary);
 
 	position: fixed;
 	top: 0;
@@ -11,12 +12,12 @@
 	right: 0;
 	z-index: 3;
 	background-color: var(--masthead--background-color);
-	border-bottom: 1px solid #ddd;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+	// border-bottom: 1px solid #ddd;
+	// box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 
-	@supports (backdrop-filter: blur(10px)) {
-		-webkit-backdrop-filter: blur(10px);
-		backdrop-filter: blur(10px);
+	@supports (backdrop-filter: blur(20px)) {
+		-webkit-backdrop-filter: blur(20px);
+		backdrop-filter: blur(20px);
 		background: none;
 	}
 
