@@ -3,13 +3,6 @@ import './_polyfill';
 import './a11y';
 import './masthead';
 
-console.log('%cDeveloped by', 'font-style: italic; font-size: 12px;');
-console.log(
-	'%cSay Hello GmbH',
-	'font-weight: bold; color: #000; font-size: 16px;'
-);
-console.log('%chttps://sayhello.ch', 'color: #000; font-size: 12px;');
-
 const conditionalLoadScript = (filename, condition) => {
 	if (!!condition) {
 		const min = sht_theme.debug ? '' : '.min';
