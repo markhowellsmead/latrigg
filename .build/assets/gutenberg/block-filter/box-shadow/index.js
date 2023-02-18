@@ -59,6 +59,30 @@ addFilter(
 	})
 );
 
+const addEditorClass = createHigherOrderComponent((BlockListBlock) => {
+	return (props) => {
+		const { attributes, className, name } = props;
+		const { withShadow } = attributes;
+
+		if (!allowedBlocks.includes(name) || !withShadow) {
+			return <BlockListBlock {...props} />;
+		}
+
+		return (
+			<BlockListBlock
+				{...props}
+				className={classnames(className, 'with--container-shadow')}
+			/>
+		);
+	};
+}, 'withClientIdClassName');
+
+addFilter(
+	'editor.BlockListBlock',
+	'sht/allow-block-backgroundfixed-editor-class',
+	addEditorClass
+);
+
 addFilter(
 	'blocks.getSaveContent.extraProps',
 	'sht/group-box-shadow',
