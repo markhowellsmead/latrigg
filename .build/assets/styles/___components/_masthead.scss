@@ -12,12 +12,9 @@
 	right: 0;
 	z-index: 3;
 	background-color: var(--masthead--background-color);
-	// border-bottom: 1px solid #ddd;
-	// box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 
-	@supports (backdrop-filter: blur(20px)) {
-		-webkit-backdrop-filter: blur(20px);
-		backdrop-filter: blur(20px);
+	@supports (backdrop-filter: blur(12px)) {
+		backdrop-filter: blur(12px);
 		background: none;
 	}
 

@@ -5,7 +5,8 @@
 	flex: 1;
 	@extend %h-guttered;
 
-	body.post-template-single-cover,
+	body.post-template-single-cover &,
+	body.single-post &,
 	body.post-template-single-panorama & {
 		--main--offset: var(--wp--preset--spacing--regular);
 	}
