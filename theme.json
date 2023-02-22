@@ -101,7 +101,7 @@
 			"text": true
 		},
 		"custom": {
-			"spacing-outer-gutter": "var:preset|spacing|regular"
+			"spacing-outer-gutter": "var(--wp--preset--spacing--regular)"
 		},
 		"layout": {
 			"contentSize": "720px",
