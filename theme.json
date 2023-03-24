@@ -2,37 +2,53 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": ["page", "post"],
+			"postTypes": [
+				"page",
+				"post"
+			],
 			"title": "Blank"
 		},
 		{
 			"name": "no-title",
-			"postTypes": ["page", "post"],
+			"postTypes": [
+				"page",
+				"post"
+			],
 			"title": "No Title"
 		},
 		{
 			"name": "page-cover",
-			"postTypes": ["page"],
+			"postTypes": [
+				"page"
+			],
 			"title": "Page (Cover Image)"
 		},
 		{
 			"name": "single-no-thumbnail",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (no thumbnail)"
 		},
 		{
 			"name": "single-square-tall",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (tall/square image)"
 		},
 		{
 			"name": "single-panorama",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (panorama image)"
 		},
 		{
 			"name": "single-cover",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (Cover Image)"
 		}
 	],
@@ -282,7 +298,9 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/Metropolis-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/Metropolis-Bold.woff2"
+							]
 						},
 						{
 							"fontFamily": "Metropolis",
@@ -430,13 +448,6 @@
 			"text": "var:preset|color|dark-gray"
 		},
 		"elements": {
-			"heading": {
-				"typography": {
-					"fontFamily": "var:preset|font-family|metropolis",
-					"lineHeight": "1.2",
-					"letterSpacing": "-.02em"
-				}
-			},
 			"h1": {
 				"typography": {
 					"fontSize": "var:preset|font-size|huge",
@@ -471,6 +482,13 @@
 				"typography": {
 					"fontSize": "var:preset|font-size|small",
 					"fontWeight": "600"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|metropolis",
+					"letterSpacing": "-.02em",
+					"lineHeight": "1.2"
 				}
 			},
 			"link": {
