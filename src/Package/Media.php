@@ -24,6 +24,7 @@ class Media
 		add_action('after_setup_theme', [$this, 'addImageSizes']);
 		add_filter('image_size_names_choose', [$this, 'selectableImageSizes']);
 		add_filter('post_thumbnail_size', [$this, 'fixPostThumbnailSize']);
+		add_filter('embed_defaults', [$this, 'setEmbedDefaults'], 10, 0);
 	}
 
 	/**
@@ -74,5 +75,18 @@ class Media
 		}
 
 		return $size;
+	}
+
+	/**
+	 * Set default sizes for all embeds, e.g. YouTube videos
+	 *
+	 * @return array
+	 */
+	public function setEmbedDefaults()
+	{
+		return [
+			'width' => 1280,
+			'height' => 720
+		];
 	}
 }
