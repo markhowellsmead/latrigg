@@ -904,10 +904,10 @@ body.post-template-single-cover .c-main, body.single-post .c-main, body.post-tem
   z-index: 3;
   background-color: var(--masthead--background-color);
 }
-@supports ((-webkit-backdrop-filter: blur(12px)) or (backdrop-filter: blur(12px))) {
+@supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
   .c-masthead {
-    -webkit-backdrop-filter: blur(12px);
-            backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
     background: none;
   }
 }
@@ -933,9 +933,9 @@ body.admin-bar .c-masthead {
   background-color: var(--masthead--background-color);
   opacity: 0.9;
 }
-@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+@supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
   .c-masthead::before {
-    opacity: 0.75;
+    opacity: 0.5;
   }
 }
 
