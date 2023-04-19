@@ -3,6 +3,10 @@
 
 .wp-block-navigation {
 	.wp-block-navigation {
+		&__responsive-close {
+			max-width: none;
+		}
+
 		&__responsive-container {
 			bottom: auto;
 
