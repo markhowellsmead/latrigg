@@ -10,4 +10,8 @@
 	body.post-template-single-panorama & {
 		--main--offset: var(--wp--preset--spacing--regular);
 	}
+
+	body.home & {
+		--main--offset: 1px;
+	}
 }
