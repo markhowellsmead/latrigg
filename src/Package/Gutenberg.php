@@ -23,6 +23,7 @@ class Gutenberg
 		}
 		add_action('enqueue_block_editor_assets', [$this, 'enqueueBlockAssets']);
 		add_filter('block_categories_all', [$this, 'blockCategories']);
+		add_filter('init', [$this, 'patternCategories']);
 		add_action('after_setup_theme', [$this, 'themeSupports']);
 		add_action('init', [$this, 'setScriptTranslations']);
 		add_filter('admin_body_class', [$this, 'extendAdminBodyClass']);
@@ -119,6 +120,13 @@ class Gutenberg
 				'slug'  => 'sht/blocks',
 				'title' => _x('Blöcke von Say Hello', 'Custom block category name', 'sha'),
 			],
+		]);
+	}
+
+	public function patternCategories()
+	{
+		register_block_pattern_category('sht/cover', [
+			'label' => __('Cover Blocks', 'latrigg')
 		]);
 	}
 
