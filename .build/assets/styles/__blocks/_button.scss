@@ -1,0 +1,33 @@
+.wp-block-button {
+	&__link {
+		&.has-transparent-background-color {
+			padding: 0;
+		}
+	}
+
+	&.is-style-with-arrow-right,
+	&.is-style-with-arrow-down {
+		.wp-block-button__link {
+			display: inline-flex;
+			align-items: center;
+		}
+	}
+
+	&.is-style-with-arrow-right {
+		.wp-block-button__link {
+			&::after {
+				@include materialicon('arrow_forward');
+				margin-left: 0.5em;
+			}
+		}
+	}
+
+	&.is-style-with-arrow-down {
+		.wp-block-button__link {
+			&::after {
+				@include materialicon('arrow_downward');
+				margin-left: 0.5em;
+			}
+		}
+	}
+}

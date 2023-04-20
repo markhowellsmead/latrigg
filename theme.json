@@ -2,53 +2,37 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": [
-				"page",
-				"post"
-			],
+			"postTypes": ["page", "post"],
 			"title": "Blank"
 		},
 		{
 			"name": "no-title",
-			"postTypes": [
-				"page",
-				"post"
-			],
+			"postTypes": ["page", "post"],
 			"title": "No Title"
 		},
 		{
 			"name": "page-cover",
-			"postTypes": [
-				"page"
-			],
+			"postTypes": ["page"],
 			"title": "Page (Cover Image)"
 		},
 		{
 			"name": "single-no-thumbnail",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (no thumbnail)"
 		},
 		{
 			"name": "single-square-tall",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (tall/square image)"
 		},
 		{
 			"name": "single-panorama",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (panorama image)"
 		},
 		{
 			"name": "single-cover",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (Cover Image)"
 		}
 	],
@@ -57,6 +41,13 @@
 		"color": {
 			"background": true,
 			"customGradient": true,
+			"gradients": [
+				{
+					"slug": "black-bottom-edge",
+					"gradient": "linear-gradient(to bottom, transparent, transparent 65%, black 100%)",
+					"name": "Black bottom edge"
+				}
+			],
 			"palette": [
 				{
 					"color": "#004ba6",
@@ -112,6 +103,11 @@
 					"color": "#f6f7f9",
 					"name": "Extra-light primary",
 					"slug": "xlight-primary"
+				},
+				{
+					"color": "rgba(0,0,0,0)",
+					"name": "Transparent",
+					"slug": "transparent"
 				}
 			],
 			"text": true
@@ -298,9 +294,7 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/Metropolis-Bold.woff2"
-							]
+							"src": ["file:./assets/fonts/Metropolis-Bold.woff2"]
 						},
 						{
 							"fontFamily": "Metropolis",
@@ -315,6 +309,22 @@
 					"fontFamily": "Metropolis, Archivo, sans-serif",
 					"name": "Metropolis",
 					"slug": "metropolis"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Material Icons",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Material Icons\"",
+					"name": "Material Icons",
+					"slug": "material-icons"
 				},
 				{
 					"fontFamily": "monospace",
