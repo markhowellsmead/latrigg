@@ -22,6 +22,22 @@
 			) !important;
 		}
 	}
+
+	&.has-custom-content-position {
+		.wp-block-cover__inner-container {
+			width: 100% !important;
+
+			.wp-block-group {
+				max-width: var(--wp--style--global--wide-size);
+				margin-left: auto;
+				margin-right: auto;
+
+				> * {
+					max-width: none;
+				}
+			}
+		}
+	}
 }
 
 .wp-block-post-content > .wp-block-cover.alignfull:first-child {

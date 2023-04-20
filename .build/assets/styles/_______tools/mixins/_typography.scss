@@ -108,3 +108,11 @@ $rem-font-size: map-get($rem-base, value) + 0px;
 @mixin av($size) {
 	letter-spacing: calc($size / 1000) * 1em;
 }
+
+@mixin materialicon($icon) {
+	content: '#{$icon}';
+	font-family: var(--wp--preset--font-family--material-icons);
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+}
