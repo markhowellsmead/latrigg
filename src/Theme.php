@@ -42,7 +42,7 @@ class Theme
 	/**
 	 * The Theme object, filled by the constructor
 	 *
-	 * @var array
+	 * @var object
 	 */
 	private $theme;
 
@@ -84,14 +84,13 @@ class Theme
 	public static function getInstance()
 	{
 		if (!isset(self::$instance) && !(self::$instance instanceof Theme)) {
-			self::$instance = new Theme;
+			self::$instance = new Theme();
 
 			self::$instance->name    = self::$instance->theme->name;
 			self::$instance->version = self::$instance->theme->version;
-			self::$instance->debug   = true;
 
-			if (!isset($_SERVER['HTTP_HOST']) || (strpos($_SERVER['HTTP_HOST'], '.hello') === false && strpos($_SERVER['HTTP_HOST'], '.local') === false) && !in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
-				self::$instance->debug = false;
+			if (defined('WP_DEBUG') && WP_DEBUG) {
+				self::$instance->debug = true;
 			}
 		}
 
