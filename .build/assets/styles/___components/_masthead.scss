@@ -3,8 +3,7 @@
 }
 
 .c-masthead {
-	// --masthead--background-color: var(--wp--preset--color--white);
-	--masthead--background-color: var(--wp--preset--color--xlight-primary);
+	--masthead--background-color: var(--wp--preset--color--xlight-primary-85);
 
 	position: fixed;
 	top: 0;
@@ -13,9 +12,9 @@
 	z-index: 3;
 	background-color: var(--masthead--background-color);
 
-	@supports (backdrop-filter: blur(20px)) {
-		backdrop-filter: blur(20px);
-		background: none;
+	@supports (backdrop-filter: blur(2px)) {
+		backdrop-filter: blur(2px);
+		// background: none;
 	}
 
 	body.admin-bar & {
@@ -43,8 +42,8 @@
 		background-color: var(--masthead--background-color);
 		opacity: 0.9;
 
-		@supports (backdrop-filter: blur(20px)) {
-			opacity: 0.5;
-		}
+		// @supports (backdrop-filter: blur(20px)) {
+		// 	opacity: 0.5;
+		// }
 	}
 }
