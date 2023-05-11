@@ -1,9 +1,21 @@
+body {
+	--main--max-width: 70rem;
+
+	@media screen and (min-width: 100em) {
+		--main--max-width: 100%;
+	}
+}
+
 .c-main {
 	--main--offset: clamp(3rem, 2.296rem + 3.005vw, 5rem);
 
 	margin-top: calc(var(--masthead--height) + var(--main--offset)) !important;
 	flex: 1;
 	@extend %h-guttered;
+	width: 100%;
+	max-width: var(--main--max-width);
+	margin-left: auto;
+	margin-right: auto;
 
 	body.post-template-single-cover &,
 	body.single-post &,

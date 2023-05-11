@@ -26,6 +26,12 @@
 		z-index: 1;
 	}
 
+	&__inner {
+		max-width: var(--main--max-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	a {
 		text-decoration: none;
 	}
