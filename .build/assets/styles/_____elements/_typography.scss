@@ -6,8 +6,6 @@ body {
 
 	// Probably not necessary but useful for browser debugging
 	--wp--preset--font-size--rem-base: #{$rem-font-size};
-
-	-webkit-font-smoothing: antialiased;
 }
 
 abbr,
@@ -18,6 +16,8 @@ acronym {
 a,
 button {
 	@include transition(opacity);
+	text-decoration-thickness: 0.5px;
+	text-underline-offset: 0.2em;
 }
 
 button {
@@ -138,7 +138,6 @@ q {
 sub,
 sup {
 	font-size: var(--wp--preset--font-size--small);
-	-webkit-font-smoothing: subpixel-antialiased;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;

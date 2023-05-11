@@ -2,37 +2,53 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": ["page", "post"],
+			"postTypes": [
+				"page",
+				"post"
+			],
 			"title": "Blank"
 		},
 		{
 			"name": "no-title",
-			"postTypes": ["page", "post"],
+			"postTypes": [
+				"page",
+				"post"
+			],
 			"title": "No Title"
 		},
 		{
 			"name": "page-cover",
-			"postTypes": ["page"],
+			"postTypes": [
+				"page"
+			],
 			"title": "Page (Cover Image)"
 		},
 		{
 			"name": "single-no-thumbnail",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (no thumbnail)"
 		},
 		{
 			"name": "single-square-tall",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (tall/square image)"
 		},
 		{
 			"name": "single-panorama",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (panorama image)"
 		},
 		{
 			"name": "single-cover",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (Cover Image)"
 		}
 	],
@@ -175,70 +191,90 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Regular.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Regular.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Medium.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Medium.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-SemiBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-SemiBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Bold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Bold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "800",
-							"src": ["file:./assets/fonts/FixelText-ExtraBold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-ExtraBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "900",
-							"src": ["file:./assets/fonts/FixelText-Black.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Black.woff2"
+							]
 						}
 					],
 					"fontFamily": "FixelText, sans-serif",
@@ -252,7 +288,9 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"]
+							"src": [
+								"file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"
+							]
 						}
 					],
 					"fontFamily": "\"Material Icons\"",
@@ -283,7 +321,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1.125rem",
+						"max": "1.1875rem",
 						"min": "1rem"
 					},
 					"name": "Regular",
@@ -337,7 +375,7 @@
 				}
 			],
 			"fontStyle": false,
-			"fontWeight": false,
+			"fontWeight": true,
 			"letterSpacing": false,
 			"lineHeight": false,
 			"textDecoration": false,
@@ -382,7 +420,7 @@
 			},
 			"core/post-title": {
 				"color": {
-					"text": "var:preset|color|black"
+					"text": "var:preset|color|dark-gray"
 				}
 			}
 		},
@@ -393,57 +431,60 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontWeight": "800",
-					"lineHeight": "1.2",
+					"fontSize": "var:preset|font-size|huge",
+					"fontWeight": "700",
 					"letterSpacing": "-0.0125em",
-					"fontSize": "var:preset|font-size|huge"
+					"lineHeight": "1.2"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontWeight": "800",
-					"lineHeight": "1.2",
+					"fontSize": "var:preset|font-size|xlarge",
+					"fontWeight": "700",
 					"letterSpacing": "-0.0125em",
-					"fontSize": "var:preset|font-size|xlarge"
+					"lineHeight": "1.2"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontWeight": "800",
-					"lineHeight": "1.2",
+					"fontSize": "var:preset|font-size|large",
+					"fontWeight": "700",
 					"letterSpacing": "-0.0125em",
-					"fontSize": "var:preset|font-size|large"
+					"lineHeight": "1.2"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontWeight": "800",
-					"lineHeight": "1.2",
+					"fontSize": "var:preset|font-size|medium",
+					"fontWeight": "700",
 					"letterSpacing": "-0.0125em",
-					"fontSize": "var:preset|font-size|medium"
+					"lineHeight": "1.2"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontWeight": "800",
-					"lineHeight": "1.2",
+					"fontSize": "var:preset|font-size|regular",
+					"fontWeight": "700",
 					"letterSpacing": "-0.0125em",
-					"fontSize": "var:preset|font-size|regular"
+					"lineHeight": "1.2"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontWeight": "800",
-					"lineHeight": "1.2",
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "700",
 					"letterSpacing": "-0.0125em",
-					"fontSize": "var:preset|font-size|small"
+					"lineHeight": "1.2"
 				}
 			},
 			"heading": {
+				"color": {
+					"text": "#404040"
+				},
 				"typography": {
 					"fontWeight": "800",
-					"lineHeight": "1.2",
-					"letterSpacing": "-0.0125em"
+					"letterSpacing": "-0.0125em",
+					"lineHeight": "1.2"
 				}
 			},
 			"link": {
@@ -458,7 +499,7 @@
 		"typography": {
 			"fontFamily": "var:preset|font-family|primary",
 			"fontSize": "var:preset|font-size|regular",
-			"fontWeight": "500",
+			"fontWeight": "400",
 			"lineHeight": "1.5"
 		}
 	},
