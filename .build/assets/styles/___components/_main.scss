@@ -1,6 +1,10 @@
 body {
 	--main--max-width: 70rem;
 
+	@media screen and (min-width: 72.5em) and (max-width: 100em) {
+		--wp--custom--spacing-outer-gutter: 0;
+	}
+
 	@media screen and (min-width: 100em) {
 		--main--max-width: 100%;
 	}
