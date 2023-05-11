@@ -885,7 +885,7 @@ body {
 }
 @media screen and (min-width: 72.5em) and (max-width: 100em) {
   body {
-    --wp--custom--spacing-outer-gutter: 0;
+    --wp--custom--spacing-outer-gutter: 1px;
   }
 }
 @media screen and (min-width: 100em) {
