@@ -1,1 +1,0 @@
-(()=>{const c=document.querySelectorAll(".wp-block-image.is-style-webcam img");if(c.length){const e=Math.floor(1e9*Math.random());c.forEach((c=>{c.src=c.src+"?force="+e}))}})();
