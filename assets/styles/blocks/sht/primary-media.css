@@ -32,7 +32,8 @@ body.category-video .wp-block-post-template .wp-block-sht-primary-media__figure 
 }
 .wp-block-post-template .wp-block-sht-primary-media__image {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .wp-block-sht-primary-media iframe {
   position: absolute;
