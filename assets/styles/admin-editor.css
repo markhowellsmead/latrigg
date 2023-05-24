@@ -350,8 +350,8 @@ cite {
 
 code {
   background-color: var(--wp--preset--color--gray-xlight);
-  display: inline-block;
-  padding: 0.0625em 0.25em;
+  color: darkred;
+  font-size: 0.95em;
 }
 
 dd + dt {
@@ -779,7 +779,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .c-grid500__item {
   display: block;
@@ -829,7 +830,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .c-grid500__flood {
   position: relative;
