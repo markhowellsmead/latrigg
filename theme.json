@@ -55,6 +55,11 @@
 					"slug": "primary"
 				},
 				{
+					"color": "#0053b7",
+					"name": "Primary dark",
+					"slug": "primary-dark"
+				},
+				{
 					"color": "#B6C4FF",
 					"name": "Secondary",
 					"slug": "secondary"
@@ -455,11 +460,13 @@
 				}
 			},
 			"link": {
-				"typography": {
-					"fontWeight": "500"
-				},
 				"color": {
 					"text": "var:preset|color|primary"
+				},
+				":hover": {
+					"color": {
+						"text": "var:preset|color|primary-dark"
+					}
 				}
 			}
 		},
