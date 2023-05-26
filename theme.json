@@ -288,7 +288,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1.1875rem",
+						"max": "1.125rem",
 						"min": "1rem"
 					},
 					"name": "Regular",
@@ -470,7 +470,7 @@
 			"fontFamily": "var:preset|font-family|primary",
 			"fontSize": "var:preset|font-size|regular",
 			"fontWeight": "400",
-			"lineHeight": "1.5"
+			"lineHeight": "1.55555556"
 		}
 	},
 	"templateParts": [
