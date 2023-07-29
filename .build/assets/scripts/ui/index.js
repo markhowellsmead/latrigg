@@ -3,6 +3,7 @@ import './_polyfill';
 import './a11y';
 import './link-target';
 import './masthead';
+import './smooth-scroll';
 
 const conditionalLoadScript = (filename, condition) => {
 	if (!!condition) {
