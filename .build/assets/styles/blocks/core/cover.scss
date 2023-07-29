@@ -4,22 +4,11 @@
 	border-radius: var(--image-border-radius);
 	overflow: hidden;
 
-	&__inner-container {
-		@extend .h-stack;
-	}
-
 	&[style*='min-height:100vh'] {
-		min-height: calc(
-			(100 * var(--vh)) - var(--masthead--height) -
-				var(--wp--custom--spacing-outer-gutter)
-		) !important;
+		min-height: calc((100 * var(--vh)) - var(--masthead--height) - var(--wp--custom--spacing-outer-gutter)) !important;
 
 		.admin-bar & {
-			min-height: calc(
-				(100 * var(--vh)) - var(--masthead--height) -
-					var(--wp--custom--spacing-outer-gutter) -
-					var(--wp-admin--admin-bar--height)
-			) !important;
+			min-height: calc((100 * var(--vh)) - var(--masthead--height) - var(--wp--custom--spacing-outer-gutter) - var(--wp-admin--admin-bar--height)) !important;
 		}
 	}
 
@@ -37,6 +26,10 @@
 				}
 			}
 		}
+	}
+
+	&__inner-container {
+		@extend .h-stack;
 	}
 }
 
