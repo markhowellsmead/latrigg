@@ -4,20 +4,20 @@
 @import '../../_____elements/_stack.scss';
 
 .wp-block-media-text {
-	h1 + &,
-	h2 + &,
-	h3 + &,
-	h4 + &,
-	h5 + &,
-	h6 + & {
-		margin-top: var(--c-block-margin-top-medium);
+
+	gap: var(--wp--preset--spacing--large);
+
+	@include breakpoint(wordpress_small) {
+		gap: var(--wp--preset--spacing--xlarge);
 	}
 
-	&.is-stacked-on-mobile {
-		gap: var(--wp--preset--spacing--medium);
-		@include breakpoint(wordpress_small) {
-			gap: var(--wp--preset--spacing--regular);
-		}
+	h1+&,
+	h2+&,
+	h3+&,
+	h4+&,
+	h5+&,
+	h6+& {
+		margin-top: var(--c-block-margin-top-medium);
 	}
 
 	&.has-background {
@@ -27,21 +27,9 @@
 				padding-bottom: 0;
 			}
 		}
-
-		&.has-media-on-the-right {
-			.wp-block-media-text__content {
-				padding-left: 0;
-			}
-		}
-
-		&.has-media-on-the-left {
-			.wp-block-media-text__content {
-				padding-right: 0;
-			}
-		}
 	}
 
-	.has-background > & {
+	.has-background>& {
 		padding-top: calc(var(--wp--style--block-gap) * 2);
 		padding-bottom: calc(var(--wp--style--block-gap) * 2);
 	}
@@ -50,6 +38,8 @@
 	.wp-block-media-text {
 		&__content {
 			@extend .h-stack;
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 		&__media {

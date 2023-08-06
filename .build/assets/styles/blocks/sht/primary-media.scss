@@ -22,14 +22,6 @@
 		&--video {
 			aspect-ratio: 16/9;
 		}
-
-		.wp-block-post-template & {
-			aspect-ratio: 3/2;
-
-			body.category-video & {
-				aspect-ratio: 16/9;
-			}
-		}
 	}
 
 	&__image {
