@@ -24,16 +24,21 @@ let CustomLayoutPanel = () => {
 		return getEditedPostAttribute('meta');
 	});
 
-	const { main_offset } = metaValues;
+	const { main_offset, side_padding } = metaValues;
 	const { editPost } = useDispatch('core/editor');
 
-	const handleMetaValueChange = (main_offset) => {
+	const handleMainOffsetChange = (main_offset) => {
 		editPost({ meta: { main_offset } });
+	};
+
+	const handleSidePaddingChange = (side_padding) => {
+		editPost({ meta: { side_padding } });
 	};
 
 	return (
 		<PluginDocumentSettingPanel title={_x('Custom layout options', 'Editor sidebar panel title', 'latrigg')} initialOpen={true} icon={'invalid-name-no-icon'}>
-			<DimensionControl label={'Main content offset'} value={main_offset} onChange={(main_offset) => handleMetaValueChange(main_offset)} />
+			<DimensionControl label={'Main content offset'} value={main_offset} onChange={(value) => handleMainOffsetChange(value)} />
+			<DimensionControl label={'Page side padding'} value={side_padding} onChange={(value) => handleSidePaddingChange(value)} />
 		</PluginDocumentSettingPanel>
 	);
 };
