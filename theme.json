@@ -34,6 +34,11 @@
 			"name": "single-cover",
 			"postTypes": ["post"],
 			"title": "Single Post (Cover Image)"
+		},
+		{
+			"name": "category-video",
+			"postTypes": ["post"],
+			"title": "Video Category List"
 		}
 	],
 	"settings": {
@@ -46,6 +51,11 @@
 					"gradient": "linear-gradient(to bottom, transparent, transparent 65%, black 100%)",
 					"name": "Black bottom edge",
 					"slug": "black-bottom-edge"
+				},
+				{
+					"gradient": "linear-gradient(135deg, transparent, #333333 0%, #000000 100%)",
+					"name": "Dark grey gradient",
+					"slug": "dark-grey-gradient"
 				}
 			],
 			"palette": [
@@ -75,7 +85,7 @@
 					"slug": "quarternary"
 				},
 				{
-					"color": "#5782b7",
+					"color": "#008fa6",
 					"name": "Quinary",
 					"slug": "quinary"
 				},
@@ -83,6 +93,11 @@
 					"color": "#0073aa",
 					"name": "WordPress blue",
 					"slug": "wordpress-blue"
+				},
+				{
+					"color": "#1b1b1b",
+					"name": "1b gray",
+					"slug": "1b-gray"
 				},
 				{
 					"color": "#404040",
@@ -123,6 +138,11 @@
 					"color": "rgba(0,0,0,0)",
 					"name": "Transparent",
 					"slug": "transparent"
+				},
+				{
+					"color": "#cfdce2",
+					"name": "Blue lighter dark",
+					"slug": "custom-blue-lighter-dark"
 				}
 			],
 			"text": true
@@ -378,9 +398,6 @@
 				"border": {
 					"radius": "var(--image-border-radius)"
 				},
-				"color": {
-					"background": "var:preset|color|white"
-				},
 				"spacing": {
 					"padding": {
 						"bottom": "var:preset|spacing|large",
@@ -460,13 +477,13 @@
 				}
 			},
 			"link": {
-				"color": {
-					"text": "var:preset|color|primary"
-				},
 				":hover": {
 					"color": {
 						"text": "var:preset|color|primary-dark"
 					}
+				},
+				"color": {
+					"text": "var:preset|color|primary"
 				}
 			}
 		},
