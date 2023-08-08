@@ -1098,8 +1098,8 @@
 				"spacing": {
 					"padding": {
 						"bottom": "var(--wp--preset--spacing--small)",
-						"left": "var(--wp--preset--spacing--medium)",
-						"right": "var(--wp--preset--spacing--medium)",
+						"left": "var(--wp--preset--spacing--regular)",
+						"right": "var(--wp--preset--spacing--regular)",
 						"top": "var(--wp--preset--spacing--small)"
 					}
 				}
