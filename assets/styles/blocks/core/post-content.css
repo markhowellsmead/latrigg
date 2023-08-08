@@ -1,14 +1,14 @@
 /*
  * https://every-layout.dev/layouts/stack/
  */
-.h-stack, .wp-block-post-content {
+.h-stack {
   --stack-size: var(--wp--preset--spacing--regular);
 }
-.h-stack > *, .wp-block-post-content > * {
+.h-stack > * {
   margin-top: 0;
   margin-bottom: 0;
 }
-.h-stack > * + *, .wp-block-post-content > * + * {
+.h-stack > * + * {
   margin-top: var(--stack-size);
 }
 .h-stack--xsmall > * + * {
