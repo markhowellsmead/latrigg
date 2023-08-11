@@ -113,6 +113,16 @@
 							"slug": "wordpress-blue"
 						},
 						{
+							"color": "#1d1d1d",
+							"name": "Say Hello Gray",
+							"slug": "say-hello-gray"
+						},
+						{
+							"color": "#222222",
+							"name": "Dark gray 2",
+							"slug": "dark-gray-2"
+						},
+						{
 							"color": "#404040",
 							"name": "Dark gray",
 							"slug": "dark-gray"
@@ -434,6 +444,11 @@
 							"gradient": "linear-gradient(135deg, transparent, #333333 0%, #000000 100%)",
 							"name": "Dark grey gradient",
 							"slug": "dark-grey-gradient"
+						},
+						{
+							"gradient": "linear-gradient(225deg, #1d1d1d, #000000 100%)",
+							"name": "Say Hello grey gradient",
+							"slug": "say-hello-grey-gradient"
 						}
 					],
 					"heading": true,
