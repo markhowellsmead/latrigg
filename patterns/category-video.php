@@ -1,12 +1,15 @@
 <?php
 /**
- * Title: main-query-loop
- * Slug: latrigg/main-query-loop
+ * Title: category-video
+ * Slug: latrigg/category-video
  * Categories: hidden
  * Inserter: no
  */
 ?>
-<!-- wp:query {"queryId":0,"query":{"perPage":21,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained","justifyContent":"center","contentSize":null}} -->
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"c-main"} -->
+<main class="wp-block-group c-main"><!-- wp:query {"queryId":0,"query":{"perPage":21,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained","justifyContent":"center","contentSize":null}} -->
 <div class="wp-block-query"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|regular"}},"className":"c-archive__header"} -->
 <div class="wp-block-group c-archive__header"><!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
@@ -16,7 +19,7 @@
 
 <!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"grid","columnCount":3}} -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|regular"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:sht/primary-media {"hideInlineEmbed":true,"className":"is-style-3x2"} /-->
+<div class="wp-block-group"><!-- wp:sht/primary-media {"hideInlineEmbed":true,"className":"is-style-16x9"} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xsmall"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:post-title {"isLink":true,"style":{"typography":{"fontWeight":"600"}},"fontSize":"medium"} /-->
@@ -54,4 +57,7 @@
 <!-- /wp:group -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:group --></div>
-<!-- /wp:query -->
+<!-- /wp:query --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
