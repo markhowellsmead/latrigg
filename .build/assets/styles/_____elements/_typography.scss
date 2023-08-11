@@ -24,10 +24,6 @@ button {
 	text-decoration: none;
 }
 
-blockquote {
-	margin: 0;
-	@extend .h-stack;
-}
 
 button {
 	text-decoration: none;
@@ -35,12 +31,6 @@ button {
 
 cite {
 	display: block;
-}
-
-code {
-	background-color: var(--wp--preset--color--gray-xlight);
-	color: darkred;
-	font-size: 0.95em;
 }
 
 dd+dt {
@@ -56,18 +46,6 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
-}
-
-figure {
-	margin: 0;
-
-	>a {
-		border-bottom: none;
-	}
-}
-
-figcaption {
-	@extend %figcaption;
 }
 
 hr {
@@ -157,6 +135,13 @@ li,
 p,
 tr {
 	font-size: 1em;
+}
+
+p {
+	code {
+		font-size: .95em;
+		;
+	}
 }
 
 h1,
