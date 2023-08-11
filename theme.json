@@ -1198,6 +1198,13 @@
 						"top": "var(--wp--preset--spacing--large)"
 					}
 				}
+			},
+			"core/table": {
+				"border": {
+					"width": "1px",
+					"style": "solid",
+					"color": "var(--wp--preset--color--light-gray)"
+				}
 			}
 		},
 		"color": {
