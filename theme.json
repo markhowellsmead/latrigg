@@ -846,6 +846,11 @@
 					"slug": "light-gray"
 				},
 				{
+					"color": "#c0c0c0",
+					"name": "Medium-light gray",
+					"slug": "medlight-gray"
+				},
+				{
 					"color": "#f0f0f0",
 					"name": "Extra-light gray",
 					"slug": "xlight-gray"
@@ -1125,10 +1130,27 @@
 			},
 			"core/code": {
 				"color": {
-					"background": "var(--wp--preset--color--white)"
+					"background": "var(--wp--preset--color--white)",
+					"text": "var(--wp--preset--color--dark-gray)"
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--regular)",
+						"left": "var(--wp--preset--spacing--regular)",
+						"right": "var(--wp--preset--spacing--regular)",
+						"top": "var(--wp--preset--spacing--regular)"
+					}
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--smaller)"
 				}
 			},
 			"core/group": {
+				"border": {
+					"radius": "var(--image-border-radius)"
+				}
+			},
+			"core/image": {
 				"border": {
 					"radius": "var(--image-border-radius)"
 				}
@@ -1151,6 +1173,24 @@
 					"text": "var(--wp--preset--color--dark-gray)"
 				}
 			},
+			"core/quote": {
+				"border": {
+					"width": "1px",
+					"style": "solid",
+					"color": "var(--wp--preset--color--medlight-gray)"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--white)"
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--regular)",
+						"left": "var(--wp--preset--spacing--regular)",
+						"right": "var(--wp--preset--spacing--xxlarge)",
+						"top": "var(--wp--preset--spacing--regular)"
+					}
+				}
+			},
 			"core/separator": {
 				"spacing": {
 					"margin": {
@@ -1165,6 +1205,27 @@
 			"text": "var(--wp--preset--color--dark-gray)"
 		},
 		"elements": {
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--gray)"
+				},
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--preset--spacing--small)"
+					}
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--smaller)"
+				}
+			},
+			"cite": {
+				"color": {
+					"text": "var(--wp--preset--color--gray)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--smaller)"
+				}
+			},
 			"h1": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--huge)",
