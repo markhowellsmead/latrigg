@@ -226,9 +226,9 @@
 							"slug": "xxlarge"
 						},
 						{
-							"name": "XXL",
+							"name": "XXXL",
 							"size": "clamp(4rem, 3rem + 4vw, 8rem)",
-							"slug": "xxlarge"
+							"slug": "xxxlarge"
 						}
 					]
 				},
