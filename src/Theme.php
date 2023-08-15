@@ -70,8 +70,6 @@ class Theme
 
 		add_action('after_setup_theme', [$this, 'themeSupports']);
 		add_action('comment_form_before', [$this, 'enqueueReplyScript']);
-		add_action('wp_head', [$this, 'noJsScript']);
-		add_filter('body_class', [$this, 'bodyClasses'], 10, 1);
 
 		$this->cleanHead();
 	}
@@ -131,11 +129,7 @@ class Theme
 	 */
 	public function themeSupports()
 	{
-		add_theme_support('automatic-feed-links');
-		add_theme_support('custom-logo');
-		add_theme_support('html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script']);
-		add_theme_support('post-thumbnails', ['post']);
-		add_theme_support('title-tag');
+		add_theme_support('wp-block-styles');
 	}
 
 	public function cleanHead()
@@ -147,37 +141,10 @@ class Theme
 		remove_action('wp_print_styles', 'print_emoji_styles');
 	}
 
-	/**
-	 * Adds a JS script to the head that removes 'no-js' from the html class list
-	 */
-	public function noJsScript()
-	{
-		echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>" . chr(10);
-	}
-
 	public function enqueueReplyScript()
 	{
 		if (is_singular() && get_option('thread_comments')) {
 			wp_enqueue_script('comment-reply');
 		}
-	}
-
-	/**
-	 * Provides a function that adds custom
-	 * css Classes to Website
-	 *
-	 * @param array $classes Default body classes
-	 *
-	 * @return array Containing all necessary Classes
-	 */
-	public function bodyClasses(array $classes)
-	{
-		$classes[] = 'no-js';
-
-		if ($this->debug) {
-			$classes[] = 'c-body--themedev';
-		}
-
-		return $classes;
 	}
 }
