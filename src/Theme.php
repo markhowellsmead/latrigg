@@ -136,6 +136,7 @@ class Theme
 		add_theme_support('html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script']);
 		add_theme_support('post-thumbnails', ['post']);
 		add_theme_support('title-tag');
+		add_theme_support('wp-block-styles');
 	}
 
 	public function cleanHead()
