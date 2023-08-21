@@ -3,7 +3,8 @@
 
 	margin-top: calc(var(--masthead--height) + var(--main--offset)) !important;
 	flex: 1;
-	@extend %h-guttered;
+	padding-left: var(--wp--custom--spacing-outer-gutter);
+	padding-right: var(--wp--custom--spacing-outer-gutter);
 	width: 100%;
 	max-width: none;
 	margin-left: auto;
