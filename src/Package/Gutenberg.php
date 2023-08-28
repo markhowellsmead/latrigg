@@ -32,9 +32,6 @@ class Gutenberg
 
 	public function themeSupports()
 	{
-		// Since WordPress 5.5: disallow block patterns delivered by Core
-		remove_theme_support('core-block-patterns');
-
 		add_editor_style('assets/styles/admin-editor.min.css');
 	}
 
