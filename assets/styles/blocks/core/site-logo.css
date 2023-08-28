@@ -1,4 +1,7 @@
 .c-masthead .wp-block-site-logo img {
   aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3NpdGUtbG9nby5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVFO0VBQ0MiLCJmaWxlIjoiYmxvY2tzL2NvcmUvc2l0ZS1sb2dvLmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3NpdGUtbG9nby5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVFO0VBQ0M7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoiYmxvY2tzL2NvcmUvc2l0ZS1sb2dvLmNzcyJ9 */
