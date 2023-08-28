@@ -36,6 +36,11 @@
 			"title": "Single Post (Cover Image)"
 		},
 		{
+			"name": "single-image-left-text-right",
+			"postTypes": ["post"],
+			"title": "Single Post (Image left, text right)"
+		},
+		{
 			"name": "category-video",
 			"postTypes": ["post"],
 			"title": "Video Category List"

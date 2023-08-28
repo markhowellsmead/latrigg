@@ -3,4 +3,32 @@
 .wp-block-image {
 	@extend .h-stack--small;
 	text-align: center;
+	margin-bottom: 0;
+
+	&.alignfull {
+		img {
+			border-radius: 0;
+		}
+	}
+
+	&.is-style-webcam {
+		overflow: hidden;
+
+		&>a {
+			display: block;
+		}
+
+		img {
+			aspect-ratio: 3/2;
+		}
+	}
+
+	&:not(:first-child) {
+		margin-block-start: var(--wp--style--block-gap);
+	}
+
+	.components-resizable-box__container,
+	img {
+		max-width: 100%;
+	}
 }
