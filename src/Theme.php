@@ -68,7 +68,6 @@ class Theme
 			]
 		);
 
-		add_action('after_setup_theme', [$this, 'themeSupports']);
 		add_action('comment_form_before', [$this, 'enqueueReplyScript']);
 
 		$this->cleanHead();
@@ -122,14 +121,6 @@ class Theme
 				sht_theme()->{$class_set}->{$class_short}->run();
 			}
 		}
-	}
-
-	/**
-	 * Allow the Theme to use additional core features
-	 */
-	public function themeSupports()
-	{
-		add_theme_support('wp-block-styles');
 	}
 
 	public function cleanHead()
