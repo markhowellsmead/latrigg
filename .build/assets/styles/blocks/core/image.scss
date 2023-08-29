@@ -23,10 +23,6 @@
 		}
 	}
 
-	&:not(:first-child) {
-		margin-block-start: var(--wp--style--block-gap);
-	}
-
 	.components-resizable-box__container,
 	img {
 		max-width: 100%;
