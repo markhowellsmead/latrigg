@@ -31,8 +31,25 @@
 	}
 
 	&-item {
-		&.current-menu-item {
+
+		&.current-menu-item,
+		.wp-block-navigation-item__content.current-menu-ancestor {
 			color: var(--wp--preset--color--primary);
+		}
+
+	}
+
+	&__container {
+		@media screen and (max-width: 37.4375em) {
+			--navigation-layout-justification-setting: flex-start !important;
+		}
+	}
+
+	&__submenu-container {
+		@media screen and (max-width: 37.4375em) {
+			gap: .5em !important;
+			padding-left: 1rem !important;
+			padding-right: 1rem !important;
 		}
 	}
 }
