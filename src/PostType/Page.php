@@ -16,13 +16,11 @@ class Page
 	{
 		register_post_meta('page', 'main_offset', [
 			'show_in_rest' => true,
-			'single' => true,
 			'type' => 'string'
 		]);
 
 		register_post_meta('page', 'side_padding', [
 			'show_in_rest' => true,
-			'single' => true,
 			'type' => 'string'
 		]);
 	}
