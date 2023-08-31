@@ -42,16 +42,7 @@ let CustomLayoutPanel = () => {
 			icon={'invalid-name-no-icon'}
 		>
 			<DimensionControl label={'Main content offset'} value={main_offset} onChange={(value) => handleMainOffsetChange(value)} />
-			<DimensionControl
-				label={'Page side padding'}
-				value={side_padding}
-				onChange={(value) => {
-					if (value === undefined) {
-						value = '';
-					}
-					handleSidePaddingChange(value);
-				}}
-			/>
+			<DimensionControl label={'Page side padding'} value={side_padding} onChange={(value) => handleSidePaddingChange(value || '')} />
 		</PluginDocumentSettingPanel>
 	);
 };
