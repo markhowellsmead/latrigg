@@ -21,7 +21,7 @@
 		top: var(--wp-admin--admin-bar--height);
 	}
 
-	> * {
+	>* {
 		position: relative;
 		z-index: 1;
 	}
@@ -51,5 +51,9 @@
 		// @supports (backdrop-filter: blur(20px)) {
 		// 	opacity: 0.5;
 		// }
+	}
+
+	.wp-block-site-logo {
+		max-width: 3.75rem;
 	}
 }

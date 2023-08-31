@@ -31,8 +31,11 @@
 	}
 
 	&-item {
-		&.current-menu-item {
+
+		&.current-menu-item,
+		.wp-block-navigation-item__content.current-menu-ancestor {
 			color: var(--wp--preset--color--primary);
 		}
+
 	}
 }
