@@ -19,4 +19,9 @@
 	body.home & {
 		--main--offset: 1px;
 	}
+
+	body.is-overlapping-nav & {
+		--main--offset: 1px;
+		--masthead--height: var(--wp--preset--spacing--regular);
+	}
 }
