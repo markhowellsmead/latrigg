@@ -10,6 +10,7 @@ class Page
 		add_action('init', [$this, 'registerMetaFields']);
 		add_action('wp_head', [$this, 'mainOffsetStyle']);
 		add_action('wp_head', [$this, 'sidePaddingStyle']);
+		add_action('body_class', [$this, 'isOverlappingNav']);
 	}
 
 	public function registerMetaFields()
@@ -22,6 +23,12 @@ class Page
 		register_post_meta('page', 'side_padding', [
 			'show_in_rest' => true,
 			'type' => 'string'
+		]);
+
+		register_post_meta('page', 'overlapping_nav', [
+			'show_in_rest' => true,
+			'single' => true,
+			'type' => 'boolean'
 		]);
 	}
 
@@ -67,5 +74,22 @@ class Page
 			}
 		</style>
 <?php
+	}
+
+	public function isOverlappingNav($classes)
+	{
+		if (get_post_type() !== 'page') {
+			return $classes;
+		}
+
+		$overlapping_nav = get_post_meta(get_the_ID(), 'overlapping_nav', true);
+
+		if (empty($overlapping_nav)) {
+			return $classes;
+		}
+
+		$classes[] = 'is-overlapping-nav';
+
+		return $classes;
 	}
 }
