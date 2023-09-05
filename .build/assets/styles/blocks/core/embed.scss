@@ -4,4 +4,8 @@
 	figcaption {
 		@extend %figcaption;
 	}
+
+	iframe {
+		width: 100%;
+	}
 }
