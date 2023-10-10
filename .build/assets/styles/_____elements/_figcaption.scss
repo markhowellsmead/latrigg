@@ -1,8 +1,17 @@
 %figcaption {
-	text-align: center;
-	font-size: var(
-		--wp--preset--font-size--small
-	); // not supported in theme.json
+	text-align: left;
+	display: flex;
+	gap: .5ch;
+	align-items: center;
+	font-size: var(--wp--preset--font-size--small); // not supported in theme.json
 	margin-top: var(--stack-size); // override core
 	margin-bottom: 0; // override core
+	padding-left: .5em;
+
+	&::before {
+		content: '↑';
+		font-size: 1.4em;
+		opacity: .5;
+		margin-right: .5ch
+	}
 }

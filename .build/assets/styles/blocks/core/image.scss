@@ -1,9 +1,14 @@
 @import '../../_____elements/_stack.scss';
+@import '../../_____elements/_figcaption.scss';
 
 .wp-block-image {
 	@extend .h-stack--small;
 	text-align: center;
 	margin-bottom: 0;
+
+	figcaption {
+		@extend %figcaption;
+	}
 
 	&.alignfull {
 		img {
