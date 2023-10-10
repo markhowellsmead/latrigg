@@ -26,6 +26,7 @@
 
 	&__image {
 		width: 100%;
+		border-radius: var(--image-border-radius);
 
 		.wp-block-post-template & {
 			height: 100%;
