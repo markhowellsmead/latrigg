@@ -1,1 +1,1 @@
-.wp-block-embed figcaption{text-align:center;font-size:var(--wp--preset--font-size--small);margin-top:var(--stack-size);margin-bottom:0}.wp-block-embed iframe{width:100%}
+@charset "UTF-8";.wp-block-embed figcaption{text-align:left;display:flex;gap:.5ch;align-items:center;font-size:var(--wp--preset--font-size--small);margin-top:var(--stack-size);margin-bottom:0;padding-left:.5em}.wp-block-embed figcaption::before{content:"↑";font-size:1.4em;opacity:.5;margin-right:.5ch}.wp-block-embed iframe{width:100%}
