@@ -1,8 +1,7 @@
 %figcaption {
 	text-align: left;
-	display: flex;
-	gap: .5ch;
-	align-items: center;
+	text-indent: -1.8ch;
+	margin-left: 1ch;
 	font-size: var(--wp--preset--font-size--small); // not supported in theme.json
 	margin-top: var(--stack-size); // override core
 	margin-bottom: 0; // override core
@@ -10,8 +9,8 @@
 
 	&::before {
 		content: '↑';
-		font-size: 1.4em;
+		font-size: 1.2em;
 		opacity: .5;
-		margin-right: .5ch
+		margin-right: .5ch;
 	}
 }
