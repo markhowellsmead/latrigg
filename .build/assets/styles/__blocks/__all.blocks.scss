@@ -1,1 +1,5 @@
 @import './button';
+
+.mgl-gallery img {
+	border-radius: var(--image-border-radius);
+}

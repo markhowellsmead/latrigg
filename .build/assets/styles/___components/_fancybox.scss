@@ -1,0 +1,7 @@
+.fancybox {
+	&__content {
+		img {
+			border-radius: var(--image-border-radius);
+		}
+	}
+}

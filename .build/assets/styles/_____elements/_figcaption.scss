@@ -5,7 +5,9 @@
 	font-size: var(--wp--preset--font-size--small); // not supported in theme.json
 	margin-top: var(--stack-size); // override core
 	margin-bottom: 0; // override core
-	padding-left: .5em;
+	padding-left: calc(1rem + .5em);
+	padding-right: 1rem;
+	max-width: var(--wp--style--global--content-size);
 
 	&::before {
 		content: '↑';
