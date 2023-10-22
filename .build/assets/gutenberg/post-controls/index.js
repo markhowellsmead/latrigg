@@ -1,4 +1,4 @@
-import { _x } from '@wordpress/i18n';
+import { _x, __ } from '@wordpress/i18n';
 import { PluginDocumentSettingPanel } from '@wordpress/edit-post';
 import { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
 import { useSelect, useDispatch } from '@wordpress/data';
@@ -35,14 +35,51 @@ let CustomLayoutPanel = () => {
 		editPost({ meta: { side_padding } });
 	};
 
+	const sizes = [
+		{
+			name: __('None'),
+			slug: 'none',
+		},
+		{
+			name: __('Small'),
+			slug: 'small',
+		},
+		{
+			name: __('Regular'),
+			slug: 'regular',
+		},
+		{
+			name: __('Medium'),
+			slug: 'medium',
+		},
+		{
+			name: __('Large'),
+			slug: 'large',
+		},
+		{
+			name: __('Extra large'),
+			slug: 'xlarge',
+		},
+	];
+
 	return (
 		<PluginDocumentSettingPanel
 			title={_x('Custom layout options', 'Editor sidebar panel title', 'latrigg')}
 			initialOpen={true}
 			icon={'invalid-name-no-icon'}
 		>
-			<DimensionControl label={'Main content offset'} value={main_offset} onChange={(value) => handleMainOffsetChange(value)} />
-			<DimensionControl label={'Page side padding'} value={side_padding} onChange={(value) => handleSidePaddingChange(value || '')} />
+			<DimensionControl
+				label={'Main content offset'}
+				value={main_offset}
+				onChange={(value) => handleMainOffsetChange(value)}
+				sizes={sizes}
+			/>
+			<DimensionControl
+				label={'Page side padding'}
+				value={side_padding}
+				onChange={(value) => handleSidePaddingChange(value || '')}
+				sizes={sizes}
+			/>
 		</PluginDocumentSettingPanel>
 	);
 };
