@@ -6,7 +6,9 @@
   font-size: var(--wp--preset--font-size--small);
   margin-top: var(--stack-size);
   margin-bottom: 0;
-  padding-left: 0.5em;
+  padding-left: calc(1rem + 0.5em);
+  padding-right: 1rem;
+  max-width: var(--wp--style--global--content-size);
 }
 .wp-block-embed figcaption::before {
   content: "↑";
@@ -18,4 +20,4 @@
 .wp-block-embed iframe {
   width: 100%;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fZWxlbWVudHMvX2ZpZ2NhcHRpb24uc2NzcyIsImJsb2Nrcy9jb3JlL2VtYmVkLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7O0FDTkQ7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9lbWJlZC5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fZWxlbWVudHMvX2ZpZ2NhcHRpb24uc2NzcyIsImJsb2Nrcy9jb3JlL2VtYmVkLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7OztBQ1JEO0VBQ0MiLCJmaWxlIjoiYmxvY2tzL2NvcmUvZW1iZWQuY3NzIn0= */

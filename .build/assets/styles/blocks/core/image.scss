@@ -10,12 +10,6 @@
 		@extend %figcaption;
 	}
 
-	&.alignfull {
-		img {
-			border-radius: 0;
-		}
-	}
-
 	&.is-style-webcam {
 		overflow: hidden;
 
