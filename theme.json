@@ -41,6 +41,11 @@
 			"title": "Single Post (Image left, text right)"
 		},
 		{
+			"name": "single-photo",
+			"postTypes": ["photo"],
+			"title": "Single Photo"
+		},
+		{
 			"name": "category-video",
 			"postTypes": ["post"],
 			"title": "Video Category List"
