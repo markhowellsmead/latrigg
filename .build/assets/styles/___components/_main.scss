@@ -12,6 +12,7 @@
 
 	body.post-template-single-cover &,
 	body.single-post &,
+	body.single-photo &,
 	body.post-template-single-panorama & {
 		--main--offset: var(--wp--preset--spacing--regular);
 	}
