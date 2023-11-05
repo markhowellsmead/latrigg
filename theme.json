@@ -2,52 +2,74 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": ["page", "post"],
+			"postTypes": [
+				"page",
+				"post"
+			],
 			"title": "Blank"
 		},
 		{
 			"name": "no-title",
-			"postTypes": ["page", "post"],
+			"postTypes": [
+				"page",
+				"post"
+			],
 			"title": "No Title"
 		},
 		{
 			"name": "page-cover",
-			"postTypes": ["page"],
+			"postTypes": [
+				"page"
+			],
 			"title": "Page (Cover Image)"
 		},
 		{
 			"name": "single-no-thumbnail",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (no thumbnail)"
 		},
 		{
 			"name": "single-square-tall",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (tall/square image)"
 		},
 		{
 			"name": "single-panorama",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (panorama image)"
 		},
 		{
 			"name": "single-cover",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (Cover Image)"
 		},
 		{
 			"name": "single-image-left-text-right",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single Post (Image left, text right)"
 		},
 		{
 			"name": "single-photo",
-			"postTypes": ["photo"],
+			"postTypes": [
+				"photo"
+			],
 			"title": "Single Photo"
 		},
 		{
 			"name": "category-video",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Video Category List"
 		}
 	],
@@ -262,70 +284,90 @@
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "400",
-									"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Regular.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "400",
-									"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Regular.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "500",
-									"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Medium.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "500",
-									"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Medium.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "600",
-									"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-SemiBold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "600",
-									"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-SemiBold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "700",
-									"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Bold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "700",
-									"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Bold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "800",
-									"src": ["file:./assets/fonts/FixelText-ExtraBold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-ExtraBold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "900",
-									"src": ["file:./assets/fonts/FixelText-Black.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Black.woff2"
+									]
 								}
 							],
 							"fontFamily": "FixelText, sans-serif",
@@ -339,7 +381,9 @@
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "400",
-									"src": ["file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"]
+									"src": [
+										"file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"
+									]
 								}
 							],
 							"fontFamily": "\"Material Icons\"",
@@ -624,70 +668,90 @@
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "400",
-									"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Regular.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "400",
-									"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Regular.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "500",
-									"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Medium.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "500",
-									"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Medium.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "600",
-									"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-SemiBold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "600",
-									"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-SemiBold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "700",
-									"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Bold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "italic",
 									"fontWeight": "700",
-									"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Bold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "800",
-									"src": ["file:./assets/fonts/FixelText-ExtraBold.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-ExtraBold.woff2"
+									]
 								},
 								{
 									"fontFamily": "FixelText",
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "900",
-									"src": ["file:./assets/fonts/FixelText-Black.woff2"]
+									"src": [
+										"file:./assets/fonts/FixelText-Black.woff2"
+									]
 								}
 							],
 							"fontFamily": "FixelText, sans-serif",
@@ -701,7 +765,9 @@
 									"fontStretch": "normal",
 									"fontStyle": "normal",
 									"fontWeight": "400",
-									"src": ["file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"]
+									"src": [
+										"file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"
+									]
 								}
 							],
 							"fontFamily": "\"Material Icons\"",
@@ -951,70 +1017,90 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Regular.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelText-Regular.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Regular.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Medium.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelText-Medium.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Medium.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-SemiBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelText-SemiBold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-SemiBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Bold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelText-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Bold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "800",
-							"src": ["file:./assets/fonts/FixelText-ExtraBold.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-ExtraBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "900",
-							"src": ["file:./assets/fonts/FixelText-Black.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelText-Black.woff2"
+							]
 						}
 					],
 					"fontFamily": "FixelText, sans-serif",
@@ -1028,7 +1114,9 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"]
+							"src": [
+								"file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"
+							]
 						}
 					],
 					"fontFamily": "\"Material Icons\"",
@@ -1132,8 +1220,8 @@
 				"spacing": {
 					"padding": {
 						"bottom": "var(--wp--preset--spacing--small)",
-						"left": "var(--wp--preset--spacing--regular)",
-						"right": "var(--wp--preset--spacing--regular)",
+						"left": "var(--wp--preset--spacing--medium)",
+						"right": "var(--wp--preset--spacing--medium)",
 						"top": "var(--wp--preset--spacing--small)"
 					}
 				}
@@ -1141,7 +1229,7 @@
 			"core/code": {
 				"color": {
 					"background": "var(--wp--preset--color--white)",
-					"text": "var(--wp--preset--color--dark-gray)"
+					"text": "var(--wp--preset--color--primary)"
 				},
 				"spacing": {
 					"padding": {
@@ -1185,9 +1273,9 @@
 			},
 			"core/quote": {
 				"border": {
-					"width": "1px",
+					"color": "var(--wp--preset--color--medlight-gray)",
 					"style": "solid",
-					"color": "var(--wp--preset--color--medlight-gray)"
+					"width": "1px"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--white)"
@@ -1209,11 +1297,16 @@
 					}
 				}
 			},
+			"core/site-title": {
+				"color": {
+					"text": "var(--wp--preset--color--black)"
+				}
+			},
 			"core/table": {
 				"border": {
-					"width": "1px",
+					"color": "var(--wp--preset--color--light-gray)",
 					"style": "solid",
-					"color": "var(--wp--preset--color--light-gray)"
+					"width": "1px"
 				}
 			}
 		},
@@ -1221,7 +1314,13 @@
 			"background": "var(--wp--preset--color--xlight-primary)",
 			"text": "var(--wp--preset--color--dark-gray)"
 		},
+		"css": "",
 		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--primary)"
+				}
+			},
 			"caption": {
 				"color": {
 					"text": "var(--wp--preset--color--gray)"
