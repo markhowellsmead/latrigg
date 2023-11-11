@@ -64,6 +64,14 @@
 			"name": "category-video",
 			"postTypes": ["post"],
 			"title": "Video Category List"
+		},
+		{
+			"name": "archive-photo",
+			"title": "Photo archive"
+		},
+		{
+			"name": "taxonomy-collection",
+			"title": "Photo collection archive"
 		}
 	],
 	"settings": {

@@ -1,15 +1,54 @@
-<!-- wp:group {"tagName":"main","className":"c-main"} -->
+<!-- wp:template-part {"slug":"header","theme":"latrigg","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"className":"c-main"} -->
 <main class="wp-block-group c-main">
 	<!-- wp:query {"queryId":0,"query":{"perPage":21,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained","justifyContent":"center","contentSize":null}} -->
 	<div class="wp-block-query">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group alignwide">
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|regular"}},"className":"c-archive__header"} -->
-			<div class="wp-block-group c-archive__header">
-				<!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
+			<!-- wp:columns {"verticalAlignment":"bottom","align":"wide"} -->
+			<div class="wp-block-columns alignwide are-vertically-aligned-bottom">
+				<!-- wp:column {"verticalAlignment":"bottom"} -->
+				<div class="wp-block-column is-vertically-aligned-bottom">
+					<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+					<div class="wp-block-group">
+						<!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-gray"}}}},"textColor":"dark-gray","fontSize":"smaller"} -->
+						<p class="has-text-align-left has-dark-gray-color has-text-color has-link-color has-smaller-font-size">
+							Photos from the collection
+						</p>
+						<!-- /wp:paragraph -->
 
-				<!-- wp:term-description {"textAlign":"center"} /-->
+						<!-- wp:query-title {"type":"archive"} /-->
+
+						<!-- wp:term-description {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-gray"}}}},"textColor":"dark-gray","fontSize":"smaller"} /-->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:column -->
+
+				<!-- wp:column {"verticalAlignment":"bottom"} -->
+				<div class="wp-block-column is-vertically-aligned-bottom">
+					<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
+					<div class="wp-block-buttons">
+						<!-- wp:button {"backgroundColor":"transparent","textColor":"primary","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"spacing":{"padding":{"left":"0","right":"0","top":"0","bottom":"0"}}},"className":"is-style-with-arrow-right","fontSize":"small"} -->
+						<div class="wp-block-button has-custom-font-size is-style-with-arrow-right has-small-font-size">
+							<a
+								class="wp-block-button__link has-primary-color has-transparent-background-color has-text-color has-background has-link-color wp-element-button"
+								href="/photos/"
+								style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0"
+								>View complete photo archive</a
+							>
+						</div>
+						<!-- /wp:button -->
+					</div>
+					<!-- /wp:buttons -->
+				</div>
+				<!-- /wp:column -->
 			</div>
+			<!-- /wp:columns -->
+
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"c-archive__header"} -->
+			<div class="wp-block-group c-archive__header"></div>
 			<!-- /wp:group -->
 
 			<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"grid","columnCount":4}} -->
@@ -72,7 +111,26 @@
 		<!-- /wp:group -->
 	</div>
 	<!-- /wp:query -->
+
+	<!-- wp:group {"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group">
+		<!-- wp:buttons {"align":"wide","layout":{"type":"flex","justifyContent":"right"},"fontSize":"small"} -->
+		<div class="wp-block-buttons alignwide has-custom-font-size has-small-font-size">
+			<!-- wp:button {"backgroundColor":"transparent","textColor":"primary","style":{"spacing":{"padding":{"left":"0","right":"0","top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"className":"is-style-with-arrow-right"} -->
+			<div class="wp-block-button is-style-with-arrow-right">
+				<a
+					class="wp-block-button__link has-primary-color has-transparent-background-color has-text-color has-background has-link-color wp-element-button"
+					href="/photos/"
+					style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0"
+					>View complete photo archive</a
+				>
+			</div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+	</div>
+	<!-- /wp:group -->
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"latrigg","tagName":"footer","className":"site-footer"} /-->
