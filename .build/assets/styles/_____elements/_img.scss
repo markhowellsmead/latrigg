@@ -2,3 +2,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+@include context-view {
+	img {
+		pointer-events: none;
+	}
+}
