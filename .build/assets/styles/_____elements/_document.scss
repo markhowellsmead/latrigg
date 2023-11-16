@@ -15,6 +15,7 @@ html {
 
 body {
 	--image-border-radius: .625rem;
+	text-wrap: pretty;
 }
 
 @include context-view {
