@@ -3,7 +3,7 @@
 }
 
 .c-masthead {
-	--masthead--background-color: var(--wp--preset--color--xlight-primary-85);
+	--masthead--background-color: #fffffff0;
 
 	position: fixed;
 	top: 0;
@@ -12,9 +12,8 @@
 	z-index: 3;
 	background-color: var(--masthead--background-color);
 
-	@supports (backdrop-filter: blur(2px)) {
-		backdrop-filter: blur(2px);
-		// background: none;
+	@supports (backdrop-filter: blur(.25rem)) {
+		backdrop-filter: blur(.25rem);
 	}
 
 	body.admin-bar & {
@@ -36,22 +35,22 @@
 		text-decoration: none;
 	}
 
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		display: block;
-		z-index: 0;
-		background-color: var(--masthead--background-color);
-		opacity: 0.9;
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	bottom: 0;
+	// 	right: 0;
+	// 	display: block;
+	// 	z-index: 0;
+	// 	background-color: var(--masthead--background-color);
+	// 	opacity: 0.9;
 
-		// @supports (backdrop-filter: blur(20px)) {
-		// 	opacity: 0.5;
-		// }
-	}
+	// @supports (backdrop-filter: blur(20px)) {
+	// 	opacity: 0.5;
+	// }
+	// }
 
 	.wp-block-site-logo {
 		max-width: 3.75rem;
