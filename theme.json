@@ -61,6 +61,11 @@
 			"title": "Single Photo (panorama)"
 		},
 		{
+			"name": "single-photo-square",
+			"postTypes": ["photo"],
+			"title": "Single Photo (square)"
+		},
+		{
 			"name": "category-video",
 			"postTypes": ["post"],
 			"title": "Video Category List"
