@@ -25,6 +25,31 @@
 		z-index: 1;
 	}
 
+	&__ident {
+		display: flex;
+		gap: var(--wp--style--block-gap);
+		justify-content: flex-start;
+		align-items: center;
+
+		@media screen and (min-width: 48em) {
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0;
+		}
+
+		.wp-block-site-logo {
+			margin: 0 !important;
+			align-self: flex-start;
+
+			@media screen and (min-width: 48em) {
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+		}
+
+	}
+
 	&__inner {
 		max-width: var(--main--max-width);
 		margin-left: auto;
