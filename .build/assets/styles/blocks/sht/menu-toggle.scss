@@ -10,7 +10,7 @@ body {
 	--menutoggle-color: currentColor;
 	--menutoggle-color-open: currentColor;
 	--menutoggle-width: #{rem-calc(24px)};
-	--menutoggle-height: #{rem-calc(24px)}; // needs to be an odd number
+	--menutoggle-height: #{rem-calc(15px)}; // needs to be an odd number
 	--menutoggle-margin: 0;
 }
 
@@ -38,7 +38,7 @@ body {
 		will-change: transform;
 		position: absolute;
 		width: var(--menutoggle-width);
-		height: 3px;
+		height: 2px;
 		background-color: currentColor;
 		@include transition;
 
@@ -69,9 +69,11 @@ body {
 				transform: rotate(45deg);
 				top: 50%;
 			}
+
 			&:nth-child(2) {
 				opacity: 0;
 			}
+
 			&:nth-child(3) {
 				transform: rotate(-45deg);
 				top: 50%;
@@ -79,11 +81,3 @@ body {
 		}
 	}
 }
-
-// @include context-view {
-.wp-block-sht-menu-toggle {
-	@include breakpoint(desktop) {
-		display: none;
-	}
-}
-// }

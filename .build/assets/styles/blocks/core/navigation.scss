@@ -20,9 +20,9 @@
 		}
 
 		&__responsive-container-content {
-			@include breakpoint(tablet down) {
-				--navigation-layout-justification-setting: flex-start;
-			}
+			// @include breakpoint(tablet down) {
+			--navigation-layout-justification-setting: flex-start;
+			// }
 		}
 
 		&__submenu-icon {
@@ -40,9 +40,9 @@
 	}
 
 	&__container {
-		@media screen and (max-width: 37.4375em) {
-			--navigation-layout-justification-setting: flex-start !important;
-		}
+		//@media screen and (max-width: 37.4375em) {
+		--navigation-layout-justification-setting: flex-start !important;
+		//}
 	}
 
 	&__submenu-container {
