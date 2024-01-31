@@ -14,24 +14,14 @@
 		transition: opacity 300ms ease;
 		height: calc(var(--vh) * 100);
 		overflow: auto;
-		backdrop-filter: blur(1rem);
+		backdrop-filter: blur(.5rem);
 		transition: all .6s ease;
+		background: rgba(255, 255, 255, .95);
 
 		>* {
 			position: relative;
 			z-index: 1;
-		}
-
-		&::after {
-			content: '';
-			background: var(--wp--preset--color--xlight-primary);
-			position: absolute;
-			z-index: 0;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: .9;
+			padding: inherit;
 		}
 
 		body.admin-bar & {
@@ -49,13 +39,25 @@
 		}
 
 		.c-menu {
+			&__entries {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+
+				>.c-menu__entry>a {
+					font-size: 1.25em;
+
+				}
+			}
+
 			&__entry {
 				display: block;
 			}
 		}
 
 		.sub-menu {
-			padding-left: 2rem;
+			font-size: .8em;
+			margin-bottom: var(--wp--preset--spacing--regular);
 		}
 	}
 
