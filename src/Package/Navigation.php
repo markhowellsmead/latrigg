@@ -40,7 +40,7 @@ class Navigation
 	public function navMenuArgs($args)
 	{
 		$args['fallback_cb'] = false;
-		$args['menu_class'] = 'c-menu__entries c-menu__entries--' . $args['theme_location'];
+		$args['menu_class'] = 'c-menu__entries c-menu__entries--' . $args['menu'];
 		return $args;
 	}
 

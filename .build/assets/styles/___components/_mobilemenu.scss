@@ -6,14 +6,37 @@
 		top: var(--masthead--height);
 		bottom: 0;
 		left: 0;
+		z-index: 1974;
 		// Don't use "right" here: it creates a scroll overflow
 		width: 100%;
 		transform: translateX(100vw);
 		opacity: 0;
-		z-index: 2;
 		transition: opacity 300ms ease;
 		height: calc(var(--vh) * 100);
 		overflow: auto;
+		backdrop-filter: blur(1rem);
+		transition: all .6s ease;
+
+		>* {
+			position: relative;
+			z-index: 1;
+		}
+
+		&::after {
+			content: '';
+			background: var(--wp--preset--color--xlight-primary);
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: .9;
+		}
+
+		body.admin-bar & {
+			top: calc(var(--masthead--height) + var(--wp-admin--admin-bar--height));
+		}
 
 		@include breakpoint(laptop) {
 			display: none;
@@ -24,5 +47,19 @@
 			transform: translateX(0);
 			opacity: 1;
 		}
+
+		.c-menu {
+			&__entry {
+				display: block;
+			}
+		}
+
+		.sub-menu {
+			padding-left: 2rem;
+		}
+	}
+
+	html.is--mobilemenu--open {
+		overflow: hidden;
 	}
 }
