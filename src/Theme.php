@@ -69,6 +69,7 @@ class Theme
 		);
 
 		add_action('comment_form_before', [$this, 'enqueueReplyScript']);
+		add_shortcode('current_date', [$this, 'currentDate']);
 
 		$this->cleanHead();
 	}
@@ -137,5 +138,10 @@ class Theme
 		if (is_singular() && get_option('thread_comments')) {
 			wp_enqueue_script('comment-reply');
 		}
+	}
+
+	public function currentDate()
+	{
+		return "2004 - " . date_i18n('Y');
 	}
 }
