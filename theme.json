@@ -905,7 +905,7 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--xlight-primary)",
+			"background": "var(--wp--preset--color--white)",
 			"text": "var(--wp--preset--color--dark-gray)"
 		},
 		"css": "",
