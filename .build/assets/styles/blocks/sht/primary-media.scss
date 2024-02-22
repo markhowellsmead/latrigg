@@ -5,20 +5,7 @@
 	body.single-photo & {
 		img {
 			border: .7rem solid var(--wp--preset--color--white);
-			box-shadow: 0 0 .7rem rgb(0, 0, 0, .25);
-		}
-	}
-
-	body.tax-collection &,
-	body.post-type-archive-photo & {
-
-		figure {
-			overflow: visible;
-		}
-
-		img {
-			border: .35rem solid var(--wp--preset--color--white);
-			box-shadow: 0 0 .35rem rgb(0, 0, 0, .25);
+			box-shadow: 0 0 1.4rem rgb(0, 0, 0, .125);
 		}
 	}
 
