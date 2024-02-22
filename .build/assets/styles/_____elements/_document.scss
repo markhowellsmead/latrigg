@@ -14,13 +14,13 @@ html {
 }
 
 body {
-	--image-border-radius: .625rem;
+	//--image-border-radius: .625rem;
+	--image-border-radius: .25rem; // 22.2.2024
 	text-wrap: pretty;
 }
 
 @include context-view {
 	[id] {
-		scroll-snap-margin-top: var(--wp--preset--spacing--regular); // Safari
 		scroll-margin-top: var(--wp--preset--spacing--regular);
 	}
 
