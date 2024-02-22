@@ -800,7 +800,8 @@
 			"lineHeight": false,
 			"textDecoration": false,
 			"textTransform": false
-		}
+		},
+		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
 		"blocks": {
@@ -1006,7 +1007,13 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)"
+			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)",
+			"padding": {
+				"top": "0",
+				"bottom": "0",
+				"left": "2rem",
+				"right": "2rem"
+			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--primary)",
