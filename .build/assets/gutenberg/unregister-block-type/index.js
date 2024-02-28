@@ -8,41 +8,18 @@
  */
 
 import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
+import domReady from '@wordpress/dom-ready';
 
-// The domReady handler from Gutenberg doesn't currently
-// work correctly so we're using a regular event listener.
-// Must be onload, not on domReady!
-window.addEventListener('load', () => {
+domReady('load', () => {
 	let activeBlocks = [];
 
 	getBlockTypes().forEach(function (blockType) {
 		activeBlocks.push(blockType.name);
 	});
 
-	// These Blocks will be unregistered.
-	// Instagram is here by default because it
-	// dropped oEmbed support in 2020
 	['core-embed/instagram'].forEach((block) => {
 		if (activeBlocks.includes(block)) {
 			unregisterBlockType(block);
-			//console.log(`block ${block} unregistered by Theme`);
 		}
 	});
 });
-
-// ALTERNATIVE: only allow specified blocks
-// (SHT blocks are always allowed in this version)
-// import {getBlockTypes} from '@wordpress/blocks';
-
-/*
-window.addEventListener('load', () => {
-     const activeBlocks = getBlockTypes().map(blockType => blockType.name);
-     const allowBlocks = ['core/paragraph', 'core/image', 'core/heading', 'core/list'];
-
-     const blocksToRemove = activeBlocks.filter(
-         activeBlock => allowBlocks.indexOf(activeBlock) === -1 && activeBlock.indexOf('sht/') !== 0
-     );
-
-     blocksToRemove.map(block => unregisterBlockType(block));
-});
-*/
