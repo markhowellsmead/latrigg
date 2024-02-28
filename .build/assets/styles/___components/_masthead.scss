@@ -16,6 +16,10 @@
 		backdrop-filter: blur(.25rem);
 	}
 
+	@media print {
+		display: none;
+	}
+
 	body.admin-bar & {
 		top: var(--wp-admin--admin-bar--height);
 	}

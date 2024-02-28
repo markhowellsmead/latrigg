@@ -25,4 +25,8 @@
 		--main--offset: 1px;
 		--masthead--height: var(--wp--preset--spacing--regular);
 	}
+
+	@media print {
+		--main--offset: 0;
+	}
 }
