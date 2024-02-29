@@ -4,16 +4,22 @@
 
 	position: relative;
 	@extend .h-stack;
+	border-radius: var(--image-border-radius);
 
 	&::after {
+		pointer-events: none;
+		color: var(--wp--preset--color--light-gray);
 		content: "”";
-		font-size: 150px;
+		font-size: clamp(5.625rem, 4.305rem + 5.634vw, 9.375rem);
 		line-height: 1;
-		opacity: .1;
 		display: block;
 		position: absolute;
-		right: 0;
-		top: -16px;
+		right: .053em;
+		top: -.16em;
+		text-shadow: -3px -3px 0 #fff,
+			3px -3px 0 #fff,
+			-3px 3px 0 #fff,
+			3px 3px 0 #fff;
 	}
 
 	cite {

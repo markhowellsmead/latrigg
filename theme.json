@@ -873,7 +873,7 @@
 					"width": "1px"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--white)"
+					"background": "var(--wp--preset--color--xlight-primary-85)"
 				},
 				"spacing": {
 					"padding": {
