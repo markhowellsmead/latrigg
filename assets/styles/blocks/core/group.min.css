@@ -1,1 +1,1 @@
-.wp-block-group.has-background{padding:var(--wp--preset--spacing--regular)}
+.wp-block-group.has-background{padding:var(--wp--preset--spacing--regular)}.wp-block-group:empty{display:none}.wp-block-group:has(>.wp-block-sht-primary-media:empty){display:none}

@@ -1,0 +1,11 @@
+.wp-block-archives-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1ch;
+  padding-left: 0;
+  list-style: none;
+}
+.wp-block-archives-list a {
+  font-size: 1.286em;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2FyY2hpdmVzLWxpc3Quc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9hcmNoaXZlcy1saXN0LmNzcyJ9 */
