@@ -1,5 +1,14 @@
 .wp-block-group {
+
 	&.has-background {
 		padding: var(--wp--preset--spacing--regular);
+	}
+
+	&:empty {
+		display: none;
+	}
+
+	&:has(>.wp-block-sht-primary-media:empty) {
+		display: none;
 	}
 }

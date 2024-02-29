@@ -1,0 +1,12 @@
+.wp-block-archives-list {
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1ch;
+	padding-left: 0;
+	list-style: none;
+
+	a {
+		font-size: 1.286em;
+	}
+}

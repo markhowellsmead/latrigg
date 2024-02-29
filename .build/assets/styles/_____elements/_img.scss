@@ -5,6 +5,8 @@ img {
 
 @include context-view {
 	img {
-		pointer-events: none;
+		&:not([data-wp-on--click]) {
+			pointer-events: none;
+		}
 	}
 }

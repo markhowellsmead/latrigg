@@ -9,3 +9,12 @@
 @import 'text-shadow';
 @import 'theme-dev';
 @import 'visibility';
+
+.wp-lightbox-container button {
+	opacity: 1 !important;
+}
+
+.has-object-fit-cover figure {
+	width: 100%;
+	height: 100%;
+}
