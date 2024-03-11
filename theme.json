@@ -6,11 +6,6 @@
 			"title": "Blank"
 		},
 		{
-			"name": "no-title",
-			"postTypes": ["page", "post"],
-			"title": "No Title"
-		},
-		{
 			"name": "page-cover",
 			"postTypes": ["page"],
 			"title": "Page (Cover Image)"
