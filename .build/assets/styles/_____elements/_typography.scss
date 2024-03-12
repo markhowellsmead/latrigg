@@ -59,20 +59,11 @@ li {
 }
 
 ol {
-	padding-left: 0;
-	list-style: none;
 	@extend .h-stack--small;
 	counter-reset: item;
 
-	li:before {
-		margin-right: var(--wp--preset--spacing--small);
-		content: counters(item, '.') '. ';
-		counter-increment: item;
-	}
-
 	ol {
 		margin-top: var(--wp--preset--spacing--small);
-		padding-left: 1.2em;
 	}
 }
 
