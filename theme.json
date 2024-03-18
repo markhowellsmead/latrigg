@@ -879,6 +879,9 @@
 			"core/post-title": {
 				"color": {
 					"text": "var(--wp--preset--color--dark-gray)"
+				},
+				"typography": {
+					"fontWeight": "500"
 				}
 			},
 			"core/quote": {
