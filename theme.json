@@ -876,6 +876,18 @@
 					}
 				}
 			},
+			"core/post-date": {
+				"color": {
+					"text": "var(--wp--preset--color--gray)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--gray)"
+						}
+					}
+				}
+			},
 			"core/post-title": {
 				"color": {
 					"text": "var(--wp--preset--color--dark-gray)"
