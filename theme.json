@@ -499,8 +499,8 @@
 				}
 			},
 			"core/post-title": {
-				"color": {
-					"text": "var(--wp--preset--color--dark-gray)"
+				"typography": {
+					"fontWeight": "900"
 				}
 			},
 			"core/quote": {
