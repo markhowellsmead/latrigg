@@ -3,6 +3,10 @@ img {
 	height: auto;
 }
 
+a:has(>img) {
+	display: block;
+}
+
 @include context-view {
 	img {
 		&:not([data-wp-on--click]) {
