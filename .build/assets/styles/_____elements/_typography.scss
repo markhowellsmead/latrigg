@@ -154,6 +154,10 @@ h6 {
 	}
 }
 
+.has-medium-font-size strong {
+	font-weight: 600;
+}
+
 @include context-edit {
 
 	h1,
