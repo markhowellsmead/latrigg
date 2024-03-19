@@ -608,7 +608,7 @@
 			},
 			"heading": {
 				"color": {
-					"text": "#404040"
+					"text": "var(--wp--preset--color--dark-gray)"
 				},
 				"typography": {
 					"fontWeight": "500",
