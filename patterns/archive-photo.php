@@ -39,15 +39,15 @@
 
 			<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"grid","columnCount":4}} -->
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group"><!-- wp:sht/primary-media {"hideInlineEmbed":true,"className":"is-style-3x2","resolution":"thumbnail"} /-->
+			<div class="wp-block-group"><!-- wp:sht/primary-media {"hideInlineEmbed":true,"resolution":"thumbnail","className":"is-style-3x2"} /-->
 
 				<!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"padding":{"right":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":{"left":"var:preset|spacing|xsmall"}}}} -->
 				<div class="wp-block-columns is-not-stacked-on-mobile" style="padding-right:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:column {"width":"70%"} -->
-					<div class="wp-block-column" style="flex-basis:70%"><!-- wp:post-title {"isLink":true,"style":{"typography":{"fontWeight":"400"}},"fontSize":"smaller"} /--></div>
+					<div class="wp-block-column" style="flex-basis:70%"><!-- wp:post-title {"isLink":true,"style":{"typography":{"fontWeight":"500"}},"fontSize":"smaller"} /--></div>
 					<!-- /wp:column -->
 
 					<!-- wp:column {"width":"30%"} -->
-					<div class="wp-block-column" style="flex-basis:30%"><!-- wp:post-date {"textAlign":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|gray"}}}},"textColor":"gray","fontSize":"small"} /--></div>
+					<div class="wp-block-column" style="flex-basis:30%"><!-- wp:post-date {"textAlign":"right","format":"M Y","style":{"elements":{"link":{"color":{"text":"var:preset|color|gray"}}}},"textColor":"gray","fontSize":"small"} /--></div>
 					<!-- /wp:column -->
 				</div>
 				<!-- /wp:columns -->
@@ -66,7 +66,7 @@
 			<div class="wp-block-group"><!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results."} -->
 				<p class="has-text-align-center">
 					<strong>Sorry, but there aren't any entries for this selection at the moment.</strong><br>If you'd like me to add
-					some, then feel free to <a href="mailto:mark@permanenttourist.ch">get in touch</a>.
+					some, then feel free to <a href="mailto:mark@permanenttourist.local">get in touch</a>.
 				</p>
 				<!-- /wp:paragraph -->
 
