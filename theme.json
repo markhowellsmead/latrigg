@@ -201,6 +201,10 @@
 			"wideSize": "64rem"
 		},
 		"spacing": {
+			"blockGap": true,
+			"margin": true,
+			"padding": true,
+			"customSpacingSize": false,
 			"spacingSizes": [
 				{
 					"name": "XS",
