@@ -24,3 +24,9 @@
 .alignfull {
 	clear: both;
 }
+
+@media screen and (min-width: 100em) {
+	body .is-layout-constrained>.alignwide {
+		--wp--style--global--wide-size: 90rem;
+	}
+}

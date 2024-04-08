@@ -11,28 +11,22 @@ const isValidPostType = function (name) {
 };
 
 let CustomLayoutPanel = () => {
-	const post_type = useSelect((select) => {
-		return select('core/editor').getCurrentPostType();
-	});
+	const postType = useSelect((select) => select('core/editor').getCurrentPostType());
+	const metaValues = useSelect((select) => select('core/editor').getEditedPostAttribute('meta'));
 
-	if (!isValidPostType(post_type)) {
+	if (!postType || !isValidPostType(postType)) {
 		return null;
 	}
 
-	const metaValues = useSelect((select) => {
-		const { getEditedPostAttribute } = select('core/editor');
-		return getEditedPostAttribute('meta');
-	});
-
-	const { main_offset, side_padding } = metaValues;
+	const { main_offset, side_padding } = metaValues || {};
 	const { editPost } = useDispatch('core/editor');
 
-	const handleMainOffsetChange = (main_offset) => {
-		editPost({ meta: { main_offset } });
+	const handleMainOffsetChange = (offsetValue) => {
+		editPost({ meta: { main_offset: offsetValue } });
 	};
 
-	const handleSidePaddingChange = (side_padding) => {
-		editPost({ meta: { side_padding } });
+	const handleSidePaddingChange = (paddingValue) => {
+		editPost({ meta: { side_padding: paddingValue } });
 	};
 
 	const sizes = [
@@ -63,11 +57,7 @@ let CustomLayoutPanel = () => {
 	];
 
 	return (
-		<PluginDocumentSettingPanel
-			title={_x('Custom layout options', 'Editor sidebar panel title', 'latrigg')}
-			initialOpen={true}
-			icon={'invalid-name-no-icon'}
-		>
+		<PluginDocumentSettingPanel title={_x('Custom layout options', 'Editor sidebar panel title', 'latrigg')} initialOpen={true}>
 			<DimensionControl
 				label={'Main content offset'}
 				value={main_offset}
