@@ -259,23 +259,9 @@
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "500",
 							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
 						},
 						{
 							"fontFamily": "FixelText",
@@ -287,23 +273,9 @@
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "700",
 							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
 						},
 						{
 							"fontFamily": "FixelText",
@@ -318,6 +290,34 @@
 							"fontStyle": "normal",
 							"fontWeight": "900",
 							"src": ["file:./assets/fonts/FixelVariable.woff2"]
+						},
+						{
+							"fontFamily": "FixelText",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
+						},
+						{
+							"fontFamily": "FixelText",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
+						},
+						{
+							"fontFamily": "FixelText",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
+						},
+						{
+							"fontFamily": "FixelText",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
 						}
 					],
 					"fontFamily": "FixelText, sans-serif",
@@ -437,9 +437,31 @@
 				}
 			},
 			"core/code": {
+				"border": {
+					"bottom": {
+						"color": "var(--wp--preset--color--medlight-gray)",
+						"style": "solid",
+						"width": "1px"
+					},
+					"left": {
+						"color": "var(--wp--preset--color--medlight-gray)",
+						"style": "solid",
+						"width": "1px"
+					},
+					"right": {
+						"color": "var(--wp--preset--color--medlight-gray)",
+						"style": "solid",
+						"width": "1px"
+					},
+					"top": {
+						"color": "var(--wp--preset--color--medlight-gray)",
+						"style": "solid",
+						"width": "1px"
+					}
+				},
 				"color": {
-					"background": "var(--wp--preset--color--white)",
-					"text": "var(--wp--preset--color--primary)"
+					"background": "var(--wp--preset--color--xlight-primary)",
+					"text": "#cc5300"
 				},
 				"spacing": {
 					"padding": {
@@ -499,10 +521,20 @@
 				}
 			},
 			"core/separator": {
+				"color": {
+					"background": "var(--wp--preset--color--dark-gray)"
+				},
 				"spacing": {
 					"margin": {
 						"bottom": "var(--wp--preset--spacing--large)",
 						"top": "var(--wp--preset--spacing--large)"
+					}
+				},
+				"variations": {
+					"dots": {
+						"color": {
+							"background": "var(--wp--preset--color--dark-gray)"
+						}
 					}
 				}
 			},
@@ -609,10 +641,10 @@
 		"spacing": {
 			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)",
 			"padding": {
-				"top": "0",
-				"right": "1rem",
 				"bottom": "0",
-				"left": "1rem"
+				"left": "1rem",
+				"right": "1rem",
+				"top": "0"
 			}
 		},
 		"typography": {

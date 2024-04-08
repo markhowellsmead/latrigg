@@ -17,27 +17,7 @@
 		<!-- /wp:group -->
 
 		<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"grid","columnCount":3}} -->
-		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|regular"}},"layout":{"type":"constrained"}} -->
-		<div class="wp-block-group"><!-- wp:sht/primary-media {"hideInlineEmbed":true,"resolution":"thumbnail","className":"is-style-3x2"} /-->
-
-			<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xsmall"}},"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group"><!-- wp:post-title {"isLink":true,"style":{"typography":{"fontWeight":"800"}},"fontSize":"medium"} /-->
-
-					<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"className":"post-meta","layout":{"type":"default"},"fontSize":"small"} -->
-					<div class="wp-block-group post-meta has-small-font-size"><!-- wp:post-date /-->
-
-						<!-- wp:post-terms {"term":"category"} /-->
-					</div>
-					<!-- /wp:group -->
-				</div>
-				<!-- /wp:group -->
-
-				<!-- wp:post-excerpt {"moreText":"Read more","fontSize":"smaller"} /-->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:group -->
+		<!-- wp:block {"ref":75899} /-->
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -56,7 +36,7 @@
 			<p class="has-text-align-center">(Here's a pretty picture, so that you don't feel disappointed.)</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:image {"align":"wide","id":73260,"sizeSlug":"gutenberg_wide","linkDestination":"none"} -->
+			<!-- wp:image {"id":73260,"sizeSlug":"gutenberg_wide","linkDestination":"none","align":"wide"} -->
 			<figure class="wp-block-image alignwide size-gutenberg_wide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/20101021-DSC_0551-Pano-1470x490.webp" alt="<?php echo esc_attr_e('Stockhorn with snow in autumn', 'Latrigg'); ?>" class="wp-image-73260" /></figure>
 			<!-- /wp:image -->
 		</div>
