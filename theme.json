@@ -75,6 +75,7 @@
 		}
 	],
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"gradients": [
 				{
@@ -196,15 +197,15 @@
 				}
 			]
 		},
+		"dimensions": {
+			"minHeight": true
+		},
 		"layout": {
 			"contentSize": "45rem",
 			"wideSize": "64rem"
 		},
 		"spacing": {
 			"blockGap": true,
-			"margin": true,
-			"padding": true,
-			"customSpacingSize": false,
 			"spacingSizes": [
 				{
 					"name": "XS",
