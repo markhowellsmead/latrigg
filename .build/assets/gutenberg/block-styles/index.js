@@ -12,9 +12,3 @@ domReady(() => {
 		label: 'Arrow down',
 	});
 });
-
-window.addEventListener('load', () => {
-	unregisterBlockStyle('core/image', 'default');
-	unregisterBlockStyle('core/image', 'rounded');
-	unregisterBlockStyle('core/separator', 'wide');
-});

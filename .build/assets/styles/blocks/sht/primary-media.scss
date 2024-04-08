@@ -49,3 +49,7 @@
 		height: 100%;
 	}
 }
+
+.wp-block-group:has(>.wp-block-sht-primary-media:empty) {
+	display: none;
+}

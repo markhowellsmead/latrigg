@@ -10,20 +10,14 @@
 		@extend %figcaption;
 	}
 
-	&.is-style-webcam {
-		overflow: hidden;
-
-		&>a {
-			display: block;
-		}
-
-		img {
-			aspect-ratio: 3/2;
-		}
-	}
-
 	.components-resizable-box__container,
 	img {
 		max-width: 100%;
+	}
+}
+
+.wp-lightbox-container {
+	button {
+		opacity: 1 !important;
 	}
 }
