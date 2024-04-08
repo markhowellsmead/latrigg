@@ -607,7 +607,13 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)"
+			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)",
+			"padding": {
+				"top": "0",
+				"right": "1rem",
+				"bottom": "0",
+				"left": "1rem"
+			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--primary)",
