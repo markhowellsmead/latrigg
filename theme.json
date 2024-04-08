@@ -452,20 +452,7 @@
 					"fontSize": "var(--wp--preset--font-size--smaller)"
 				}
 			},
-			"core/group": {
-				"border": {
-					"radius": "var(--image-border-radius)"
-				}
-			},
-			"core/image": {
-				"border": {
-					"radius": "var(--image-border-radius)"
-				}
-			},
 			"core/media-text": {
-				"border": {
-					"radius": "var(--image-border-radius)"
-				},
 				"spacing": {
 					"padding": {
 						"bottom": "var(--wp--preset--spacing--large)",
