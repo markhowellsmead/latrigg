@@ -1,7 +1,7 @@
 /**
  * In order to ensure that the content doesn't align against the
  * edge of the browser window at small screen sizes, we apply a
- * gutter using var(--wp--custom--spacing-outer-gutter), which
+ * gutter using var(--wp--preset--spacing--regular), which
  * is defined in theme.json. This will indent all content on the
  * left and right. The CSS custom property will be defined inline
  * by WordPress core.
@@ -27,20 +27,16 @@
 	body & {
 		width: unset;
 		max-width: none !important;
-		margin-left: calc(
-			-1 * var(--wp--custom--spacing-outer-gutter)
-		) !important;
-		margin-right: calc(
-			-1 * var(--wp--custom--spacing-outer-gutter)
-		) !important;
+		margin-left: calc(-1 * var(--wp--preset--spacing--regular)) !important;
+		margin-right: calc(-1 * var(--wp--preset--spacing--regular)) !important;
 	}
 }
 
 %h-guttered {
-	padding-left: var(--wp--custom--spacing-outer-gutter);
-	padding-right: var(--wp--custom--spacing-outer-gutter);
+	padding-left: var(--wp--preset--spacing--regular);
+	padding-right: var(--wp--preset--spacing--regular);
 
-	> .alignfull {
+	>.alignfull {
 		@extend %h-guttered-full;
 	}
 }

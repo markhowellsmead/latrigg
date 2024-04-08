@@ -31,9 +31,3 @@ $context: 'view';
 		--hd-play-button-opacity: 1;
 	}
 }
-
-@media screen and (min-width: 100em) {
-	body .is-layout-constrained>.alignwide {
-		--wp--style--global--wide-size: 90rem;
-	}
-}
