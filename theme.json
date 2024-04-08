@@ -639,13 +639,7 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)",
-			"padding": {
-				"bottom": "0",
-				"left": "1rem",
-				"right": "1rem",
-				"top": "0"
-			}
+			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)"
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--primary)",
