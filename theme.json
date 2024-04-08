@@ -75,10 +75,7 @@
 		}
 	],
 	"settings": {
-		"appearanceTools": true,
 		"color": {
-			"background": true,
-			"customGradient": true,
 			"gradients": [
 				{
 					"gradient": "linear-gradient(to bottom, transparent, transparent 65%, black 100%)",
@@ -197,11 +194,7 @@
 					"name": "Pale green",
 					"slug": "custom-pale-green"
 				}
-			],
-			"text": true
-		},
-		"custom": {
-			"spacing-outer-gutter": "var(--wp--preset--spacing--regular)"
+			]
 		},
 		"layout": {
 			"contentSize": "45rem",
@@ -247,8 +240,6 @@
 			]
 		},
 		"typography": {
-			"customFontSize": false,
-			"dropCap": false,
 			"fluid": true,
 			"fontFamilies": [
 				{
@@ -418,13 +409,7 @@
 					"size": "40px",
 					"slug": "huge"
 				}
-			],
-			"fontStyle": false,
-			"fontWeight": true,
-			"letterSpacing": false,
-			"lineHeight": false,
-			"textDecoration": false,
-			"textTransform": false
+			]
 		},
 		"useRootPaddingAwareAlignments": true
 	},
@@ -432,7 +417,7 @@
 		"blocks": {
 			"core/button": {
 				"border": {
-					"radius": "5px"
+					"radius": "var(--image-border-radius)"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--dark-gray)"
@@ -652,5 +637,5 @@
 		}
 	],
 	"version": 2,
-	"$schema": "https://schemas.wp.org/wp/6.4/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json"
 }
