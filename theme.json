@@ -221,6 +221,16 @@
 					"color": "#f2f6ef",
 					"name": "Pale green",
 					"slug": "custom-pale-green"
+				},
+				{
+					"color": "#004666",
+					"name": "WordPress blue dark",
+					"slug": "custom-word-press-blue-dark"
+				},
+				{
+					"color": "#2a647e26",
+					"name": "WordPress blue 15%",
+					"slug": "custom-word-press-blue-15"
 				}
 			]
 		},
