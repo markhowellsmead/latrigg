@@ -534,6 +534,12 @@
 					"fontSize": "var(--wp--preset--font-size--smaller)"
 				}
 			},
+			"core/heading": {
+				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "600"
+				}
+			},
 			"core/media-text": {
 				"spacing": {
 					"padding": {
@@ -677,6 +683,7 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
+					"fontStyle": "normal",
 					"fontWeight": "600",
 					"letterSpacing": "0.015em",
 					"lineHeight": "1.2"
