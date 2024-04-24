@@ -2,67 +2,94 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": ["page", "post"],
+			"postTypes": [
+				"page",
+				"post"
+			],
 			"title": "Blank"
 		},
 		{
 			"name": "page-cover",
-			"postTypes": ["page"],
+			"postTypes": [
+				"page"
+			],
 			"title": "Page (Cover Image)"
 		},
 		{
 			"name": "single-cover",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Cover Image"
 		},
 		{
 			"name": "single-image-left-text-right",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Image left, text right"
 		},
 		{
 			"name": "single-no-thumbnail",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "No thumbnail"
 		},
 		{
 			"name": "single-panorama",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Panorama image"
 		},
 		{
 			"name": "single-square-tall",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Tall/square primary image"
 		},
 		{
 			"name": "single-photo",
-			"postTypes": ["photo"],
+			"postTypes": [
+				"photo"
+			],
 			"title": "Single Photo"
 		},
 		{
 			"name": "single-photo-tall",
-			"postTypes": ["photo"],
+			"postTypes": [
+				"photo"
+			],
 			"title": "Single Photo (tall)"
 		},
 		{
 			"name": "single-photo-wide",
-			"postTypes": ["photo"],
+			"postTypes": [
+				"photo"
+			],
 			"title": "Single Photo (wide)"
 		},
 		{
 			"name": "single-photo-panorama",
-			"postTypes": ["photo"],
+			"postTypes": [
+				"photo"
+			],
 			"title": "Single Photo (panorama)"
 		},
 		{
 			"name": "single-photo-square",
-			"postTypes": ["photo"],
+			"postTypes": [
+				"photo"
+			],
 			"title": "Single Photo (square)"
 		},
 		{
 			"name": "category-video",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Video Category List"
 		},
 		{
@@ -254,70 +281,90 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "800",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "900",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelItalicVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelItalicVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelItalicVariable.woff2"
+							]
 						},
 						{
 							"fontFamily": "FixelText",
 							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
+							"src": [
+								"file:./assets/fonts/FixelItalicVariable.woff2"
+							]
 						}
 					],
 					"fontFamily": "FixelText, sans-serif",
@@ -331,7 +378,9 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"]
+							"src": [
+								"file:./assets/fonts/material-icons-sharp-v109-latin-regular.woff2"
+							]
 						}
 					],
 					"fontFamily": "\"Material Icons\"",
@@ -555,6 +604,7 @@
 			"background": "var(--wp--preset--color--white)",
 			"text": "var(--wp--preset--color--dark-gray)"
 		},
+		"css": "",
 		"elements": {
 			"button": {
 				"color": {
