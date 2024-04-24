@@ -1,14 +1,7 @@
-body {
-  --wp-block-code-border-color: var(--wp--preset--color--gray-light);
-}
-
-.wp-block-code {
-  border: 1px solid var(--wp-block-code-border-color);
-}
 .wp-block-code code {
   max-width: 100%;
-  padding: var(--wp--preset--spacing--regular);
+  padding: var(--wp--preset--spacing--xsmall);
   white-space: pre;
   overflow-x: auto;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2NvZGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOzs7QUFHRDtFQUNDOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoiYmxvY2tzL2NvcmUvY29kZS5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2NvZGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQztFQUNDO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL2NvZGUuY3NzIn0= */
