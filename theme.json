@@ -194,18 +194,24 @@
 					"color": "#f2f6ef",
 					"name": "Pale green",
 					"slug": "custom-pale-green"
+				},
+				{
+					"color": "#004666",
+					"name": "WordPress blue dark",
+					"slug": "custom-word-press-blue-dark"
+				},
+				{
+					"color": "#2a647e26",
+					"name": "WordPress blue 15%",
+					"slug": "custom-word-press-blue-15"
 				}
 			]
-		},
-		"dimensions": {
-			"minHeight": true
 		},
 		"layout": {
 			"contentSize": "45rem",
 			"wideSize": "64rem"
 		},
 		"spacing": {
-			"blockGap": true,
 			"spacingSizes": [
 				{
 					"name": "XS",
@@ -475,6 +481,12 @@
 					"fontSize": "var(--wp--preset--font-size--smaller)"
 				}
 			},
+			"core/heading": {
+				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "700"
+				}
+			},
 			"core/media-text": {
 				"spacing": {
 					"padding": {
@@ -495,11 +507,6 @@
 							"text": "var(--wp--preset--color--gray)"
 						}
 					}
-				}
-			},
-			"core/post-title": {
-				"typography": {
-					"fontWeight": "900"
 				}
 			},
 			"core/quote": {
@@ -555,6 +562,7 @@
 			"background": "var(--wp--preset--color--white)",
 			"text": "var(--wp--preset--color--dark-gray)"
 		},
+		"css": "",
 		"elements": {
 			"button": {
 				"color": {
@@ -584,15 +592,13 @@
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--huge)",
-					"fontWeight": "900"
+					"fontSize": "var(--wp--preset--font-size--huge)"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
-					"fontSize": "var(--wp--preset--font-size--xlarge)",
-					"fontWeight": "800"
+					"fontSize": "var(--wp--preset--font-size--xlarge)"
 				}
 			},
 			"h3": {
@@ -617,13 +623,10 @@
 				}
 			},
 			"heading": {
-				"color": {
-					"text": "var(--wp--preset--color--dark-gray)"
-				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
-					"fontWeight": "600",
-					"letterSpacing": "-0.0125em",
+					"fontStyle": "normal",
+					"fontWeight": "700",
 					"lineHeight": "1.2"
 				}
 			},

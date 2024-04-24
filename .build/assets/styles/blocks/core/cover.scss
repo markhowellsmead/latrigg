@@ -5,10 +5,10 @@
 	overflow: hidden;
 
 	&[style*='min-height:100vh'] {
-		min-height: calc((100 * var(--vh)) - var(--masthead--height) - var(--wp--preset--spacing--regular)) !important;
+		min-height: calc((100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular)) !important;
 
 		.admin-bar & {
-			min-height: calc((100 * var(--vh)) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)) !important;
+			min-height: calc((100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)) !important;
 		}
 	}
 
