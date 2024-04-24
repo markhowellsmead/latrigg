@@ -484,7 +484,7 @@
 			"core/heading": {
 				"typography": {
 					"fontStyle": "normal",
-					"fontWeight": "600"
+					"fontWeight": "700"
 				}
 			},
 			"core/media-text": {
@@ -507,11 +507,6 @@
 							"text": "var(--wp--preset--color--gray)"
 						}
 					}
-				}
-			},
-			"core/post-title": {
-				"typography": {
-					"fontWeight": "900"
 				}
 			},
 			"core/quote": {
@@ -631,8 +626,7 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
 					"fontStyle": "normal",
-					"fontWeight": "600",
-					"letterSpacing": "0.015em",
+					"fontWeight": "700",
 					"lineHeight": "1.2"
 				}
 			},
