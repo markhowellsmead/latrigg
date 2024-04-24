@@ -1,13 +1,7 @@
-body {
-	--wp-block-code-border-color: var(--wp--preset--color--gray-light);
-}
-
 .wp-block-code {
-	border: 1px solid var(--wp-block-code-border-color);
-
 	code {
 		max-width: 100%;
-		padding: var(--wp--preset--spacing--regular);
+		padding: var(--wp--preset--spacing--xsmall);
 		white-space: pre;
 		overflow-x: auto;
 	}

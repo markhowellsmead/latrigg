@@ -12,7 +12,7 @@
 		transform: translateX(100vw);
 		opacity: 0;
 		transition: opacity 300ms ease;
-		height: calc(var(--vh) * 100);
+		height: calc(var(--svh) * 100);
 		overflow: auto;
 		backdrop-filter: blur(.5rem);
 		transition: all .6s ease;
