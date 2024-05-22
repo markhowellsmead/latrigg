@@ -1,8 +1,6 @@
 body {
 	--checkbox-size: calc(var(--wp--preset--spacing--regular) * 1.5);
-	--checkbox-size-small: var(
-		--wp--preset--spacing--regular
-	); // used in other SCSS files, not here
+	--checkbox-size-small: var(--wp--preset--spacing--regular); // used in other SCSS files, not here
 	--field-border: 1px solid var(--wp--preset--color--light-gray);
 	--field-radius: var(--radius);
 	--checkbox-radius: #{rem-calc(2px)};
@@ -46,7 +44,7 @@ input {
 	&[type='time'],
 	&[type='url'],
 	&[type='week'] {
-		-webkit-appearance: none; // remove inner shadow
+		appearance: none;
 		border: var(--field-border);
 		border-radius: var(--field-radius);
 		padding: var(--wp--preset--spacing--small);
@@ -70,59 +68,58 @@ input {
 	}
 }
 
-[type='radio'],
-[type='checkbox'] {
-	position: absolute;
-	transform: scale(0);
-	z-index: -1;
-	width: 0;
-	height: 0;
-	margin: 0 !important;
-	opacity: 0;
-	overflow: hidden;
-	pointer-events: none;
+// X[type='radio'],
+// X[type='checkbox'] {
+// 	position: absolute;
+// 	transform: scale(0);
+// 	z-index: -1;
+// 	width: 0;
+// 	height: 0;
+// 	margin: 0 !important;
+// 	opacity: 0;
+// 	overflow: hidden;
+// 	pointer-events: none;
 
-	~ label {
-		display: flex !important;
-		align-items: center;
+// 	~label {
+// 		display: flex !important;
+// 		align-items: center;
 
-		&:before {
-			@include transition;
-			content: '';
-			display: inline-block;
-			width: var(--checkbox-size);
-			height: var(--checkbox-size);
-			flex: 0 0 var(--checkbox-size);
-			margin-right: 0.5em;
-			background: url('../img/icons/checkbox-active.min.svg') center
-				no-repeat;
-			background-color: var(--checkbox-background-color);
-			background-size: 0;
-			border: var(--field-border);
-			border-radius: var(--checkbox-radius);
-			vertical-align: baseline;
-		}
+// 		&:before {
+// 			@include transition;
+// 			content: '';
+// 			display: inline-block;
+// 			width: var(--checkbox-size);
+// 			height: var(--checkbox-size);
+// 			flex: 0 0 var(--checkbox-size);
+// 			margin-right: 0.5em;
+// 			background: url('../img/icons/checkbox-active.min.svg') center no-repeat;
+// 			background-color: var(--checkbox-background-color);
+// 			background-size: 0;
+// 			border: var(--field-border);
+// 			border-radius: var(--checkbox-radius);
+// 			vertical-align: baseline;
+// 		}
 
-		a {
-			display: inline-block;
-			margin-right: 0.25em;
-		}
-	}
+// 		a {
+// 			display: inline-block;
+// 			margin-right: 0.25em;
+// 		}
+// 	}
 
-	&:checked ~ label:before {
-		background-color: var(--checkbox-checked-background-color);
-		border-color: var(--checkbox-checked-border-color);
-		background-size: contain;
-	}
-}
+// 	&:checked~label:before {
+// 		background-color: var(--checkbox-checked-background-color);
+// 		border-color: var(--checkbox-checked-border-color);
+// 		background-size: contain;
+// 	}
+// }
 
-[type='checkbox'] ~ label:before {
-	border-radius: var(--checkbox-radius);
-}
+// X[type='checkbox']~label:before {
+// 	border-radius: var(--checkbox-radius);
+// }
 
-[type='radio'] ~ label:before {
-	border-radius: 50%;
-}
+// X[type='radio']~label:before {
+// 	border-radius: 50%;
+// }
 
 textarea {
 	-webkit-appearance: none; // remove inner shadow
@@ -156,4 +153,52 @@ label.error {
 .input.error {
 	border-color: var(--sht--preset--color--danger-border);
 	outline-color: var(--sht--preset--color--danger-border);
+}
+
+input[type="checkbox"] {
+	appearance: none;
+	background-color: var(--wp--preset--color--white);
+	margin: 0;
+
+	font: inherit;
+	color: currentColor;
+	width: 1.15em;
+	height: 1.15em;
+	border: 4px solid currentColor;
+	border-radius: var(--checkbox-radius);
+	transform: translateY(-0.075em);
+	display: grid;
+	place-content: center;
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	width: 0.65em;
+	height: 0.65em;
+	clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	transform: scale(0);
+	transform-origin: center;
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em currentColor;
+}
+
+input[type="checkbox"]:checked::before {
+	transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+	outline: max(1px, 0.1em) solid #ccc;
+	outline-offset: max(2px, 0.2em);
+}
+
+input[type="checkbox"]:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+:has(>input[type="checkbox"]) {
+	display: grid !important;
+	align-items: baseline !important;
+	grid-template-columns: 1em auto;
+	gap: .5em !important;
 }
