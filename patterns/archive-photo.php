@@ -66,7 +66,7 @@
 			<div class="wp-block-group"><!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results."} -->
 				<p class="has-text-align-center">
 					<strong>Sorry, but there aren't any entries for this selection at the moment.</strong><br>If you'd like me to add
-					some, then feel free to <a href="mailto:mark@permanenttourist.local">get in touch</a>.
+					some, then feel free to <a href="mailto:mark@<?php echo $_SERVER['HTTP_HOST']; ?>">get in touch</a>.
 				</p>
 				<!-- /wp:paragraph -->
 
