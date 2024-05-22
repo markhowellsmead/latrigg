@@ -29,15 +29,15 @@
 		<!-- wp:query-no-results {"align":"wide"} -->
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group"><!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results."} -->
-			<p class="has-text-align-center"><strong>Sorry, but there aren't any entries for this selection at the moment.</strong><br>If you'd like me to add some, then feel free to <a href="mailto:mark@permanenttourist.local">get in touch</a>.</p>
+			<p class="has-text-align-center"><strong>Sorry, but there aren't any entries for this selection at the moment.</strong><br>If you'd like me to add some, then feel free to <a href="mailto:mark@<?php echo $_SERVER['HTTP_HOST']; ?>">get in touch</a>.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"align":"center"} -->
 			<p class="has-text-align-center">(Here's a pretty picture, so that you don't feel disappointed.)</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:image {"id":73260,"sizeSlug":"gutenberg_wide","linkDestination":"none","align":"wide"} -->
-			<figure class="wp-block-image alignwide size-gutenberg_wide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/20101021-DSC_0551-Pano-1470x490.webp" alt="<?php echo esc_attr_e('Stockhorn with snow in autumn', 'Latrigg'); ?>" class="wp-image-73260" /></figure>
+			<!-- wp:image {"id":null,"sizeSlug":"gutenberg_wide","linkDestination":"none","align":"wide"} -->
+			<figure class="wp-block-image alignwide size-gutenberg_wide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/20101021-DSC_0551-Pano-jpg-webp.webp" alt="<?php echo esc_attr_e('Stockhorn with snow in autumn', 'Latrigg'); ?>" class="wp-image-73260" /></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:group -->
