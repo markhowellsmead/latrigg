@@ -70,7 +70,8 @@ class Page
 	?>
 		<style>
 			.c-main {
-				--wp--custom--spacing-outer-gutter: <?php echo $size; ?>;
+				padding-left: <?php echo $size; ?>;
+				padding-right: <?php echo $size; ?>;
 			}
 		</style>
 <?php
