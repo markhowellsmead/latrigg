@@ -72,6 +72,11 @@
 		{
 			"name": "taxonomy-collection",
 			"title": "Photo collection archive"
+		},
+		{
+			"name": "single-mhm-place",
+			"postTypes": ["mhm-place"],
+			"title": "Single place"
 		}
 	],
 	"settings": {
