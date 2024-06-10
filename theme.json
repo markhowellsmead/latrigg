@@ -131,7 +131,7 @@
 					"slug": "wordpress-blue"
 				},
 				{
-					"color": "#4a4a4a",
+					"color": "#555",
 					"name": "Dark gray",
 					"slug": "dark-gray"
 				},
@@ -350,6 +350,11 @@
 					"slug": "material-icons"
 				},
 				{
+					"fontFamily": "freight-text-pro-1, freight-text-pro-2, serif",
+					"name": "Freight Text Pro",
+					"slug": "freight-text-pro"
+				},
+				{
 					"fontFamily": "monospace",
 					"name": "Monospace",
 					"slug": "monospace"
@@ -382,11 +387,11 @@
 				},
 				{
 					"fluid": {
-						"max": "1.3125rem",
+						"max": "1.25rem",
 						"min": "1.125rem"
 					},
 					"name": "Medium",
-					"size": "21px",
+					"size": "20px",
 					"slug": "medium"
 				},
 				{
@@ -486,12 +491,6 @@
 					"fontSize": "var(--wp--preset--font-size--smaller)"
 				}
 			},
-			"core/heading": {
-				"typography": {
-					"fontStyle": "normal",
-					"fontWeight": "700"
-				}
-			},
 			"core/media-text": {
 				"spacing": {
 					"padding": {
@@ -500,6 +499,11 @@
 						"right": "var(--wp--preset--spacing--large)",
 						"top": "var(--wp--preset--spacing--large)"
 					}
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--primary)"
 				}
 			},
 			"core/post-date": {
@@ -550,9 +554,21 @@
 					}
 				}
 			},
+			"core/site-logo": {
+				"variations": {
+					"rounded": {
+						"filter": {
+							"duotone": "unset"
+						}
+					}
+				}
+			},
 			"core/site-title": {
 				"color": {
 					"text": "var(--wp--preset--color--black)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--primary)"
 				}
 			},
 			"core/table": {
@@ -650,10 +666,10 @@
 			"blockGap": "clamp(1rem, 0.8rem + 1vw, 1.70455rem)"
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--primary)",
-			"fontSize": "var(--wp--preset--font-size--regular)",
+			"fontFamily": "var(--wp--preset--font-family--freight-text-pro)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
 			"fontWeight": "400",
-			"lineHeight": "1.55555556"
+			"lineHeight": "1.5"
 		}
 	},
 	"templateParts": [
@@ -668,6 +684,6 @@
 			"title": "Footer"
 		}
 	],
-	"version": 2,
-	"$schema": "https://schemas.wp.org/wp/6.5/theme.json"
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json"
 }
