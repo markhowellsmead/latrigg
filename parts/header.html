@@ -17,12 +17,12 @@
 	>
 		<!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
 		<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile">
-			<!-- wp:column {"verticalAlignment":"center","width":"5rem","hiddenForMobile":true} -->
-			<div class="wp-block-column is-vertically-aligned-center is-hidden-for--mobile" style="flex-basis: 5rem"></div>
+			<!-- wp:column {"verticalAlignment":"center","width":"","hiddenForMobile":true} -->
+			<div class="wp-block-column is-vertically-aligned-center is-hidden-for--mobile"></div>
 			<!-- /wp:column -->
 
-			<!-- wp:column {"verticalAlignment":"center","width":""} -->
-			<div class="wp-block-column is-vertically-aligned-center">
+			<!-- wp:column {"verticalAlignment":"center","width":"20rem"} -->
+			<div class="wp-block-column is-vertically-aligned-center" style="flex-basis: 20rem">
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"c-masthead__ident","layout":{"type":"default"}} -->
 				<div class="wp-block-group c-masthead__ident">
 					<!-- wp:site-logo {"width":60,"shouldSyncIcon":false,"className":"is-style-rounded","style":{"color":{"duotone":"unset"}}} /-->
@@ -49,10 +49,16 @@
 			</div>
 			<!-- /wp:column -->
 
-			<!-- wp:column {"verticalAlignment":"center","width":"5rem"} -->
-			<div class="wp-block-column is-vertically-aligned-center" style="flex-basis: 5rem">
-				<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+			<!-- wp:column {"verticalAlignment":"center","width":""} -->
+			<div class="wp-block-column is-vertically-aligned-center">
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
 				<div class="wp-block-group">
+					<!-- wp:group {"style":{"spacing":{"padding":{"top":"0.3rem"}}},"layout":{"type":"constrained"},"fontSize":"smaller","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"screenSize":{"hideOnScreenSize":{"large":true,"medium":true,"small":true,"extraSmall":true}}}}]}} -->
+					<div class="wp-block-group has-smaller-font-size" style="padding-top: 0.3rem">
+						<!-- wp:navigation {"ref":71590,"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"screenSize":{"hideOnScreenSize":{"medium":true,"small":true}}}}]}} /-->
+					</div>
+					<!-- /wp:group -->
+
 					<!-- wp:sht/menu-toggle -->
 					<button
 						aria-expanded="false"
