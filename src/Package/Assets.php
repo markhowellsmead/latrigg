@@ -38,6 +38,7 @@ class Assets
 		$deps[] = 'fancybox';
 
 		wp_enqueue_style('sht-style', get_template_directory_uri() . '/assets/styles/ui' . ($min ? '.min' : '') . '.css', $deps, filemtime(get_template_directory() . '/assets/styles/ui' . ($min ? '.min' : '') . '.css'));
+		wp_enqueue_style('sht-adobe-fonts', 'https://use.typekit.net/ifk0xgd.css');
 
 		// Javascript
 		$deps = [];
@@ -62,6 +63,7 @@ class Assets
 	{
 		add_theme_support('editor-styles');
 		add_editor_style('assets/styles/admin-editor' . (sht_theme()->debug ? '' : '.min') . '.css');
+		add_editor_style('https://use.typekit.net/ifk0xgd.css');
 		// if (file_exists(get_template_directory() . '/assets/styles/admin-editor' . (sht_theme()->debug ? '' : '.min') . '.css')) {
 		// 	add_editor_style('assets/styles/admin-editor' . (sht_theme()->debug ? '' : '.min') . '.css');
 		// }
