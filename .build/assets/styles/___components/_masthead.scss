@@ -1,5 +1,13 @@
 :root {
-	--masthead--height: 80px;
+	--masthead--height: 92px;
+
+	@media screen and (min-width: 48em) {
+		--masthead--height: 146px;
+	}
+
+	@media screen and (min-width: 48em) {
+		--masthead--height: 146px;
+	}
 }
 
 .c-masthead {
@@ -12,8 +20,8 @@
 	z-index: 3;
 	background-color: var(--masthead--background-color);
 
-	@supports (backdrop-filter: blur(.25rem)) {
-		backdrop-filter: blur(.25rem);
+	@supports (backdrop-filter: blur(0.25rem)) {
+		backdrop-filter: blur(0.25rem);
 	}
 
 	@media print {
@@ -24,7 +32,7 @@
 		top: var(--wp-admin--admin-bar--height);
 	}
 
-	>* {
+	> * {
 		position: relative;
 		z-index: 1;
 	}
@@ -51,7 +59,6 @@
 				margin-right: auto !important;
 			}
 		}
-
 	}
 
 	&__inner {
