@@ -21,6 +21,9 @@ body {
 @include context-view {
 	[id] {
 		scroll-margin-top: var(--wp--preset--spacing--regular);
+	html {
+		scroll-behavior: smooth;
+	}
 	}
 
 	body {
