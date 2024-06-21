@@ -19,11 +19,17 @@ body {
 }
 
 @include context-view {
-	[id] {
-		scroll-margin-top: var(--wp--preset--spacing--regular);
+
 	html {
 		scroll-behavior: smooth;
 	}
+
+	:target {
+		scroll-margin-top: calc(var(--masthead--height, var(--wp--preset--spacing--regular)));
+
+		// body.admin-bar & {
+		// 	scroll-margin-top: calc(var(--masthead--height, var(--wp--preset--spacing--regular)));
+		// }
 	}
 
 	body {
