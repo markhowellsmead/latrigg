@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"slug": "infobox-light",
+	"title": "Infobox light",
+	"blockTypes": ["core/group"],
+	"styles": {
+		"border": {
+			"color": "red",
+			"style": "solid",
+			"radius": "4px",
+			"width": "2px"
+		},
+		"color": {
+			"background": "var:preset|color|xlight-primary"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|medium",
+				"bottom": "var:preset|spacing|medium",
+				"left": "var:preset|spacing|medium",
+				"right": "var:preset|spacing|medium"
+			}
+		},
+		"typography": {
+			"fontStyle": "italic"
+		}
+	}
+}
