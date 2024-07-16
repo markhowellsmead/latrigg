@@ -31,3 +31,97 @@ $context: 'view';
 		--hd-play-button-opacity: 1;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	:root :where(body) {
+		--wp--preset--color--white: #22222a;
+		--wp--preset--color--black: #f0f0f0;
+		--wp--preset--color--gray: #bbb;
+		--wp--preset--color--dark-gray: #ddd;
+		--wp--preset--color--primary: #cc0;
+		--wp--preset--color--primary-dark: #aa0;
+		--wp--preset--color--wordpress-blue: #0fb3ff;
+		--wp--preset--color--medlight-gray: rgb(80, 80, 80);
+		--wp--preset--color--primary-verylight: rgb(8, 8, 9);
+		--wp--preset--color--xlight-primary: rgb(8, 8, 9);
+		--wp--preset--color--xlight-primary-85: rgb(8, 8, 9, 0.85);
+
+		--wp--preset--font-size--small: 15px;
+
+		-webkit-font-smoothing: antialiased;
+
+		a,
+		button {
+			text-decoration-color: rgba(255, 255, 255, 0.2);
+			text-underline-offset: 0.2em;
+		}
+
+		img {
+			filter: brightness(0.85);
+		}
+
+		input[type='checkbox'] {
+			border-width: 1px;
+			border-color: var(--wp--preset--color--gray);
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			--wp--preset--color--dark-gray: #eee;
+		}
+
+		.has-text-color {
+			--wp--preset--color--dark-gray: #555;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--xlight-primary-85: rgba(255, 255, 255, 0.85);
+		}
+
+		.wp-block-quote::after {
+			filter: invert(1);
+		}
+
+		:where(.wp-element-button, .wp-block-button__link) {
+			color: var(--wp--preset--color--white);
+			background-color: #000;
+
+			&.has-text-color {
+				color: var(--wp--preset--color--black);
+			}
+		}
+
+		:where(.wp-block-button .wp-block-button__link) {
+			color: var(--wp--preset--color--white);
+		}
+
+		.c-masthead,
+		.c-mobilemenu {
+			background-color: #22222ae6 !important;
+		}
+
+		.wp-block-cover,
+		.wp-block-cover * {
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--xlight-primary-85: rgba(255, 255, 255, 0.85);
+		}
+
+		.with--text-shadow {
+			text-shadow: none;
+		}
+
+		select,
+		textarea,
+		input {
+			background-color: var(--wp--preset--color--white);
+			border-color: var(--wp--preset--color--gray);
+			color: var(--wp--preset--color--black);
+		}
+
+		.wp-block-post-title {
+			--wp--preset--color--primary: currentColor;
+		}
+	}
+}
