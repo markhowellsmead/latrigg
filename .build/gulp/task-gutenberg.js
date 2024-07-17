@@ -1,12 +1,10 @@
-const filter = require('gulp-filter');
-
 import gulp from 'gulp';
 import webpack from 'webpack';
 import gulpWebpack from 'webpack-stream';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
-
-const DependencyExtractionWebpackPlugin = require('@wordpress/dependency-extraction-webpack-plugin');
+import filter from 'gulp-filter';
+import DependencyExtractionWebpackPlugin from '@wordpress/dependency-extraction-webpack-plugin';
 
 export const task = (config) => {
 	return (

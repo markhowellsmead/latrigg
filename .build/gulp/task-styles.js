@@ -1,12 +1,14 @@
 import { src, dest } from 'gulp';
-
 import cleanCSS from 'gulp-clean-css';
 import filter from 'gulp-filter';
 import sassImportJson from 'gulp-sass-import-json';
 import autoprefixer from 'gulp-autoprefixer';
 import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
-const sass = require('gulp-sass')(require('sass'));
+import sassModule from 'gulp-sass';
+import sassCompiler from 'sass';
+
+const sass = sassModule(sassCompiler);
 
 export const task = (config) => {
 	return (
@@ -24,7 +26,7 @@ export const task = (config) => {
 			.pipe(dest(config.assetsDir + 'styles/'))
 			.pipe(sourcemaps.write('.'))
 			.on('error', config.errorLog)
-			// minify
+			// Minify
 			.pipe(cleanCSS())
 			.pipe(
 				rename({
