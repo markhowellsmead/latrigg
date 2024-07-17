@@ -1,3 +1,7 @@
+:root :where(.wp-block-site-title a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a) {
+	text-decoration: none;
+}
+
 body {
 	--font-weight-normal: 400;
 	--font-weight-bold: 700;
@@ -16,7 +20,7 @@ acronym {
 a,
 button {
 	@include transition(opacity);
-	text-decoration-thickness: 0.5px;
+	text-decoration-thickness: 1px !important;
 	text-underline-offset: 0.2em;
 }
 
@@ -38,7 +42,7 @@ cite {
 	display: block;
 }
 
-dd+dt {
+dd + dt {
 	margin-top: var(--wp--preset--spacing--regular);
 }
 
@@ -83,7 +87,6 @@ ul {
 }
 
 nav {
-
 	li,
 	ul {
 		list-style: none;
@@ -135,8 +138,7 @@ tr {
 
 p {
 	code {
-		font-size: .95em;
-		;
+		font-size: 0.95em;
 	}
 }
 
@@ -146,7 +148,6 @@ h3,
 h4,
 h5,
 h6 {
-
 	word-break: break-word;
 	text-wrap: balance;
 
@@ -164,14 +165,12 @@ h6 {
 }
 
 @include context-edit {
-
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
-
 		a,
 		a:active,
 		a:hover {
