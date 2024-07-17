@@ -217,6 +217,7 @@
 			"wideSize": "64rem"
 		},
 		"spacing": {
+			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
 					"name": "XS",
@@ -256,6 +257,7 @@
 			]
 		},
 		"typography": {
+			"defaultFontSizes": false,
 			"fluid": true,
 			"fontFamilies": [
 				{
