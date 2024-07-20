@@ -4,9 +4,7 @@ body {
 	--c-comments-background-odd: var(--wp--preset--color--white);
 	--c-comments-respond-border-color: var(--wp--preset--color--gray-light);
 	--c-comments-cancel-link-color: var(--wp--preset--color--primary);
-	--c-comments-cancel-link-color-hover: var(
-		--wp--preset--color--primary-dark
-	);
+	--c-comments-cancel-link-color-hover: var(--wp--preset--color--primary-dark);
 }
 
 .c-comments {
@@ -117,5 +115,13 @@ body {
 		&:hover {
 			color: var(--c-comments-cancel-link-color-hover);
 		}
+	}
+}
+
+.comment-form {
+	@extend .h-stack;
+
+	> * {
+		@extend .h-stack--zero;
 	}
 }

@@ -14,6 +14,12 @@
 		}
 	}
 
+	&--zero {
+		> * + * {
+			--stack-size: 0;
+		}
+	}
+
 	&--xsmall {
 		> * + * {
 			--stack-size: var(--wp--preset--spacing--xsmall);
