@@ -122,6 +122,7 @@ body {
 	@extend .h-stack;
 
 	> * {
-		@extend .h-stack--zero;
+		@extend .h-stack;
+		@extend .h-stack--xsmall;
 	}
 }

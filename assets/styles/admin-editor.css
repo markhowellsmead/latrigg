@@ -62,29 +62,29 @@ The structure follows the principles of ITCSS (http://www.creativebloq.com/web-d
 /*
  * https://every-layout.dev/layouts/stack/
  */
-.h-stack, .c-menu__entries--mobile, .c-editormessage, .comment-form, .c-comments .comment-body,
+.h-stack, .c-menu__entries--mobile, .c-editormessage, .comment-form > *, .comment-form, .c-comments .comment-body,
 .c-comments .comment-content, .c-comments .comment,
 .c-comments .pingback,
 .c-comments .trackback, .is-root-container, .c-blocks, .c-article__header, li {
   --stack-size: var(--wp--preset--spacing--regular);
 }
-.h-stack > *, .c-menu__entries--mobile > *, .c-editormessage > *, .comment-form > *, .c-comments .comment-body > *,
+.h-stack > *, .c-menu__entries--mobile > *, .c-editormessage > *, .comment-form > * > *, .comment-form > *, .c-comments .comment-body > *,
 .c-comments .comment-content > *, .c-comments .comment > *,
 .c-comments .pingback > *,
 .c-comments .trackback > *, .is-root-container > *, .c-blocks > *, .c-article__header > *, li > * {
   margin-top: 0;
   margin-bottom: 0;
 }
-.h-stack > * + *, .c-menu__entries--mobile > * + *, .c-editormessage > * + *, .comment-form > * + *, .c-comments .comment-body > * + *,
+.h-stack > * + *, .c-menu__entries--mobile > * + *, .c-editormessage > * + *, .comment-form > * > * + *, .comment-form > * + *, .c-comments .comment-body > * + *,
 .c-comments .comment-content > * + *, .c-comments .comment > * + *,
 .c-comments .pingback > * + *,
 .c-comments .trackback > * + *, .is-root-container > * + *, .c-blocks > * + *, .c-article__header > * + *, li > * + * {
   margin-top: var(--stack-size);
 }
-.h-stack--zero > * + *, .comment-form > * > * + * {
+.h-stack--zero > * + * {
   --stack-size: 0;
 }
-.h-stack--xsmall > * + * {
+.h-stack--xsmall > * + *, .comment-form > * > * + * {
   --stack-size: var(--wp--preset--spacing--xsmall);
 }
 .h-stack--small > * + *, .c-loop__entryheader > * + *, .c-comments .comment-meta > * + *, ul > * + *, ol > * + * {
