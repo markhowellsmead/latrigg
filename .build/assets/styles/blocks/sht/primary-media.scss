@@ -1,18 +1,17 @@
 @import '../../_______tools/mixins/flood';
 
 .wp-block-sht-primary-media {
-
 	body.single-photo & {
 		img {
-			border: .7rem solid var(--wp--preset--color--white);
-			box-shadow: 0 0 1.4rem rgb(0, 0, 0, .125);
+			border: 0.7rem solid var(--wp--preset--color--white);
+			box-shadow: 0 0.125rem 0.5rem rgb(0, 0, 0, 0.125);
 		}
 	}
 
 	&__figure {
 		position: relative;
 
-		>a {
+		> a {
 			display: block;
 			height: 100%;
 		}
@@ -50,6 +49,6 @@
 	}
 }
 
-.wp-block-group:has(>.wp-block-sht-primary-media:empty) {
+.wp-block-group:has(> .wp-block-sht-primary-media:empty) {
 	display: none;
 }
