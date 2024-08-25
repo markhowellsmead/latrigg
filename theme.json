@@ -81,6 +81,14 @@
 	],
 	"settings": {
 		"appearanceTools": true,
+		"dimensions": {
+			"aspectRatio": true,
+			"aspectRatios": [
+				{ "name": "Panorama - 2:1", "slug": "panorama-2-1", "ratio": "2/1" },
+				{ "name": "Panorama - 3:1", "slug": "panorama-3-1", "ratio": "3/1" },
+				{ "name": "Panorama - 4:1", "slug": "panorama-4-1", "ratio": "4/1" }
+			]
+		},
 		"color": {
 			"gradients": [
 				{
