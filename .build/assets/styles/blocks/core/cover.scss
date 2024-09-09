@@ -12,6 +12,12 @@
 		}
 	}
 
+	&.has-aspect-ratio {
+		@media screen and (max-width: 63.9375em) {
+			aspect-ratio: unset !important;
+		}
+	}
+
 	&.has-custom-content-position {
 		.wp-block-cover__inner-container {
 			width: 100% !important;
