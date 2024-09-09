@@ -37,10 +37,10 @@
   border-radius: var(--image-border-radius);
   overflow: hidden;
 }
-.wp-block-cover[style*="min-height:100vh"] {
+.wp-block-cover:not(.has-aspect-ratio)[style*="min-height:100vh"] {
   min-height: calc(100 * var(--svh) - var(--masthead--height) - var(--wp--preset--spacing--regular)) !important;
 }
-.admin-bar .wp-block-cover[style*="min-height:100vh"] {
+.admin-bar .wp-block-cover:not(.has-aspect-ratio)[style*="min-height:100vh"] {
   min-height: calc(100 * var(--svh) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)) !important;
 }
 .wp-block-cover.has-custom-content-position .wp-block-cover__inner-container {
