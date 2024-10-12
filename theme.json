@@ -601,16 +601,13 @@
 				}
 			},
 			"caption": {
-				"color": {
-					"text": "var(--wp--preset--color--gray)"
-				},
 				"spacing": {
 					"margin": {
 						"top": "var(--wp--preset--spacing--small)"
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--smaller)"
+					"fontSize": ".8em"
 				}
 			},
 			"cite": {

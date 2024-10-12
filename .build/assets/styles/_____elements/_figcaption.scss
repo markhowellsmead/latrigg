@@ -2,10 +2,9 @@
 	text-align: left;
 	text-indent: -1.8ch;
 	margin-left: 1ch;
-	font-size: var(--wp--preset--font-size--small); // not supported in theme.json
 	margin-top: var(--stack-size); // override core
 	margin-bottom: 0; // override core
-	padding-left: calc(1rem + .5em);
+	padding-left: calc(1rem);
 	padding-right: 1rem;
 	max-width: var(--wp--style--global--content-size);
 
@@ -14,5 +13,6 @@
 		font-size: 1.2em;
 		opacity: .5;
 		margin-right: .5ch;
+		filter: grayscale(1) brightness(0);
 	}
 }
