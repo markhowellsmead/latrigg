@@ -1,8 +1,8 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"right":"0","left":"0"}}},"className":"c-main","layout":{"type":"default"},"metadata":{"name":"Main"}} -->
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"right":"0","left":"0"}}},"className":"c-main","layout":{"type":"default"}} -->
 <main class="wp-block-group c-main" style="padding-right: 0; padding-left: 0">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|medium","padding":{"top":"var:preset|spacing|large","bottom":"0","left":"var:preset|spacing|regular","right":"var:preset|spacing|regular"}},"border":{"radius":"0px"}},"layout":{"type":"constrained","wideSize":"75rem"},"metadata":{"name":"Header"}} -->
+	<!-- wp:group {"metadata":{"name":"Header"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"top":"var:preset|spacing|large","bottom":"0","left":"var:preset|spacing|regular","right":"var:preset|spacing|regular"}},"border":{"radius":"0px"}},"layout":{"type":"constrained","wideSize":""}} -->
 	<div
 		class="wp-block-group alignwide"
 		style="
@@ -26,7 +26,7 @@
 		class="wp-block-group"
 		style="padding-right: var(--wp--preset--spacing--regular); padding-left: var(--wp--preset--spacing--regular)"
 	>
-		<!-- wp:post-content {"layout":{"inherit":true}} /-->
+		<!-- wp:post-content {"metadata":{"ignoredHookedBlocks":["jetpack/subscriptions"]},"layout":{"inherit":true}} /-->
 	</div>
 	<!-- /wp:group -->
 
@@ -39,10 +39,8 @@
 			padding-left: var(--wp--preset--spacing--regular);
 		"
 	>
-		<!-- wp:group -->
-		<div class="wp-block-group has-small-font-size">
-			<!-- wp:post-terms {"term":"post_tag","prefix":"Tags: "} /-->
-		</div>
+		<!-- wp:group {"className":"has-small-font-size"} -->
+		<div class="wp-block-group has-small-font-size"><!-- wp:post-terms {"term":"post_tag","prefix":"Tags: "} /--></div>
 		<!-- /wp:group -->
 
 		<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xlarge"}}},"layout":{"type":"constrained"}} -->
