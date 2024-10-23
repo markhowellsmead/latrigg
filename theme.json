@@ -36,6 +36,11 @@
 			"title": "Tall/square primary image"
 		},
 		{
+			"name": "single-mhm-explore",
+			"postTypes": ["mhm-explore"],
+			"title": "Single place / explore"
+		},
+		{
 			"name": "single-photo",
 			"postTypes": ["photo"],
 			"title": "Single Photo"
@@ -72,11 +77,6 @@
 		{
 			"name": "taxonomy-collection",
 			"title": "Photo collection archive"
-		},
-		{
-			"name": "single-mhm-place",
-			"postTypes": ["mhm-place"],
-			"title": "Single place"
 		}
 	],
 	"settings": {
