@@ -18,11 +18,15 @@
 	}
 
 	body.home & {
-		--main--offset: 1px;
+		--main--offset: 2px;
+	}
+
+	body.single-mhm-explore & {
+		--main--offset: 2px;
 	}
 
 	body.is-overlapping-nav & {
-		--main--offset: 1px;
+		--main--offset: 2px;
 		--masthead--height: var(--wp--preset--spacing--regular);
 	}
 

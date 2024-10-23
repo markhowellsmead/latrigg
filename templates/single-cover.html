@@ -2,26 +2,26 @@
 
 <!-- wp:group {"tagName":"main","className":"c-main"} -->
 <main class="wp-block-group c-main">
-	<!-- wp:cover {"useFeaturedImage":true,"dimRatio":80,"minHeight":30,"minHeightUnit":"vw","customGradient":"linear-gradient(180deg,rgba(0,0,0,0) 44%,rgb(0,0,0) 100%)","contentPosition":"bottom center","align":"full","style":{"spacing":{"padding":{"top":"3vw","right":"3vw","bottom":"3vw","left":"3vw"}}},"withTextShadow":true} -->
+	<!-- wp:cover {"useFeaturedImage":true,"dimRatio":80,"customOverlayColor":"#FFF","minHeight":75,"minHeightUnit":"vh","customGradient":"linear-gradient(180deg,rgba(0,0,0,0) 44%,rgb(0,0,0) 100%)","contentPosition":"bottom center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"3vw","right":"3vw","bottom":"3vw","left":"3vw"}},"dimensions":{"aspectRatio":"3/1"}},"withTextShadow":true} -->
 	<div
-		class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center with--text-shadow"
-		style="padding-top: 3vw; padding-right: 3vw; padding-bottom: 3vw; padding-left: 3vw; min-height: 30vw"
+		class="wp-block-cover alignfull is-light has-custom-content-position is-position-bottom-center with--text-shadow"
+		style="padding-top: 3vw; padding-right: 3vw; padding-bottom: 3vw; padding-left: 3vw; min-height: 75vh"
 	>
 		<span
 			aria-hidden="true"
 			class="wp-block-cover__background has-background-dim-80 has-background-dim has-background-gradient"
-			style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44%, rgb(0, 0, 0) 100%)"
+			style="background-color: #fff; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44%, rgb(0, 0, 0) 100%)"
 		></span>
 		<div class="wp-block-cover__inner-container">
 			<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|body-background"}}},"spacing":{"blockGap":"10px"}},"textColor":"white","layout":{"wideSize":"800px"}} -->
 			<div class="wp-block-group has-white-color has-text-color has-link-color">
 				<!-- wp:post-title {"textAlign":"center","level":1,"fontSize":"huge"} /-->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"fontSize":"small"} -->
-				<div class="wp-block-group has-small-font-size">
+				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"},"elements":{"link":{"color":{"text":"var:preset|color|light-gray"}}}},"textColor":"light-gray","fontSize":"small"} -->
+				<div class="wp-block-group has-light-gray-color has-text-color has-link-color has-small-font-size">
 					<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 					<div class="wp-block-group">
-						<!-- wp:post-date {"textColor":"gray","fontSize":"small"} /-->
+						<!-- wp:post-date {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-gray"}}}},"textColor":"light-gray","fontSize":"small"} /-->
 
 						<!-- wp:paragraph -->
 						<p>•</p>
@@ -46,11 +46,35 @@
 	<div style="height: var(--wp--preset--spacing--regular)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:post-content {"layout":{"inherit":true}} /-->
+	<!-- wp:post-content {"metadata":{"ignoredHookedBlocks":["jetpack/subscriptions"]},"layout":{"inherit":true}} /-->
+
+	<!-- wp:group {"style":{"spacing":{"margin":{"top":"48px","bottom":"48px"},"padding":{"top":"5px","bottom":"5px"}}},"layout":{"inherit":true,"type":"constrained"}} -->
+	<div class="wp-block-group" style="margin-top: 48px; margin-bottom: 48px; padding-top: 5px; padding-bottom: 5px">
+		<!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"bottom":"36px"}}}} -->
+		<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" style="margin-bottom: 36px" />
+		<!-- /wp:separator -->
+
+		<!-- wp:heading {"textAlign":"center","level":3,"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"margin":{"top":"4px","bottom":"10px"}}}} -->
+		<h3 class="wp-block-heading has-text-align-center" style="margin-top: 4px; margin-bottom: 10px">
+			Discover more from Permanent Tourist
+		</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"15px"},"spacing":{"margin":{"top":"4px","bottom":"0px"}}}} -->
+		<p class="has-text-align-center" style="margin-top: 4px; margin-bottom: 0px; font-size: 15px">
+			Subscribe to get the latest posts sent to your email.
+		</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:group {"layout":{"type":"constrained","contentSize":"480px"}} -->
+		<div class="wp-block-group"><!-- wp:jetpack/subscriptions {"appSource":"subscribe-block-post-end"} /--></div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
 
 	<!-- wp:group {"style":{"spacing":{"blockGap":"0.5vw","margin":{"top":"3vw"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 	<div class="wp-block-group" style="margin-top: 3vw">
-		<!-- wp:group {"style":{"spacing":{"blockGap":"10px"}},"className":"post-meta","layout":{"type":"flex"},"fontSize":"small"} -->
+		<!-- wp:group {"className":"post-meta","style":{"spacing":{"blockGap":"10px"}},"fontSize":"small","layout":{"type":"flex"}} -->
 		<div class="wp-block-group post-meta has-small-font-size">
 			<!-- wp:post-date {"textColor":"gray","fontSize":"small"} /-->
 
