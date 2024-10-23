@@ -23,6 +23,7 @@ class Gutenberg
 		}
 		add_action('enqueue_block_editor_assets', [$this, 'enqueueBlockAssets']);
 		add_filter('block_categories_all', [$this, 'blockCategories']);
+		add_filter('init', [$this, 'registerPatternCategories']);
 		add_filter('init', [$this, 'patternCategories']);
 		add_action('after_setup_theme', [$this, 'themeSupports']);
 		add_action('init', [$this, 'setScriptTranslations']);
@@ -146,5 +147,13 @@ class Gutenberg
 			$classes .= ' post-type-' . $post->post_type . ' post-type-' . $post->post_type . '--' . $post->post_name;
 		}
 		return $classes;
+	}
+
+	public function registerPatternCategories()
+	{
+		register_block_pattern_category(
+			'latrigg/post-content',
+			['label' => __('Full post content', 'latrigg')]
+		);
 	}
 }
