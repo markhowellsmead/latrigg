@@ -81,14 +81,6 @@
 	],
 	"settings": {
 		"appearanceTools": true,
-		"dimensions": {
-			"aspectRatio": true,
-			"aspectRatios": [
-				{ "name": "Panorama - 2:1", "slug": "panorama-2-1", "ratio": "2/1" },
-				{ "name": "Panorama - 3:1", "slug": "panorama-3-1", "ratio": "3/1" },
-				{ "name": "Panorama - 4:1", "slug": "panorama-4-1", "ratio": "4/1" }
-			]
-		},
 		"color": {
 			"gradients": [
 				{
@@ -217,6 +209,25 @@
 					"color": "#2a647e26",
 					"name": "WordPress blue 15%",
 					"slug": "custom-word-press-blue-15"
+				}
+			]
+		},
+		"dimensions": {
+			"aspectRatios": [
+				{
+					"name": "Panorama - 2:1",
+					"ratio": "2/1",
+					"slug": "panorama-2-1"
+				},
+				{
+					"name": "Panorama - 3:1",
+					"ratio": "3/1",
+					"slug": "panorama-3-1"
+				},
+				{
+					"name": "Panorama - 4:1",
+					"ratio": "4/1",
+					"slug": "panorama-4-1"
 				}
 			]
 		},
@@ -501,6 +512,11 @@
 					"fontSize": "var(--wp--preset--font-size--smaller)"
 				}
 			},
+			"core/footnotes": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--regular)"
+				}
+			},
 			"core/media-text": {
 				"spacing": {
 					"padding": {
@@ -607,7 +623,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": ".8em"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"cite": {

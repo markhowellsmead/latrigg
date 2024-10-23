@@ -17,7 +17,7 @@
 		<!-- /wp:group -->
 
 		<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"grid","columnCount":3}} -->
-		<!-- wp:block {"ref":75899} /-->
+		<!-- wp:pattern {"slug":"latrigg/single-post-card"} /-->
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
