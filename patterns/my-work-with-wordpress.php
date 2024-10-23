@@ -12,12 +12,12 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p>My daily work at Swiss WordPress agency <a href="https://sayhello.ch/" class="ek-link">Say Hello</a> largely involves building websites using <a href="https://permanenttourist.local/wordpress/" class="ek-link">WordPress</a>: developing custom blocks for the <a href="/topic/gutenberg/" class="ek-link">Gutenberg Block Editor</a>, designing sites and page layouts and integrating APIs to pull data from services like <a href="https://www.outdooractive.com/en/author/mark-howells-mead/117238767/" class="ek-link">Outdooractive</a> and <a href="https://www.parks.swiss/en/" class="ek-link">Swiss Parks</a>.</p>
+	<p>My daily work at Swiss WordPress agency <a href="https://sayhello.ch/" class="ek-link">Say Hello</a> largely involves building websites using <a href="/wordpress/" class="ek-link">WordPress</a>: developing custom blocks for the <a href="/topic/gutenberg/" class="ek-link">Gutenberg Block Editor</a>, designing sites and page layouts and integrating APIs to pull data from services like <a href="https://www.outdooractive.com/en/author/mark-howells-mead/117238767/" class="ek-link">Outdooractive</a> and <a href="https://www.parks.swiss/en/" class="ek-link">Swiss Parks</a>.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons -->
 	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"wordpress-blue"} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-wordpress-blue-background-color has-background wp-element-button" href="https://permanenttourist.local/wordpress/">More about my work with WordPress</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-wordpress-blue-background-color has-background wp-element-button" href="/wordpress/">More about my work with WordPress</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

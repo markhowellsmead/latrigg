@@ -24,29 +24,29 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"fontSize":"small"} -->
 					<div class="wp-block-buttons has-custom-font-size has-small-font-size"><!-- wp:button {"backgroundColor":"custom-green","textColor":"white","className":"is-style-fill"} -->
-						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="https://permanenttourist.local/blog/archive/">Blog</a></div>
+						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="/blog/archive/">Blog</a></div>
 						<!-- /wp:button -->
 
 						<!-- wp:button {"backgroundColor":"custom-green","textColor":"white","className":"is-style-fill"} -->
-						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="https://permanenttourist.local/photography/">Photography</a></div>
+						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="/photography/">Photography</a></div>
 						<!-- /wp:button -->
 
 						<!-- wp:button {"backgroundColor":"custom-green","textColor":"white","className":"is-style-fill"} -->
-						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="https://permanenttourist.local/video/">Video</a></div>
+						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="/video/">Video</a></div>
 						<!-- /wp:button -->
 
 						<!-- wp:button {"backgroundColor":"custom-green","textColor":"white","className":"is-style-fill"} -->
-						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="https://permanenttourist.local/hiking/">Hiking and walking</a></div>
+						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="/hiking/">Hiking and walking</a></div>
 						<!-- /wp:button -->
 
 						<!-- wp:button {"backgroundColor":"custom-green","textColor":"white","className":"is-style-fill"} -->
-						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="https://permanenttourist.local/wordpress/">WordPress</a></div>
+						<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-custom-green-background-color has-text-color has-background wp-element-button" href="/wordpress/">WordPress</a></div>
 						<!-- /wp:button -->
 					</div>
 					<!-- /wp:buttons -->
 
 					<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#ffffff91"}},"fontSize":"small"} -->
-					<p class="has-text-align-center has-text-color has-small-font-size" style="color:#ffffff91">Photo: <a href="https://permanenttourist.local/2018/09/etang-de-la-gruere/">Etang de la Gruère</a>, March 2024</p>
+					<p class="has-text-align-center has-text-color has-small-font-size" style="color:#ffffff91">Photo: <a href="/2018/09/etang-de-la-gruere/">Etang de la Gruère</a>, March 2024</p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}}} -->

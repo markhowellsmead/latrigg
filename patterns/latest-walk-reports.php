@@ -34,7 +34,7 @@
 					<!-- /wp:html -->
 
 					<!-- wp:paragraph {"fontSize":"small"} -->
-					<p class="has-small-font-size">Hiking amongst glacial screes <a href="https://permanenttourist.local/2022/09/hiking-amongst-the-glacial-screes/">in September 2023</a></p>
+					<p class="has-small-font-size">Hiking amongst glacial screes <a href="/2022/09/hiking-amongst-the-glacial-screes/">in September 2023</a></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

@@ -19,14 +19,14 @@
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->
-				<p>I've been visiting the Lake District since the 1990s and after <a href="https://permanenttourist.local/2010/08/conquering-catbells/">taking up hiking in 2010</a>, the <em>Wainwrights</em> have become my favourite destination; even trumping the wonderful and breath-taking routes I walk at home in the Swiss Alps.</p>
+				<p>I've been visiting the Lake District since the 1990s and after <a href="/2010/08/conquering-catbells/">taking up hiking in 2010</a>, the <em>Wainwrights</em> have become my favourite destination; even trumping the wonderful and breath-taking routes I walk at home in the Swiss Alps.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:column -->
 
 			<!-- wp:column {"verticalAlignment":"center","width":""} -->
 			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"lightbox":{"enabled":false},"sizeSlug":"large","linkDestination":"custom"} -->
-				<figure class="wp-block-image size-large"><a href="https://permanenttourist.local/2010/08/conquering-catbells/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/20100704_DSC_4827-edited.webp" alt="" class="" /></a>
+				<figure class="wp-block-image size-large"><a href="/2010/08/conquering-catbells/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/20100704_DSC_4827-edited.webp" alt="" class="" /></a>
 					<figcaption class="wp-element-caption">Catbells, 2010</figcaption>
 				</figure>
 				<!-- /wp:image -->
@@ -56,7 +56,7 @@
 
 		<!-- wp:buttons {"align":"wide","layout":{"type":"flex","justifyContent":"center"},"fontSize":"smaller"} -->
 		<div class="wp-block-buttons alignwide has-custom-font-size has-smaller-font-size"><!-- wp:button {"textColor":"white","style":{"color":{"background":"#68804d"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"className":"is-style-with-arrow-right"} -->
-			<div class="wp-block-button is-style-with-arrow-right"><a class="wp-block-button__link has-white-color has-text-color has-background has-link-color wp-element-button" href="https://permanenttourist.local/topic/wainwright-fells/" style="background-color:#68804d">All posts about the Wainwright Fells</a></div>
+			<div class="wp-block-button is-style-with-arrow-right"><a class="wp-block-button__link has-white-color has-text-color has-background has-link-color wp-element-button" href="/topic/wainwright-fells/" style="background-color:#68804d">All posts about the Wainwright Fells</a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->

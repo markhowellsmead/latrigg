@@ -34,26 +34,26 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"fontSize":"smaller"} -->
 			<div class="wp-block-buttons has-custom-font-size has-smaller-font-size"><!-- wp:button {"backgroundColor":"xlight-primary","borderColor":"light-gray","className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="https://permanenttourist.local/photography/">Photography</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="/photography/">Photography</a></div>
 				<!-- /wp:button -->
 
 				<!-- wp:button {"backgroundColor":"xlight-primary","borderColor":"light-gray","className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="https://permanenttourist.local/video/">Video</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="/video/">Video</a></div>
 				<!-- /wp:button -->
 
 				<!-- wp:button {"backgroundColor":"xlight-primary","borderColor":"light-gray","className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="https://permanenttourist.local/blog/archive/">Blog</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="/blog/archive/">Blog</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
 
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"fontSize":"small"} -->
 			<div class="wp-block-buttons has-custom-font-size has-small-font-size"><!-- wp:button {"backgroundColor":"xlight-primary","borderColor":"light-gray","className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="https://permanenttourist.local/hiking/">Hiking and walking</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="/hiking/">Hiking and walking</a></div>
 				<!-- /wp:button -->
 
 				<!-- wp:button {"backgroundColor":"xlight-primary","borderColor":"light-gray","className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="https://permanenttourist.local/wordpress/">WordPress</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-xlight-primary-background-color has-background has-border-color has-light-gray-border-color wp-element-button" href="/wordpress/">WordPress</a></div>
 				<!-- /wp:button -->
 
 				<!-- wp:button {"backgroundColor":"xlight-primary","borderColor":"light-gray","className":"is-style-outline"} -->
