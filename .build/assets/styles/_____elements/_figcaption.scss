@@ -10,12 +10,13 @@
 	font-style: italic;
 
 	&::before {
+		display: inline-block;
 		content: '↑';
 		font-size: 1.2em;
 		opacity: 0.5;
 		margin-right: 0.5ch;
 		filter: grayscale(1) brightness(3);
-		transform: translateY(1px);
+		transform: translateY(1.5px);
 		text-indent: 0;
 		font-style: normal;
 	}
