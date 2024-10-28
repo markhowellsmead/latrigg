@@ -7,12 +7,16 @@
 	padding-left: calc(1rem);
 	padding-right: 1rem;
 	max-width: var(--wp--style--global--content-size);
+	font-style: italic;
 
 	&::before {
 		content: '↑';
 		font-size: 1.2em;
-		opacity: .5;
-		margin-right: .5ch;
-		filter: grayscale(1) brightness(0);
+		opacity: 0.5;
+		margin-right: 0.5ch;
+		filter: grayscale(1) brightness(3);
+		transform: translateY(1px);
+		text-indent: 0;
+		font-style: normal;
 	}
 }
