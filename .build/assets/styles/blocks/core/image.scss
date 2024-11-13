@@ -8,6 +8,10 @@
 
 	figcaption {
 		@extend %figcaption;
+
+		a {
+			display: inline;
+		}
 	}
 
 	.components-resizable-box__container,

@@ -1,8 +1,8 @@
 // import './modules/settings';
-import './_polyfill';
-import './a11y';
-import './link-target';
-import './masthead';
+import './_polyfill.js';
+import './a11y.js';
+import './link-target.js';
+import './masthead.js';
 
 const conditionalLoadScript = (filename, condition) => {
 	if (!!condition) {
