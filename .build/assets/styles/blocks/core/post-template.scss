@@ -1,0 +1,15 @@
+.wp-block-post-template {
+	&.is-style-post-template-latest-explore {
+		.wp-block-cover {
+			@media screen and (max-width: 48.8125em) {
+				min-height: 45vh !important;
+			}
+		}
+
+		.wp-block-columns {
+			@media screen and (max-width: 48.8125em) {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+}
