@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Latest Feature",
+	"slug": "columns-latest-feature",
+	"blockTypes": ["core/columns"],
+	"styles": {
+		"blocks": {
+			"core/cover": {
+				"dimensions": {
+					"minHeight": "75vh"
+				}
+			}
+		}
+	}
+}
