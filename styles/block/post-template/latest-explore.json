@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Latest Explore",
+	"slug": "post-template-latest-explore",
+	"blockTypes": ["core/post-template"],
+	"styles": {
+		"blocks": {
+			"core/cover": {
+				"dimensions": {
+					"minHeight": "75vh",
+					"aspectRatio": "auto"
+				}
+			}
+		}
+	}
+}
