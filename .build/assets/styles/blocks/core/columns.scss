@@ -10,6 +10,14 @@
 	&.is-style-narrow-gap {
 		gap: calc(var(--wp--preset--spacing--medium) / 2);
 	}
+
+	&.is-style-columns-latest-feature {
+		.wp-block-cover {
+			@media screen and (max-width: 48.8125em) {
+				min-height: 45vh !important;
+			}
+		}
+	}
 }
 
 .wp-block-column {
