@@ -15,8 +15,8 @@ class Navigation
 	public function __construct()
 	{
 		$this->menus = [
-			'primary' => _x('Primary', 'Menu navigation label', 'sha'),
-			'mobile' => _x('Mobile', 'Menu navigation label', 'sha'),
+			'primary' => _x('Primary', 'Menu navigation label', 'latrigg'),
+			'mobile' => _x('Mobile', 'Menu navigation label', 'latrigg'),
 		];
 	}
 

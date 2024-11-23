@@ -8,15 +8,10 @@ const blockName = 'sht/archive-title-search';
 
 registerBlockType(blockName, {
 	apiVersion: 2,
-	title: _x('Archive Title (Search)', 'Block title', 'sha'),
+	title: _x('Archive Title (Search)', 'Block title', 'latrigg'),
 	icon,
 	category: 'sht/blocks',
-	keywords: [
-		_x('Bilder', 'Block keyword', 'sha'),
-		'image',
-		'gallery',
-		_x('Impressionen', 'Block keyword', 'sha'),
-	],
+	keywords: [_x('Bilder', 'Block keyword', 'latrigg'), 'image', 'gallery', _x('Impressionen', 'Block keyword', 'latrigg')],
 	supports: {
 		align: ['wide', 'full'],
 		html: false,
