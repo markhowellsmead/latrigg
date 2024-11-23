@@ -8,7 +8,7 @@ const blockName = 'sht/menu-toggle',
 
 registerBlockType(blockName, {
 	apiVersion: 2,
-	title: _x('Menü-Toggle-Schalter', 'Block title', 'sha'),
+	title: _x('Menü-Toggle-Schalter', 'Block title', 'latrigg'),
 	icon,
 	category: 'sht/blocks',
 	keywords: ['navigation', 'toggle'],
@@ -22,15 +22,9 @@ registerBlockType(blockName, {
 
 		return (
 			<div {...blockProps}>
-				<span
-					className={`${classNameBase}__line ${classNameBase}__line--1`}
-				/>
-				<span
-					className={`${classNameBase}__line ${classNameBase}__line--2`}
-				/>
-				<span
-					className={`${classNameBase}__line ${classNameBase}__line--3`}
-				/>
+				<span className={`${classNameBase}__line ${classNameBase}__line--1`} />
+				<span className={`${classNameBase}__line ${classNameBase}__line--2`} />
+				<span className={`${classNameBase}__line ${classNameBase}__line--3`} />
 			</div>
 		);
 	},
@@ -48,15 +42,9 @@ registerBlockType(blockName, {
 
 		return (
 			<button {...blockProps}>
-				<span
-					className={`${classNameBase}__line ${classNameBase}__line--1`}
-				/>
-				<span
-					className={`${classNameBase}__line ${classNameBase}__line--2`}
-				/>
-				<span
-					className={`${classNameBase}__line ${classNameBase}__line--3`}
-				/>
+				<span className={`${classNameBase}__line ${classNameBase}__line--1`} />
+				<span className={`${classNameBase}__line ${classNameBase}__line--2`} />
+				<span className={`${classNameBase}__line ${classNameBase}__line--3`} />
 			</button>
 		);
 	},

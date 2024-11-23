@@ -10,9 +10,9 @@ if (empty($data['entries'] ?? [])) {
 		<section class="b-home-carousel b-home-carousel--noselection">
 			<div class="c-editormessage c-editormessage--noselection">
 				<p>
-					<strong><?php _x('Home page carousel', 'Editor message title', 'sha'); ?></strong>
+					<strong><?php _x('Home page carousel', 'Editor message title', 'latrigg'); ?></strong>
 				</p>
-				<p><?php _x('No entries available 😥', 'Editor message', 'sha'); ?></p>
+				<p><?php _x('No entries available 😥', 'Editor message', 'latrigg'); ?></p>
 			</div>
 		</section>
 	<?php }

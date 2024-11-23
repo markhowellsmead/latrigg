@@ -1,1 +1,1 @@
-export { default as sayhello } from './library/sayhello';
+export { default as sayhello } from './library/sayhello.js';

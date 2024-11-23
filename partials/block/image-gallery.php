@@ -4,7 +4,7 @@ if (empty($images = get_field('images'))) {
 	if ($args['is_context_edit'] ?? false) {
 ?>
 		<section class="wp-block-sht-imagegallery wp-block-sht-imagegallery--empty <?php echo !empty($args['align']) ? ' align' . $args['align'] : ''; ?>">
-			<p class=""><strong><?php echo $args['title']; ?></strong>: <?php _ex('Keine Bilder ausgewählt', 'Editor block message', 'sha'); ?></p>
+			<p class=""><strong><?php echo $args['title']; ?></strong>: <?php _ex('Keine Bilder ausgewählt', 'Editor block message', 'latrigg'); ?></p>
 		</section>
 <?php
 	}
