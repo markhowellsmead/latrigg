@@ -6,11 +6,7 @@
 
 import { Toolbar, Spinner } from '@wordpress/components';
 import { Component, Fragment } from '@wordpress/element';
-import {
-	MediaPlaceholder,
-	BlockControls,
-	MediaReplaceFlow,
-} from '@wordpress/block-editor';
+import { MediaPlaceholder, BlockControls, MediaReplaceFlow } from '@wordpress/block-editor';
 import { _x } from '@wordpress/i18n';
 
 import { getLazySrcs } from '../LazyImage';
@@ -21,24 +17,14 @@ export default class ImageSelectorWithPlaceholder extends Component {
 		this.props = props;
 		this.state = { is_uploading: false };
 
-		const {
-			attributes,
-			imageAttribute,
-			imageExternalURLAttribute,
-			imageFormat,
-			allowURL,
-			accept,
-			allowedTypes,
-			labels,
-		} = this.props;
+		const { attributes, imageAttribute, imageExternalURLAttribute, imageFormat, allowURL, accept, allowedTypes, labels } = this.props;
 
 		this.accept_types = accept || 'image/*';
 		this.allowed_types = allowedTypes || ['image'];
 		this.allow_url = !!allowURL;
 		this.image_attribute_key = imageAttribute || 'image';
 		this.image_format = imageFormat || 'full';
-		this.url_attribute_key =
-			imageExternalURLAttribute || 'imageExternalURL';
+		this.url_attribute_key = imageExternalURLAttribute || 'imageExternalURL';
 		this.labels_object = labels || {};
 
 		this.imageExternalURL_attribute = attributes[this.url_attribute_key];
@@ -115,36 +101,25 @@ export default class ImageSelectorWithPlaceholder extends Component {
 
 		return (
 			<Fragment>
-				{(!!image.id || !!imageExternalURL) &&
-					!this.state.is_uploading && (
-						<BlockControls>
-							<Toolbar>
-								<MediaReplaceFlow
-									name={_x(
-										'Bild ersetzen',
-										'MediaReplaceFlow label',
-										'sha'
-									)}
-									mediaId={image.id}
-									mediaURL={this.imageExternalURL_attribute}
-									accept={this.accept_types}
-									allowedTypes={this.allowed_types}
-									onFilesUpload={this.onPreUpload}
-									onSelect={this.onSelect}
-									onSelectURL={this.onSelectURL}
-								/>
-							</Toolbar>
-						</BlockControls>
-					)}
+				{(!!image.id || !!imageExternalURL) && !this.state.is_uploading && (
+					<BlockControls>
+						<Toolbar>
+							<MediaReplaceFlow
+								name={_x('Bild ersetzen', 'MediaReplaceFlow label', 'latrigg')}
+								mediaId={image.id}
+								mediaURL={this.imageExternalURL_attribute}
+								accept={this.accept_types}
+								allowedTypes={this.allowed_types}
+								onFilesUpload={this.onPreUpload}
+								onSelect={this.onSelect}
+								onSelectURL={this.onSelectURL}
+							/>
+						</Toolbar>
+					</BlockControls>
+				)}
 				{!!this.state.is_uploading && (
 					<Fragment>
-						<p>
-							{_x(
-								'Datei wird hochgeladen... bitte warten Sie...',
-								'Upload message',
-								'sha'
-							)}
-						</p>
+						<p>{_x('Datei wird hochgeladen... bitte warten Sie...', 'Upload message', 'latrigg')}</p>
 						<Spinner />
 					</Fragment>
 				)}

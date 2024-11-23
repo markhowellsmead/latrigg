@@ -116,7 +116,7 @@ class Gutenberg
 		return array_merge($categories, [
 			[
 				'slug'  => 'sht/blocks',
-				'title' => _x('Blöcke von Say Hello', 'Custom block category name', 'sha'),
+				'title' => _x('Blöcke von Say Hello', 'Custom block category name', 'latrigg'),
 			],
 		]);
 	}

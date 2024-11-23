@@ -1,2 +1,2 @@
-import './archive-title-search';
-import './menu-toggle';
+import './archive-title-search/index.js';
+import './menu-toggle/index.js';
