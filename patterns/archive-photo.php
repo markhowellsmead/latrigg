@@ -53,7 +53,7 @@
 					style="padding-right: var(--wp--preset--spacing--small); padding-left: var(--wp--preset--spacing--small)">
 					<!-- wp:column {"width":"70%"} -->
 					<div class="wp-block-column" style="flex-basis: 70%">
-						<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontWeight":"500"}},"fontSize":"regular","fontFamily":"freight-text-pro"} /-->
+						<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontWeight":"500"}},"fontSize":"regular","fontFamily":"primary"} /-->
 					</div>
 					<!-- /wp:column -->
 
