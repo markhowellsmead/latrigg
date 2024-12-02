@@ -131,6 +131,11 @@
 					"slug": "wordpress-blue"
 				},
 				{
+					"color": "rgba(28,45,51,.8)",
+					"name": "Body color",
+					"slug": "body-color"
+				},
+				{
 					"color": "rgb(85,85,85)",
 					"name": "Dark gray",
 					"slug": "dark-gray"
@@ -547,9 +552,8 @@
 		},
 		"color": {
 			"background": "var(--wp--preset--color--white)",
-			"text": "var(--wp--preset--color--dark-gray-80)"
+			"text": "var(--wp--preset--color--body-color)"
 		},
-		"css": "",
 		"elements": {
 			"button": {
 				"color": {
