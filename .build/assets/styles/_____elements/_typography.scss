@@ -15,9 +15,17 @@ acronym {
 
 a,
 button {
-	@include transition(opacity);
+	transition: all .3s;
 	text-decoration-thickness: 1px !important;
-	text-underline-offset: 0.2em;
+	text-underline-offset: 0.125em;
+}
+
+a {
+	text-decoration-style: dotted;
+
+	&:hover {
+		text-decoration-style: solid;
+	}
 }
 
 blockquote {
@@ -38,7 +46,7 @@ cite {
 	display: block;
 }
 
-dd + dt {
+dd+dt {
 	margin-top: var(--wp--preset--spacing--regular);
 }
 
@@ -51,12 +59,6 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
-}
-
-hr {
-	border-style: solid;
-	border-width: 0 0 1px;
-	border-color: var(--wp-block-separator-color);
 }
 
 li {
@@ -83,6 +85,7 @@ ul {
 }
 
 nav {
+
 	li,
 	ul {
 		list-style: none;
@@ -161,12 +164,14 @@ h6 {
 }
 
 @include context-edit {
+
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
+
 		a,
 		a:active,
 		a:hover {

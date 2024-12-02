@@ -96,12 +96,12 @@
 			],
 			"palette": [
 				{
-					"color": "#004ba6",
+					"color": "rgb(95,152,168)",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#0053b7",
+					"color": "rgb(62,100,114)",
 					"name": "Primary dark",
 					"slug": "primary-dark"
 				},
@@ -131,6 +131,11 @@
 					"slug": "wordpress-blue"
 				},
 				{
+					"color": "rgba(28,45,51,.8)",
+					"name": "Body text",
+					"slug": "body-text"
+				},
+				{
 					"color": "rgb(85,85,85)",
 					"name": "Dark gray",
 					"slug": "dark-gray"
@@ -156,7 +161,7 @@
 					"slug": "medlight-gray"
 				},
 				{
-					"color": "#f0f0f0",
+					"color": "#ececec",
 					"name": "Extra-light gray",
 					"slug": "xlight-gray"
 				},
@@ -214,6 +219,16 @@
 					"color": "#2a647e26",
 					"name": "WordPress blue 15%",
 					"slug": "custom-word-press-blue-15"
+				},
+				{
+					"color": "rgba(250,252,252,.82)",
+					"name": "Body background transparency",
+					"slug": "body-background-transparency"
+				},
+				{
+					"color": "rgb(250,252,252)",
+					"name": "Body background",
+					"slug": "body-background"
 				}
 			]
 		},
@@ -285,80 +300,8 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFace": [
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "800",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "900",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						}
-					],
-					"fontFamily": "FixelText, sans-serif",
-					"name": "FixelText",
+					"fontFamily": "freight-text-pro-1, freight-text-pro-2, serif",
+					"name": "Freight Text Pro",
 					"slug": "primary"
 				},
 				{
@@ -374,11 +317,6 @@
 					"fontFamily": "\"Material Icons\"",
 					"name": "Material Icons",
 					"slug": "material-icons"
-				},
-				{
-					"fontFamily": "freight-text-pro-1, freight-text-pro-2, serif",
-					"name": "Freight Text Pro",
-					"slug": "primary"
 				},
 				{
 					"fontFamily": "monospace",
@@ -544,14 +482,20 @@
 					}
 				}
 			},
+			"core/post-title": {
+				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "600"
+				}
+			},
 			"core/quote": {
 				"border": {
-					"color": "var(--wp--preset--color--medlight-gray)",
+					"color": "var(--wp--preset--color--xlight-gray)",
 					"style": "solid",
 					"width": "1px"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--xlight-primary-85)"
+					"background": "var(--wp--preset--color--white)"
 				},
 				"spacing": {
 					"padding": {
@@ -563,8 +507,12 @@
 				}
 			},
 			"core/separator": {
+				"border": {
+					"color": "var(--wp--preset--color--medlight-gray)",
+					"width": "1px"
+				},
 				"color": {
-					"background": "var(--wp--preset--color--dark-gray)"
+					"text": "var(--wp--preset--color--dark-gray)"
 				},
 				"spacing": {
 					"margin": {
@@ -572,10 +520,26 @@
 						"top": "var(--wp--preset--spacing--large)"
 					}
 				},
+				"typography": {
+					"fontSize": "3em",
+					"letterSpacing": "1em"
+				},
 				"variations": {
 					"dots": {
 						"color": {
-							"background": "var(--wp--preset--color--dark-gray)"
+							"text": "currentColor"
+						},
+						"spacing": {
+							"padding": {
+								"left": "0",
+								"right": "0"
+							}
+						},
+						"typography": {
+							"fontFamily": "inherit",
+							"fontSize": "2em",
+							"letterSpacing": ".5em",
+							"textAlign": "center"
 						}
 					}
 				}
@@ -603,10 +567,9 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--white)",
-			"text": "var(--wp--preset--color--dark-gray-80)"
+			"background": "var(--wp--preset--color--body-background)",
+			"text": "var(--wp--preset--color--body-text)"
 		},
-		"css": "",
 		"elements": {
 			"button": {
 				"color": {
@@ -633,7 +596,8 @@
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--huge)"
+					"fontSize": "var(--wp--preset--font-size--huge)",
+					"fontStyle": "normal"
 				}
 			},
 			"h2": {
@@ -664,7 +628,7 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
-					"fontStyle": "normal",
+					"fontStyle": "italic",
 					"fontWeight": "500",
 					"lineHeight": "1.2"
 				}
@@ -703,5 +667,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.6/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
 }
