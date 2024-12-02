@@ -3,7 +3,7 @@
 	"version": 3,
 	"slug": "lead",
 	"title": "Lead",
-	"blockTypes": ["core/post-excerpt"],
+	"blockTypes": ["core/paragraph"],
 	"styles": {
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--large)"
