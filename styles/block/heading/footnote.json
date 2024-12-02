@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"slug": "footnote",
+	"title": "Footnote",
+	"blockTypes": ["core/heading"],
+	"styles": {
+		"typography": {
+			"fontWeight": "600"
+		}
+	}
+}

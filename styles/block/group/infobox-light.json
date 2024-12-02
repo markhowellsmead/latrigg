@@ -6,13 +6,13 @@
 	"blockTypes": ["core/group"],
 	"styles": {
 		"border": {
-			"color": "red",
+			"color": "var(--wp--preset--color--xlight-gray)",
 			"style": "solid",
 			"radius": "4px",
 			"width": "2px"
 		},
 		"color": {
-			"background": "var:preset|color|xlight-primary"
+			"background": "var:preset|color|white"
 		},
 		"spacing": {
 			"padding": {
