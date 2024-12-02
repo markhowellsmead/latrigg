@@ -3,9 +3,8 @@ body.single-post :not(.wp-block-heading):not(.wp-block-separator) + .wp-block-he
 }
 
 .wp-block-heading:has(+ .wp-block-footnotes) {
-  font-size: var(--wp--preset--font-size--regular);
   margin-block-start: 1em;
   padding-block-start: 1em;
   border-top: 1px solid var(--wp--preset--color--medlight-gray);
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2hlYWRpbmcuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL2hlYWRpbmcuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2hlYWRpbmcuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQSIsImZpbGUiOiJibG9ja3MvY29yZS9oZWFkaW5nLmNzcyJ9 */

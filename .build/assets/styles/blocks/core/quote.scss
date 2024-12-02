@@ -8,7 +8,7 @@
 
 	&::after {
 		pointer-events: none;
-		color: var(--wp--preset--color--light-gray);
+		color: var(--wp--preset--color--body-text);
 		content: "”";
 		font-size: clamp(5.625rem, 4.305rem + 5.634vw, 9.375rem);
 		line-height: 1;
@@ -16,10 +16,11 @@
 		position: absolute;
 		right: .053em;
 		top: -.16em;
-		text-shadow: -3px -3px 0 #fff,
-			3px -3px 0 #fff,
-			-3px 3px 0 #fff,
-			3px 3px 0 #fff;
+		opacity: .1;
+		// text-shadow: -3px -3px 0 #fff,
+		// 	3px -3px 0 #fff,
+		// 	-3px 3px 0 #fff,
+		// 	3px 3px 0 #fff;
 	}
 
 	cite {

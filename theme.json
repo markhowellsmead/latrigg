@@ -96,12 +96,12 @@
 			],
 			"palette": [
 				{
-					"color": "#004ba6",
+					"color": "rgb(95,152,168)",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#0053b7",
+					"color": "rgb(62,100,114)",
 					"name": "Primary dark",
 					"slug": "primary-dark"
 				},
@@ -132,8 +132,8 @@
 				},
 				{
 					"color": "rgba(28,45,51,.8)",
-					"name": "Body color",
-					"slug": "body-color"
+					"name": "Body text",
+					"slug": "body-text"
 				},
 				{
 					"color": "rgb(85,85,85)",
@@ -161,7 +161,7 @@
 					"slug": "medlight-gray"
 				},
 				{
-					"color": "#f0f0f0",
+					"color": "#ececec",
 					"name": "Extra-light gray",
 					"slug": "xlight-gray"
 				},
@@ -219,6 +219,16 @@
 					"color": "#2a647e26",
 					"name": "WordPress blue 15%",
 					"slug": "custom-word-press-blue-15"
+				},
+				{
+					"color": "rgba(250,252,252,.82)",
+					"name": "Body background transparency",
+					"slug": "body-background-transparency"
+				},
+				{
+					"color": "rgb(250,252,252)",
+					"name": "Body background",
+					"slug": "body-background"
 				}
 			]
 		},
@@ -447,7 +457,7 @@
 			},
 			"core/footnotes": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--smaller)"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"core/media-text": {
@@ -472,14 +482,20 @@
 					}
 				}
 			},
+			"core/post-title": {
+				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "600"
+				}
+			},
 			"core/quote": {
 				"border": {
-					"color": "var(--wp--preset--color--medlight-gray)",
+					"color": "var(--wp--preset--color--xlight-gray)",
 					"style": "solid",
 					"width": "1px"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--xlight-primary-85)"
+					"background": "var(--wp--preset--color--white)"
 				},
 				"spacing": {
 					"padding": {
@@ -551,8 +567,8 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--white)",
-			"text": "var(--wp--preset--color--body-color)"
+			"background": "var(--wp--preset--color--body-background)",
+			"text": "var(--wp--preset--color--body-text)"
 		},
 		"elements": {
 			"button": {
@@ -580,7 +596,8 @@
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--huge)"
+					"fontSize": "var(--wp--preset--font-size--huge)",
+					"fontStyle": "normal"
 				}
 			},
 			"h2": {
@@ -611,7 +628,7 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
-					"fontStyle": "normal",
+					"fontStyle": "italic",
 					"fontWeight": "500",
 					"lineHeight": "1.2"
 				}

@@ -3,7 +3,6 @@ body.single-post :not(.wp-block-heading):not(.wp-block-separator)+.wp-block-head
 }
 
 .wp-block-heading:has(+.wp-block-footnotes) {
-	font-size: var(--wp--preset--font-size--regular);
 	margin-block-start: 1em;
 	padding-block-start: 1em;
 	border-top: 1px solid var(--wp--preset--color--medlight-gray);

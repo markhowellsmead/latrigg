@@ -15,9 +15,17 @@ acronym {
 
 a,
 button {
-	@include transition(opacity);
+	transition: all .3s;
 	text-decoration-thickness: 1px !important;
-	text-underline-offset: 0.2em;
+	text-underline-offset: 0.125em;
+}
+
+a {
+	text-decoration-style: dotted;
+
+	&:hover {
+		text-decoration-style: solid;
+	}
 }
 
 blockquote {
