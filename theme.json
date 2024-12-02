@@ -447,7 +447,7 @@
 			},
 			"core/footnotes": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--regular)"
+					"fontSize": "var(--wp--preset--font-size--smaller)"
 				}
 			},
 			"core/media-text": {
