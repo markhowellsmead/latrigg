@@ -285,80 +285,8 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFace": [
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "800",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "900",
-							"src": ["file:./assets/fonts/FixelVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "500",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "600",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						},
-						{
-							"fontFamily": "FixelText",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "700",
-							"src": ["file:./assets/fonts/FixelItalicVariable.woff2"]
-						}
-					],
-					"fontFamily": "FixelText, sans-serif",
-					"name": "FixelText",
+					"fontFamily": "freight-text-pro-1, freight-text-pro-2, serif",
+					"name": "Freight Text Pro",
 					"slug": "primary"
 				},
 				{
@@ -374,11 +302,6 @@
 					"fontFamily": "\"Material Icons\"",
 					"name": "Material Icons",
 					"slug": "material-icons"
-				},
-				{
-					"fontFamily": "freight-text-pro-1, freight-text-pro-2, serif",
-					"name": "Freight Text Pro",
-					"slug": "primary"
 				},
 				{
 					"fontFamily": "monospace",
@@ -723,5 +646,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.6/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
 }
