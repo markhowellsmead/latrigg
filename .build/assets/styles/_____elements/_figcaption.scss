@@ -1,5 +1,6 @@
 figcaption {
 	text-align: left;
+	text-wrap-style: auto;
 	text-indent: -1.5rem;
 	margin-left: 1ch;
 	margin-top: var(--stack-size); // override core
@@ -8,6 +9,7 @@ figcaption {
 	padding-right: 1.5rem;
 	max-width: var(--wp--style--global--content-size);
 	font-style: italic;
+	margin-inline: auto;
 
 	&::before {
 		display: inline-block;
@@ -23,5 +25,11 @@ figcaption {
 
 	a {
 		display: inline;
+	}
+}
+
+@container mediablock (min-width: 30rem) {
+	figcaption {
+		text-wrap-style: balance;
 	}
 }

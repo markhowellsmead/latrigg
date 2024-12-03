@@ -1,6 +1,7 @@
 @import '../../_____elements/_figcaption.scss';
 
 .wp-block-embed {
+	container-name: mediablock;
 	iframe {
 		width: 100%;
 	}
