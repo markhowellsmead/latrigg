@@ -32,6 +32,16 @@
 				margin-top: 0;
 			}
 		}
+
+		&__submenu-container li {
+			padding: var(--wp--preset--spacing--xxsmall) 0;
+			&:first-child {
+				padding-block-start: var(--wp--preset--spacing--small);
+			}
+			&:last-child {
+				padding-block-end: var(--wp--preset--spacing--small);
+			}
+		}
 	}
 
 	&-item {
