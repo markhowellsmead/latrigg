@@ -1,11 +1,11 @@
-%figcaption {
+figcaption {
 	text-align: left;
-	text-indent: -1.8ch;
+	text-indent: -1.5rem;
 	margin-left: 1ch;
 	margin-top: var(--stack-size); // override core
 	margin-bottom: 0; // override core
-	padding-left: calc(1rem);
-	padding-right: 1rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	max-width: var(--wp--style--global--content-size);
 	font-style: italic;
 
@@ -19,5 +19,9 @@
 		transform: translateY(1.5px);
 		text-indent: 0;
 		font-style: normal;
+	}
+
+	a {
+		display: inline;
 	}
 }
