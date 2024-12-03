@@ -5,6 +5,8 @@
 	@extend .h-stack--small;
 	text-align: center;
 	margin-bottom: 0;
+	container-type: inline-size;
+	container-name: mediablock;
 
 	.components-resizable-box__container,
 	img {
