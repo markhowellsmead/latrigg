@@ -2,7 +2,12 @@
 
 .wp-block-embed {
 	container-name: mediablock;
+
 	iframe {
 		width: 100%;
+	}
+
+	figcaption a {
+		display: inline;
 	}
 }

@@ -3,4 +3,8 @@
 .wp-block-video {
 	@extend .h-stack--small;
 	container-name: mediablock;
+
+	figcaption a {
+		display: inline;
+	}
 }
