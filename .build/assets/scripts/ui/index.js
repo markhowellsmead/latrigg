@@ -1,5 +1,6 @@
 // import './modules/settings';
 import './a11y.js';
+import './lazyload.js';
 import './link-target.js';
 import './masthead.js';
 
