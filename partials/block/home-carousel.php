@@ -5,7 +5,7 @@ if (empty($data ?? [])) {
 }
 
 if (empty($data['entries'] ?? [])) {
-	if (pt_must_use_get_instance()->Package->Gutenberg->isContextEdit()) {
+	if (pt_must_use_get_instance()->Package_Gutenberg->isContextEdit()) {
 ?>
 		<section class="b-home-carousel b-home-carousel--noselection">
 			<div class="c-editormessage c-editormessage--noselection">
