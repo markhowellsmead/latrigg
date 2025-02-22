@@ -4,7 +4,7 @@ $alignment = $data['attributes']['alignment'];
 $title = get_the_title();
 $excerpt = get_the_excerpt();
 
-if (pt_must_use_get_instance()->Package->Gutenberg->isContextEdit()) {
+if (pt_must_use_get_instance()->Package_Gutenberg->isContextEdit()) {
 	$title = $data['attributes']['post_title'];
 	$excerpt = $data['attributes']['post_excerpt'];
 }
@@ -16,7 +16,7 @@ if (pt_must_use_get_instance()->Package->Gutenberg->isContextEdit()) {
 		</header>
 		<?php if (!empty($excerpt)) { ?>
 			<div class="wp-block-sht-post-header__excerpt"><?php echo $excerpt; ?></div>
-		<?php } elseif (pt_must_use_get_instance()->Package->Gutenberg->isContextEdit()) { ?>
+		<?php } elseif (pt_must_use_get_instance()->Package_Gutenberg->isContextEdit()) { ?>
 			<mark class="wp-block-sht-post-header__excerptempty"><?php _ex('Add an excerpt using the global "Excerpt" field. (Optional.)', 'Helptext', 'picard'); ?></mark>
 		<?php } ?>
 	</div>
