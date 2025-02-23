@@ -235,6 +235,16 @@
 		"dimensions": {
 			"aspectRatios": [
 				{
+					"name": "Classic - 5:4",
+					"ratio": "5/4",
+					"slug": "panorama-5-4"
+				},
+				{
+					"name": "Classic - 4:5",
+					"ratio": "4/5",
+					"slug": "panorama-4-5"
+				},
+				{
 					"name": "Panorama - 2:1",
 					"ratio": "2/1",
 					"slug": "panorama-2-1"
