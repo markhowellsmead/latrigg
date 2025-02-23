@@ -89,6 +89,11 @@
 					"slug": "black-bottom-edge"
 				},
 				{
+					"gradient": "linear-gradient(to bottom, transparent, transparent 50%, black 100%)",
+					"name": "Bigger black bottom edge",
+					"slug": "bigger-black-bottom-edge"
+				},
+				{
 					"gradient": "linear-gradient(135deg, transparent, #333333 0%, #000000 100%)",
 					"name": "Dark grey gradient",
 					"slug": "dark-grey-gradient"
@@ -573,6 +578,12 @@
 					"color": "var(--wp--preset--color--light-gray)",
 					"style": "solid",
 					"width": "1px"
+				}
+			},
+			"sht/page-teaser-cover": {
+				"color": {
+					"gradient": "var(--wp--preset--gradient--bigger-black-bottom-edge)",
+					"text": "var(--wp--preset--color--white)"
 				}
 			}
 		},
