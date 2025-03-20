@@ -8,7 +8,9 @@
 		min-height: calc((100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular)) !important;
 
 		.admin-bar & {
-			min-height: calc((100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)) !important;
+			min-height: calc(
+				(100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)
+			) !important;
 		}
 	}
 
@@ -21,16 +23,6 @@
 	&.has-custom-content-position {
 		.wp-block-cover__inner-container {
 			width: 100% !important;
-
-			.wp-block-group {
-				max-width: var(--wp--style--global--wide-size);
-				margin-left: auto;
-				margin-right: auto;
-
-				>* {
-					max-width: none;
-				}
-			}
 		}
 	}
 
@@ -39,6 +31,6 @@
 	}
 }
 
-.wp-block-post-content>.wp-block-cover.alignfull:first-child {
+.wp-block-post-content > .wp-block-cover.alignfull:first-child {
 	margin-top: calc(var(--main--offset) * -1 + 1px);
 }

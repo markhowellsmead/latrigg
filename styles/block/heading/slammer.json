@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"slug": "slammer",
+	"title": "Slammer",
+	"blockTypes": ["core/heading"],
+	"styles": {
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--slammer)",
+			"fontStyle": "normal",
+			"fontWeight": "900"
+		}
+	}
+}

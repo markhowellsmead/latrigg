@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"slug": "teaser-lead",
+	"title": "Teaser lead",
+	"blockTypes": ["core/paragraph"],
+	"styles": {
+		"css": "p.is-style-teaser-lead {opacity:.2;text-wrap-style: balance}",
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--medium)"
+		}
+	}
+}

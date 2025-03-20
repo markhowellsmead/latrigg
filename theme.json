@@ -94,6 +94,11 @@
 					"slug": "bigger-black-bottom-edge"
 				},
 				{
+					"gradient": "linear-gradient(180deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 50%,rgb(0,0,0) 100%)",
+					"name": "Shadow top and bottom",
+					"slug": "shadow-top-and-bottom"
+				},
+				{
 					"gradient": "linear-gradient(135deg, transparent, #333333 0%, #000000 100%)",
 					"name": "Dark grey gradient",
 					"slug": "dark-grey-gradient"
@@ -408,6 +413,15 @@
 					"name": "Huge",
 					"size": "40px",
 					"slug": "huge"
+				},
+				{
+					"fluid": {
+						"max": "4rem",
+						"min": "3rem"
+					},
+					"name": "Slammer",
+					"size": "64",
+					"slug": "slammer"
 				}
 			]
 		},
