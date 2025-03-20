@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"slug": "cover-teaser",
+	"title": "Teaser",
+	"blockTypes": ["core/group"],
+	"styles": {
+		"dimensions": {
+			"contentSize": "35rem"
+		},
+		"elements": {
+			"button": {
+				"typography": {
+					"fontSize": "var:preset|font-size|regular"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var:preset|spacing|xsmall",
+						"right": "var:preset|spacing|regular",
+						"bottom": "var:preset|spacing|xsmall",
+						"left": "var:preset|spacing|regular"
+					}
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontSize": "var:preset|font-size|slammer",
+					"fontStyle": "normal",
+					"fontWeight": "900",
+					"lineHeight": "1"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "var:preset|spacing|medium"
+		}
+	}
+}

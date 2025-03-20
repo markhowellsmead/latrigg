@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"slug": "subline",
+	"title": "Subline",
+	"blockTypes": ["core/paragraph"],
+	"styles": {
+		"color": {
+			"text": "var(--wp--preset--color--xlight-gray)"
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--regular)"
+		}
+	}
+}
