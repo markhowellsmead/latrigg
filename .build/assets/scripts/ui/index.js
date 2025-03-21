@@ -16,3 +16,4 @@ const conditionalLoadScript = (filename, condition) => {
 conditionalLoadScript('fancybox', true);
 conditionalLoadScript('svh', !CSS.supports || !CSS.supports('height', '1svh'));
 conditionalLoadScript('aria-toggler', !!document.querySelectorAll('[aria-controls]:not([data-standalone-controller])').length);
+conditionalLoadScript('cover', document.querySelectorAll('.wp-block-cover').length);
