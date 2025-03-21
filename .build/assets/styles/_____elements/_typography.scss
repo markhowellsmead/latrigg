@@ -15,7 +15,7 @@ acronym {
 
 a,
 button {
-	transition: all .3s;
+	transition: all 0.3s;
 	text-decoration-thickness: 1px !important;
 	text-underline-offset: 0.125em;
 }
@@ -46,7 +46,7 @@ cite {
 	display: block;
 }
 
-dd+dt {
+dd + dt {
 	margin-top: var(--wp--preset--spacing--regular);
 }
 
@@ -85,7 +85,6 @@ ul {
 }
 
 nav {
-
 	li,
 	ul {
 		list-style: none;
@@ -122,6 +121,12 @@ sup {
 
 sup {
 	top: -0.5em;
+
+	&.fn {
+		margin-left: 2px;
+		font-weight: 900;
+		font-size: 0.8em;
+	}
 }
 
 sub {
@@ -164,14 +169,12 @@ h6 {
 }
 
 @include context-edit {
-
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
-
 		a,
 		a:active,
 		a:hover {
