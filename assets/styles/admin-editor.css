@@ -1279,11 +1279,11 @@ body {
 }
 
 @media (scripting: enabled) {
-  [loading=lazy] {
+  img[loading=lazy] {
     opacity: 0;
     transition: opacity 1s;
   }
-  [loading=lazy].is--loaded {
+  img[loading=lazy].is--loaded {
     opacity: 1;
   }
 }
