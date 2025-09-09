@@ -1,5 +1,5 @@
 import { _x, __ } from '@wordpress/i18n';
-import { PluginDocumentSettingPanel } from '@wordpress/components';
+import { PluginDocumentSettingPanel } from '@wordpress/editor';
 import { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
 import { useSelect, useDispatch } from '@wordpress/data';
 import { registerPlugin } from '@wordpress/plugins';
