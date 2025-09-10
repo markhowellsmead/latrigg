@@ -82,6 +82,13 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"duotone": [
+				{
+					"colors": ["#0073aa", "#ffffff"],
+					"name": "WordPress blue",
+					"slug": "wordpress-blue"
+				}
+			],
 			"gradients": [
 				{
 					"gradient": "linear-gradient(to bottom, transparent, transparent 65%, black 100%)",

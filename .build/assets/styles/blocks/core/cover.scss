@@ -4,13 +4,19 @@
 	border-radius: var(--image-border-radius);
 	overflow: hidden;
 
+	&:not(.has-aspect-ratio)[style*='min-height:90vh'] {
+		min-height: calc((90 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular)) !important;
+
+		.admin-bar & {
+			min-height: calc((90 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)) !important;
+		}
+	}
+
 	&:not(.has-aspect-ratio)[style*='min-height:100vh'] {
 		min-height: calc((100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular)) !important;
 
 		.admin-bar & {
-			min-height: calc(
-				(100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)
-			) !important;
+			min-height: calc((100 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular) - var(--wp-admin--admin-bar--height)) !important;
 		}
 	}
 
@@ -31,6 +37,6 @@
 	}
 }
 
-.wp-block-post-content > .wp-block-cover.alignfull:first-child {
+.wp-block-post-content>.wp-block-cover.alignfull:first-child {
 	margin-top: calc(var(--main--offset) * -1 + 1px);
 }
