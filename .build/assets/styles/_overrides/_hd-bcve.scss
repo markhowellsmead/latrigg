@@ -1,5 +1,7 @@
 @include context-view {
-	body .hd-bcve-wrapper .play-button {
+
+	body .hd-bcve-wrapper .play-button,
+	body .shp-video-play-button {
 		--hd-play-button-size: 64px;
 		padding: 1rem;
 		border-radius: 50%;
@@ -17,15 +19,19 @@
 		}
 	}
 
-	body .hd-bcve-wrapper:hover .play-button {
+
+	body .hd-bcve-wrapper:hover .play-button,
+	body .shp-video-play-button-wrapper:hover .shp-video-play-button {
 		opacity: 1;
 	}
 
-	body .hd-bcve-wrapper:hover .play-button:hover {
+	body .hd-bcve-wrapper:hover .play-button:hover,
+	body .shp-video-play-button-wrapper:hover .shp-video-play-button:hover {
 		transform: translate(-50%, -50%) scale(1.1);
 	}
 
-	body .hd-bcve-wrapper:hover .play-button:after {
+	body .hd-bcve-wrapper:hover .play-button:after,
+	body .shp-video-play-button-wrapper:hover .shp-video-play-button:after {
 		--hd-play-button-opacity: 1;
 	}
 }
