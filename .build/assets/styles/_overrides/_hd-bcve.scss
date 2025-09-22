@@ -2,13 +2,14 @@
 
 	body .hd-bcve-wrapper .play-button,
 	body .shp-video-play-button {
-		--hd-play-button-size: 64px;
+		--hd-play-button-size: clamp(2rem, 1.714rem + 1.429vw, 3rem);
+		--hd-play-button-background-color: rgba(0, 0, 0, 0.5);
 		padding: 1rem;
 		border-radius: 50%;
 		box-sizing: content-box;
-		background-color: rgba(0, 0, 0, .5) !important;
 		transform-origin: center;
 		transition: transform .3s;
+		background-color: var(--hd-play-button-background-color) !important;
 
 		&::after {
 			--hd-play-button-opacity: 1;
