@@ -40,3 +40,9 @@
 .wp-block-post-content>.wp-block-cover.alignfull:first-child {
 	margin-top: calc(var(--main--offset) * -1 + 1px);
 }
+
+@media screen and (max-width:89.9375em) {
+	.wp-block-cover.is-style-cover-page-header {
+		min-height: 50vh !important;
+	}
+}
