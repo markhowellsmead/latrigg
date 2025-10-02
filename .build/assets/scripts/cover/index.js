@@ -11,14 +11,17 @@ const blocks = document.querySelectorAll('.wp-block-cover[style*="min-height"]')
 if (blocks.length) {
 	blocks.forEach((block) => {
 		const minHeight = block.style.minHeight;
-		if (minHeight.indexOf('vh') !== -1 || minHeight.indexOf('svh') !== -1) {
+		if (minHeight && (minHeight?.indexOf('vh') !== -1 || minHeight?.indexOf('svh') !== -1)) {
 			block.dataset.minHeightWas = minHeight;
 		}
 	});
 
 	const doResize = () => {
 		blocks.forEach((block) => {
-			if (block.dataset.minHeightWas.indexOf('vh') !== -1 || block.dataset.minHeightWas.indexOf('svh') !== -1) {
+			if (
+				block.dataset.minHeightWas &&
+				(block.dataset.minHeightWas.indexOf('vh') !== -1 || block.dataset.minHeightWas.indexOf('svh') !== -1)
+			) {
 				if (window.innerHeight < 650) {
 					block.style.minHeight = '460px';
 				} else {
