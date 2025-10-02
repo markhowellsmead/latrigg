@@ -8,6 +8,10 @@ body {
 	--wp--preset--font-size--rem-base: #{$rem-font-size};
 }
 
+p:empty {
+	display: none;
+}
+
 abbr,
 acronym {
 	cursor: help;
@@ -46,7 +50,7 @@ cite {
 	display: block;
 }
 
-dd + dt {
+dd+dt {
 	margin-top: var(--wp--preset--spacing--regular);
 }
 
@@ -85,6 +89,7 @@ ul {
 }
 
 nav {
+
 	li,
 	ul {
 		list-style: none;
@@ -169,12 +174,14 @@ h6 {
 }
 
 @include context-edit {
+
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
+
 		a,
 		a:active,
 		a:hover {
