@@ -42,7 +42,7 @@
 		<!-- wp:query-no-results {"align":"wide"} -->
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group"><!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results."} -->
-			<p class="has-text-align-center"><strong>Sorry, but there aren't any entries for this selection at the moment.</strong><br>If you'd like me to add some, then feel free to <a href="mailto:mark@permanenttourist.test">get in touch</a>.</p>
+			<p class="has-text-align-center"><strong>Sorry, but there aren't any entries for this selection at the moment.</strong><br>If you'd like me to add some, then feel free to <a href="mailto:mark@permanenttourist.ch">get in touch</a>.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"align":"center"} -->
