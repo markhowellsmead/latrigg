@@ -6,9 +6,8 @@
   display: block;
   font-size: var(--wp--preset--font-size--regular);
   font-family: var(--wp--preset--font-family--primary);
-  font-weight: 500;
-  color: var(--wp--preset--color--gray);
+  opacity: 0.8;
   letter-spacing: 0;
   margin-bottom: var(--wp--preset--spacing--xsmall);
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3F1ZXJ5LXRpdGxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0M7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoiYmxvY2tzL2NvcmUvcXVlcnktdGl0bGUuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3F1ZXJ5LXRpdGxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0M7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL3F1ZXJ5LXRpdGxlLmNzcyJ9 */
