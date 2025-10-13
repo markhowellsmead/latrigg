@@ -21,7 +21,8 @@
 		--main--offset: 2px;
 	}
 
-	body.category-hiking-and-walking & {
+	body.category &,
+	body.tag & {
 		--main--offset: 2px;
 	}
 

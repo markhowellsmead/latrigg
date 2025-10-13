@@ -682,6 +682,7 @@
 			"background": "var(--wp--preset--color--body-background)",
 			"text": "var(--wp--preset--color--body-text)"
 		},
+		"css": "@media screen and (min-width:1920px){\n    .post-template-single-image-left-text-right .c-main > .wp-block-columns.alignwide {\n        --wp--style--global--wide-size: 100rem;\n    }\n}",
 		"elements": {
 			"button": {
 				"color": {
