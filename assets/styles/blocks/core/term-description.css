@@ -1,7 +1,10 @@
+.wp-block-term-description {
+  text-wrap-style: balance;
+}
 .wp-block-term-description > * {
   margin: 0;
 }
 .wp-block-term-description > * + * {
   margin-top: 1em;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3Rlcm0tZGVzY3JpcHRpb24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQztFQUNDOztBQUNBO0VBQ0MiLCJmaWxlIjoiYmxvY2tzL2NvcmUvdGVybS1kZXNjcmlwdGlvbi5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3Rlcm0tZGVzY3JpcHRpb24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVDOztBQUVBO0VBQ0M7O0FBRUE7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS90ZXJtLWRlc2NyaXB0aW9uLmNzcyJ9 */
