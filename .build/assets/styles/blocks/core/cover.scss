@@ -41,8 +41,22 @@
 	margin-top: calc(var(--main--offset) * -1 + 1px);
 }
 
-@media screen and (max-width:89.9375em) {
-	.wp-block-cover.is-style-cover-page-header {
+.wp-block-cover.is-style-cover-page-header,
+.wp-block-cover.is-style-cover-post-header {
+	min-height: 45vh !important;
+
+	.wp-block-cover__background {
+		opacity: .65;
+		background: var(--wp--preset--gradient--shadow-top-and-bottom);
+	}
+
+	@media screen and (max-width:89.9375em) {
 		min-height: 75vh !important;
+	}
+}
+
+.wp-block-cover.is-style-cover-post-header {
+	.wp-block-cover__background {
+		opacity: .5 !important;
 	}
 }
