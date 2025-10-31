@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Video Feature",
+	"slug": "columns-video-feature",
+	"blockTypes": ["core/columns"],
+	"styles": {
+		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--large)"
+				}
+			}
+		},
+		"border": {
+			"radius": "inherit"
+		}
+	}
+}
