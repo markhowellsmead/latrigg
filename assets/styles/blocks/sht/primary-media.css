@@ -41,4 +41,12 @@ body.single-photo .wp-block-sht-primary-media img {
 .wp-block-group:has(> .wp-block-sht-primary-media:empty) {
   display: none;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9zaHQvcHJpbWFyeS1tZWRpYS5zY3NzIiwiX19fX19fX3Rvb2xzL21peGlucy9fZmxvb2Quc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJRTtFQUNDO0VBQ0E7O0FBSUY7RUFDQzs7QUFFQTtFQUNDO0VBQ0E7O0FBRUE7RUFDQztFQ2pCSDtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RURjRzs7QUFLSDtFQUNDO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUlGO0VDbENBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFRCtCQztFQUNBOzs7QUFJRjtFQUNDIiwiZmlsZSI6ImJsb2Nrcy9zaHQvcHJpbWFyeS1tZWRpYS5jc3MifQ== */
+
+@media screen and (min-height: 67.5em) {
+  body.single-post.post-template-single-image-left-text-right .wp-block-sht-primary-media {
+    position: sticky;
+    top: 50%;
+    transform: translateY(calc(-50% + var(--masthead--height) / 2));
+  }
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9zaHQvcHJpbWFyeS1tZWRpYS5zY3NzIiwiX19fX19fX3Rvb2xzL21peGlucy9fZmxvb2Quc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJRTtFQUNDO0VBQ0E7O0FBSUY7RUFDQzs7QUFFQTtFQUNDO0VBQ0E7O0FBRUE7RUFDQztFQ2pCSDtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RURjRzs7QUFLSDtFQUNDO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUlGO0VDbENBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFRCtCQztFQUNBOzs7QUFJRjtFQUNDOzs7QUFHRDtFQUVFO0lBQ0M7SUFDQTtJQUNBIiwiZmlsZSI6ImJsb2Nrcy9zaHQvcHJpbWFyeS1tZWRpYS5jc3MifQ== */
