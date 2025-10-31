@@ -44,12 +44,13 @@
 	display: none;
 }
 
-@media screen and (min-height: 67.5em) {
-	.wp-block-sht-primary-media {
-		body.single-post.post-template-single-image-left-text-right & {
-			position: sticky;
-			top: 50%;
-			transform: translateY(calc(-50% + var(--masthead--height) / 2));
-		}
-	}
-}
+// CHECK THIS WITH VARIOUS IMAGE AND BLOG POST CONTENT HEIGHTS
+// @media screen and (min-height: 67.5em) {
+// 	.wp-block-sht-primary-media {
+// 		body.single-post.post-template-single-image-left-text-right & {
+// 			position: sticky;
+// 			top: 50%;
+// 			transform: translateY(calc(-50% + var(--masthead--height) / 2));
+// 		}
+// 	}
+// }
