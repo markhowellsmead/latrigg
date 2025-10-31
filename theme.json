@@ -557,7 +557,7 @@
 			"core/post-title": {
 				"typography": {
 					"fontStyle": "normal",
-					"fontWeight": "600"
+					"fontWeight": "800"
 				}
 			},
 			"core/quote": {
@@ -677,14 +677,14 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--huge)",
 					"fontStyle": "normal",
-					"fontWeight": "500"
+					"fontWeight": "800"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--xlarge)",
 					"fontStyle": "italic",
-					"fontWeight": "500"
+					"fontWeight": "600"
 				}
 			},
 			"h3": {
