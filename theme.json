@@ -396,7 +396,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1rem",
+						"max": "1.078125rem",
 						"min": "0.9375rem"
 					},
 					"name": "Smaller",
@@ -405,7 +405,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1.125rem",
+						"max": "1.15rem",
 						"min": "1rem"
 					},
 					"name": "Regular",
@@ -414,7 +414,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1.25rem",
+						"max": "1.4375rem",
 						"min": "1.125rem"
 					},
 					"name": "Medium",
@@ -423,7 +423,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1.5rem",
+						"max": "1.7rem",
 						"min": "1.3125rem"
 					},
 					"name": "Large",
@@ -432,7 +432,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1.75rem",
+						"max": "1.95rem",
 						"min": "1.5rem"
 					},
 					"name": "Extra large",
@@ -441,7 +441,7 @@
 				},
 				{
 					"fluid": {
-						"max": "2rem",
+						"max": "2.275rem",
 						"min": "1.75rem"
 					},
 					"name": "Extra extra large",
@@ -450,7 +450,7 @@
 				},
 				{
 					"fluid": {
-						"max": "2.5rem",
+						"max": "2.6rem",
 						"min": "2rem"
 					},
 					"name": "Huge",
@@ -459,7 +459,7 @@
 				},
 				{
 					"fluid": {
-						"max": "4rem",
+						"max": "3.9rem",
 						"min": "3rem"
 					},
 					"name": "Slammer",
