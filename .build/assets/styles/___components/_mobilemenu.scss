@@ -14,11 +14,11 @@
 		transition: opacity 300ms ease;
 		height: calc(var(--svh) * 100);
 		overflow: auto;
-		backdrop-filter: blur(0.5rem);
+		backdrop-filter: blur(var(--wp--preset--blur--regular));
 		transition: all 0.6s ease;
-		background: rgba(255, 255, 255, 0.95);
+		background: var(--wp--preset--color--body-background-transparency);
 
-		> * {
+		>* {
 			position: relative;
 			z-index: 1;
 			padding: inherit;
@@ -40,7 +40,7 @@
 
 		.c-menu {
 			&__entries {
-				> .c-menu__entry > a {
+				>.c-menu__entry>a {
 					font-size: 1.25em;
 				}
 			}
