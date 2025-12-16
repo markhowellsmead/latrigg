@@ -19,10 +19,7 @@
 	right: 0;
 	z-index: 3;
 	background-color: var(--masthead--background-color);
-
-	@supports (backdrop-filter: blur(0.25rem)) {
-		backdrop-filter: blur(0.25rem);
-	}
+	backdrop-filter: blur(var(--wp--preset--blur--regular));
 
 	@media print {
 		display: none;
@@ -32,7 +29,7 @@
 		top: var(--wp-admin--admin-bar--height);
 	}
 
-	> * {
+	>* {
 		position: relative;
 		z-index: 1;
 	}
