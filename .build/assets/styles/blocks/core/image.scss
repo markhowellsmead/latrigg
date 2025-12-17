@@ -8,6 +8,14 @@
 	container-type: inline-size;
 	container-name: mediablock;
 
+	&:not(.alignwide):not(.alignfull) {
+
+		.single-post .wp-block-post-content>&,
+		.single-page .wp-block-post-content>& {
+			max-width: calc(var(--wp--style--global--content-size) * 1.1);
+		}
+	}
+
 	.components-resizable-box__container,
 	img {
 		max-width: 100%;
