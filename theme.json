@@ -363,8 +363,8 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "freight-text-pro-1, freight-text-pro-2, serif",
-					"name": "Freight Text Pro",
+					"fontFamily": "Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif",
+					"name": "Primary",
 					"slug": "primary"
 				},
 				{
@@ -414,7 +414,7 @@
 				},
 				{
 					"fluid": {
-						"max": "1.375rem",
+						"max": "1.3125rem",
 						"min": "1.125rem"
 					},
 					"name": "Medium",
@@ -556,8 +556,7 @@
 			},
 			"core/post-title": {
 				"typography": {
-					"fontStyle": "normal",
-					"fontWeight": "800"
+					"fontStyle": "normal"
 				}
 			},
 			"core/quote": {
@@ -676,22 +675,17 @@
 			"h1": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--huge)",
-					"fontStyle": "normal",
-					"fontWeight": "800"
+					"fontStyle": "normal"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--xlarge)",
-					"fontStyle": "italic",
-					"fontWeight": "600"
+					"fontSize": "var(--wp--preset--font-size--xlarge)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--large)",
-					"fontStyle": "italic",
-					"fontWeight": "500"
+					"fontSize": "var(--wp--preset--font-size--large)"
 				}
 			},
 			"h4": {
@@ -712,7 +706,6 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
-					"fontStyle": "italic",
 					"fontWeight": "400",
 					"lineHeight": "1.2"
 				}

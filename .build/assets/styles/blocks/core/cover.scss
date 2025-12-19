@@ -4,6 +4,10 @@
 	border-radius: var(--image-border-radius);
 	overflow: hidden;
 
+	h1 {
+		font-weight: 700;
+	}
+
 	&:not(.has-aspect-ratio)[style*='min-height:90vh'] {
 		min-height: calc((90 * var(--svh)) - var(--masthead--height) - var(--wp--preset--spacing--regular)) !important;
 
