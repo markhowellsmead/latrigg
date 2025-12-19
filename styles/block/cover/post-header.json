@@ -18,16 +18,13 @@
 			},
 			"core/heading": {
 				"typography": {
-					"fontSize": "var:preset|font-size|huge",
-					"fontStyle": "normal",
-					"fontWeight": "900"
+					"fontSize": "var:preset|font-size|huge"
 				}
 			},
 			"core/post-title": {
 				"typography": {
 					"fontSize": "var:preset|font-size|huge",
-					"fontStyle": "normal",
-					"fontWeight": "900"
+					"fontStyle": "normal"
 				}
 			}
 		},

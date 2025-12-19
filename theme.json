@@ -1,4 +1,6 @@
 {
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
 	"customTemplates": [
 		{
 			"name": "blank",
@@ -189,6 +191,11 @@
 					"slug": "body-text"
 				},
 				{
+					"color": "rgba(28 45 51)",
+					"name": "Heading text",
+					"slug": "heading-color"
+				},
+				{
 					"color": "rgb(85,85,85)",
 					"name": "Dark gray",
 					"slug": "dark-gray"
@@ -363,7 +370,7 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif",
+					"fontFamily": "'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif",
 					"name": "Primary",
 					"slug": "primary"
 				},
@@ -404,12 +411,18 @@
 					"slug": "smaller"
 				},
 				{
+					"fluid": false,
+					"name": "Regular fixed",
+					"size": "1.125rem",
+					"slug": "regular-fixed"
+				},
+				{
 					"fluid": {
-						"max": "1.15rem",
+						"max": "1.125rem",
 						"min": "1rem"
 					},
 					"name": "Regular",
-					"size": "16px",
+					"size": "18px",
 					"slug": "regular"
 				},
 				{
@@ -661,7 +674,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--regular)"
+					"fontSize": "var(--wp--preset--font-size--regular-fixed)"
 				}
 			},
 			"cite": {
@@ -704,6 +717,7 @@
 				}
 			},
 			"heading": {
+				"color": { "text": "var(--wp--preset--color--heading-color)" },
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
 					"fontWeight": "400",
@@ -742,7 +756,5 @@
 			"name": "footer",
 			"title": "Footer"
 		}
-	],
-	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
+	]
 }

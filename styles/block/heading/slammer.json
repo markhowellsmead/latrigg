@@ -7,8 +7,7 @@
 	"styles": {
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--slammer)",
-			"fontStyle": "normal",
-			"fontWeight": "900"
+			"fontStyle": "normal"
 		}
 	}
 }
