@@ -1,0 +1,6 @@
+.wp-block-accordion {
+	&:has(.wp-block-comments) {
+		padding: 1em;
+		background-color: rgb(0 0 0 / .05);
+	}
+}
