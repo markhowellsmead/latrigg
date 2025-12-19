@@ -26,7 +26,6 @@
 				"typography": {
 					"fontSize": "var:preset|font-size|slammer",
 					"fontStyle": "normal",
-					"fontWeight": "900",
 					"lineHeight": "1"
 				}
 			}
