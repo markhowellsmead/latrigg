@@ -674,7 +674,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--regular-fixed)"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"cite": {
