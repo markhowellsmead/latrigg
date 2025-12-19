@@ -1027,7 +1027,7 @@ body.admin-bar .c-masthead {
   transform: translateX(100vw);
   opacity: 0;
   transition: opacity 300ms ease;
-  height: 100svh;
+  height: 100dvh;
   overflow: auto;
   -webkit-backdrop-filter: blur(var(--wp--preset--blur--regular));
           backdrop-filter: blur(var(--wp--preset--blur--regular));
