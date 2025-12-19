@@ -717,7 +717,9 @@
 				}
 			},
 			"heading": {
-				"color": { "text": "var(--wp--preset--color--heading-color)" },
+				"color": {
+					"text": "var(--wp--preset--color--heading-color)"
+				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
 					"fontWeight": "400",
