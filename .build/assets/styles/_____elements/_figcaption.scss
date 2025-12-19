@@ -11,18 +11,6 @@ figcaption {
 	font-style: italic;
 	margin-inline: auto;
 
-	&::before {
-		display: inline-block;
-		content: '↑';
-		font-size: 1.2em;
-		opacity: 0.5;
-		margin-right: 0.5ch;
-		filter: grayscale(1) brightness(3);
-		transform: translateY(1.5px);
-		text-indent: 0;
-		font-style: normal;
-	}
-
 	a {
 		display: inline;
 	}

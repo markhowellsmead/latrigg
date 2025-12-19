@@ -12,13 +12,21 @@
 
 		.single-post .wp-block-post-content>&,
 		.single-page .wp-block-post-content>& {
-			max-width: calc(var(--wp--style--global--content-size) * 1.1);
+			max-width: calc(var(--wp--style--global--content-size) + 2rem);
+
+			img {
+				transform: translateX(1rem);
+			}
 		}
 	}
 
 	.components-resizable-box__container,
 	img {
 		max-width: 100%;
+	}
+
+	img {
+		border: 1px solid var(--dominant-color, transparent);
 	}
 
 	figcaption a {
