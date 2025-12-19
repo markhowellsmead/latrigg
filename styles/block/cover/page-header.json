@@ -36,7 +36,7 @@
 			"gradient": "var(--wp--preset--gradient--shadow-top-and-bottom)"
 		},
 		"dimensions": {
-			"minHeight": "40vh"
+			"minHeight": "75vh"
 		},
 		"border": {
 			"radius": {
