@@ -15,7 +15,9 @@
 			max-width: calc(var(--wp--style--global--content-size) + 2rem);
 
 			img {
-				transform: translateX(1rem);
+				@media screen and (min-width: 50rem) {
+					transform: translateX(1rem);
+				}
 			}
 		}
 	}
