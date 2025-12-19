@@ -7,3 +7,13 @@ body.single-post :not(.wp-block-heading):not(.wp-block-separator)+.wp-block-head
 	padding-block-start: 1em;
 	border-top: 1px solid var(--wp--preset--color--medlight-gray);
 }
+
+body.blog :not(.wp-block-heading)+.wp-block-heading:not(:first-child),
+body.page :not(.wp-block-heading)+.wp-block-heading:not(:first-child) {
+	margin-block-start: var(--wp--preset--spacing--medium) !important;
+}
+
+body.blog :not(.wp-block-heading)+h2.wp-block-heading:not(:first-child),
+body.page :not(.wp-block-heading)+h2.wp-block-heading:not(:first-child) {
+	margin-block-start: var(--wp--preset--spacing--large) !important;
+}

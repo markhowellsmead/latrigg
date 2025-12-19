@@ -1,28 +1,27 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","className":"c-main"} -->
+<!-- wp:group {"tagName":"main","className":"c-main","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"constrained","wideSize":"90rem"}} -->
 <main class="wp-block-group c-main">
-	<!-- wp:query {"queryId":0,"query":{"perPage":21,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained","justifyContent":"center","contentSize":"64rem","wideSize":"90rem"}} -->
-	<div class="wp-block-query">
+	<!-- wp:template-part {"slug":"plain-category-view-header","align":"wide"} /-->
+
+	<!-- wp:query {"queryId":0,"query":{"perPage":21,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","layout":{"type":"constrained","justifyContent":"center","contentSize":"64rem","wideSize":"90rem"}} -->
+	<div class="wp-block-query alignwide">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"constrained","wideSize":"90rem","contentSize":"64rem"}} -->
 		<div class="wp-block-group alignwide">
-			<!-- wp:group {"align":"wide","className":"c-archive__header","style":{"spacing":{"blockGap":"var:preset|spacing|regular"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-			<div class="wp-block-group alignwide c-archive__header">
-				<!-- wp:heading {"level":1} -->
-				<h1 class="wp-block-heading">Latest blog posts</h1>
-				<!-- /wp:heading -->
+			<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group">
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","margin":{"top":"var:preset|spacing|regular"}}}} -->
+				<div class="wp-block-group" style="margin-top: var(--wp--preset--spacing--regular)">
+					<!-- wp:post-title {"isLink":true,"fontSize":"medium"} /-->
 
-				<!-- wp:paragraph -->
-				<p>
-					I've been waffling on since the late 1990s, and putting posts and random thoughts online here since 2004. These are the
-					latest posts.
-				</p>
-				<!-- /wp:paragraph -->
+					<!-- wp:block {"ref":79974} /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:post-excerpt {"moreText":"Read more","fontSize":"regular"} /-->
 			</div>
 			<!-- /wp:group -->
-
-			<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"grid","columnCount":3}} -->
-			<!-- wp:block {"ref":75899} /-->
 			<!-- /wp:post-template -->
 
 			<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->

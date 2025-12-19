@@ -38,7 +38,7 @@ class Assets
 		$deps[] = 'fancybox';
 
 		wp_enqueue_style('sht-style', get_template_directory_uri() . '/assets/styles/ui' . ($min ? '.min' : '') . '.css', $deps, filemtime(get_template_directory() . '/assets/styles/ui' . ($min ? '.min' : '') . '.css'));
-		wp_enqueue_style('sht-adobe-fonts', 'https://use.typekit.net/ifk0xgd.css');
+		//wp_enqueue_style('sht-adobe-fonts', 'https://use.typekit.net/ifk0xgd.css');
 
 		// Javascript
 		$deps = [];

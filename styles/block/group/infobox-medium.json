@@ -1,13 +1,17 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
-	"slug": "infobox-dark",
-	"title": "Infobox dark",
+	"slug": "infobox-medium",
+	"title": "Infobox medium",
 	"blockTypes": ["core/group"],
 	"styles": {
+		"border": {
+			"style": "solid",
+			"width": "1px",
+			"color": "var:preset|color|xlight-primary"
+		},
 		"color": {
-			"background": "var:preset|color|dark-gray",
-			"text": "var:preset|color|xlight-primary"
+			"background": "var:preset|color|xlight-primary"
 		},
 		"spacing": {
 			"padding": {
