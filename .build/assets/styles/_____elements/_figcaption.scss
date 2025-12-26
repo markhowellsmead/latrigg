@@ -1,12 +1,9 @@
 figcaption {
 	text-align: left;
-	text-wrap-style: auto;
-	text-indent: -1.5rem;
 	margin-left: 1ch;
 	margin-top: var(--stack-size); // override core
 	margin-bottom: 0; // override core
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-right: 3rem;
 	max-width: var(--wp--style--global--content-size);
 	font-style: italic;
 	margin-inline: auto;
