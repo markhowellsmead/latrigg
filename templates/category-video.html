@@ -2,14 +2,28 @@
 
 <!-- wp:group {"tagName":"main","className":"c-main"} -->
 <main class="wp-block-group c-main">
-	<!-- wp:query {"queryId":0,"query":{"perPage":21,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained","justifyContent":"center","contentSize":null}} -->
+	<!-- wp:query {"queryId":0,"query":{"perPage":18,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained","justifyContent":"center","contentSize":null}} -->
 	<div class="wp-block-query">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:template-part {"slug":"plain-category-view-header","align":"wide"} /-->
 
 			<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xlarge"}},"layout":{"type":"grid","columnCount":3}} -->
-			<!-- wp:block {"ref":75899} /-->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group">
+				<!-- wp:sht/primary-media {"hideInlineEmbed":true,"className":"is-style-16x9"} /-->
+
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","margin":{"top":"var:preset|spacing|regular"}}}} -->
+				<div class="wp-block-group" style="margin-top: var(--wp--preset--spacing--regular)">
+					<!-- wp:post-title {"isLink":true,"fontSize":"medium"} /-->
+
+					<!-- wp:block {"ref":79974} /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:post-excerpt {"moreText":"Read more","fontSize":"regular"} /-->
+			</div>
+			<!-- /wp:group -->
 			<!-- /wp:post-template -->
 
 			<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -35,9 +49,8 @@
 				<!-- wp:image {"sizeSlug":"large","linkDestination":"none","align":"wide"} -->
 				<figure class="wp-block-image alignwide size-large">
 					<img
-						src="https://permanenttourist.ch/wp-content/themes/latrigg/assets/images/20230528-DSCF2758-edited-1280x720.webp"
+						src="/wp-content/themes/latrigg/assets/images/20230528-DSCF2758-edited-1280x720.webp"
 						alt="Poppies in north-western Switzerland"
-						class=""
 					/>
 				</figure>
 				<!-- /wp:image -->
