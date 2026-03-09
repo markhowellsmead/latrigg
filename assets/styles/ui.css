@@ -897,8 +897,7 @@ body.is-overlapping-nav .c-main {
   right: 0;
   z-index: 3;
   background-color: var(--masthead--background-color);
-  -webkit-backdrop-filter: blur(var(--wp--preset--blur--regular));
-          backdrop-filter: blur(var(--wp--preset--blur--regular));
+  backdrop-filter: blur(var(--wp--preset--blur--regular));
 }
 @media print {
   .c-masthead {
@@ -1026,8 +1025,7 @@ body.admin-bar .c-masthead {
   transition: opacity 300ms ease;
   height: calc(100dvh - var(--masthead--height));
   overflow: auto;
-  -webkit-backdrop-filter: blur(var(--wp--preset--blur--regular));
-          backdrop-filter: blur(var(--wp--preset--blur--regular));
+  backdrop-filter: blur(var(--wp--preset--blur--regular));
   transition: all 0.6s ease;
   background: var(--wp--preset--color--body-background-transparency);
 }

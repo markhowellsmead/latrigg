@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Latest Explore Card",
+	"slug": "post-template-latest-explore-card",
+	"blockTypes": ["core/post-template"],
+	"styles": {
+		"css": ".wp-block-post-template.is-style-post-template-latest-explore-card { cursor: initial; }"
+	}
+}
