@@ -12,4 +12,24 @@
 			}
 		}
 	}
+
+	&.is-style-post-template-latest-explore-card {
+		.wp-block-cover {
+			--latest-explore-card--aspect-ratio: 1;
+			aspect-ratio: var(--latest-explore-card--aspect-ratio) !important;
+			height: 100%;
+
+			@media screen and (min-width: 37.5625em) {
+				--latest-explore-card--aspect-ratio: 2/6;
+			}
+
+			@media screen and (min-width: 48em) {
+				--latest-explore-card--aspect-ratio: 1/2;
+			}
+
+			@media screen and (min-width: 64em) {
+				--latest-explore-card--aspect-ratio: 210/297;
+			}
+		}
+	}
 }

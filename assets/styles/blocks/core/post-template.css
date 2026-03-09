@@ -8,4 +8,24 @@
     flex-direction: column-reverse;
   }
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3Bvc3QtdGVtcGxhdGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHRztFQUREO0lBRUU7OztBQUtEO0VBREQ7SUFFRSIsImZpbGUiOiJibG9ja3MvY29yZS9wb3N0LXRlbXBsYXRlLmNzcyJ9 */
+.wp-block-post-template.is-style-post-template-latest-explore-card .wp-block-cover {
+  --latest-explore-card--aspect-ratio: 1;
+  aspect-ratio: var(--latest-explore-card--aspect-ratio) !important;
+  height: 100%;
+}
+@media screen and (min-width: 37.5625em) {
+  .wp-block-post-template.is-style-post-template-latest-explore-card .wp-block-cover {
+    --latest-explore-card--aspect-ratio: 2/6;
+  }
+}
+@media screen and (min-width: 48em) {
+  .wp-block-post-template.is-style-post-template-latest-explore-card .wp-block-cover {
+    --latest-explore-card--aspect-ratio: 1/2;
+  }
+}
+@media screen and (min-width: 64em) {
+  .wp-block-post-template.is-style-post-template-latest-explore-card .wp-block-cover {
+    --latest-explore-card--aspect-ratio: 210/297;
+  }
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3Bvc3QtdGVtcGxhdGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHRztFQUREO0lBRUU7OztBQUtEO0VBREQ7SUFFRTs7O0FBTUY7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFMRDtJQU1FOzs7QUFHRDtFQVREO0lBVUU7OztBQUdEO0VBYkQ7SUFjRSIsImZpbGUiOiJibG9ja3MvY29yZS9wb3N0LXRlbXBsYXRlLmNzcyJ9 */
