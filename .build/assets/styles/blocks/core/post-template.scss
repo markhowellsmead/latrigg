@@ -14,21 +14,26 @@
 	}
 
 	&.is-style-post-template-latest-explore-card {
+
+		@media screen and (min-width: 48em) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media screen and (min-width: 80em) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
 		.wp-block-cover {
 			--latest-explore-card--aspect-ratio: 1;
 			aspect-ratio: var(--latest-explore-card--aspect-ratio) !important;
 			height: 100%;
 
-			@media screen and (min-width: 37.5625em) {
-				--latest-explore-card--aspect-ratio: 2/6;
-			}
-
 			@media screen and (min-width: 48em) {
-				--latest-explore-card--aspect-ratio: 1/2;
+				--latest-explore-card--aspect-ratio: 210/297;
 			}
 
-			@media screen and (min-width: 64em) {
-				--latest-explore-card--aspect-ratio: 210/297;
+			@media screen and (min-width: 64em) and (max-width: 79.9375em) {
+				--latest-explore-card--aspect-ratio: 1;
 			}
 		}
 	}

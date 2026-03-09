@@ -139,6 +139,11 @@
 					"slug": "bigger-black-bottom-edge"
 				},
 				{
+					"gradient": "linear-gradient(to bottom, transparent, transparent 25%, black 100%)",
+					"name": "Bigger black bottom edge taller",
+					"slug": "bigger-black-bottom-edge-taller"
+				},
+				{
 					"gradient": "linear-gradient(180deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 50%,rgb(0,0,0) 100%)",
 					"name": "Shadow top and bottom",
 					"slug": "shadow-top-and-bottom"
