@@ -862,7 +862,7 @@ body.home .c-main {
 body.category .c-main, body.tag .c-main {
   --main--offset: 2px;
 }
-.c-main body.single-mhm-explore, body.post-type-archive-mhm-explore .c-main {
+body.single-mhm-explore .c-main, body.post-type-archive-mhm-explore .c-main {
   --main--offset: 1px;
 }
 body.is-overlapping-nav .c-main {
