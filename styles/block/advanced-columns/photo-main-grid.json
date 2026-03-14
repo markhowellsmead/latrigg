@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Photography main grid",
+	"slug": "advanced-columns-photography-main-grid",
+	"blockTypes": ["advanced-columns/columns"],
+	"styles": {
+		"css": "pointer-events: default;"
+	}
+}
