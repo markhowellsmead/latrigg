@@ -1,8 +1,8 @@
 import { _x, __ } from '@wordpress/i18n';
 import { PluginDocumentSettingPanel } from '@wordpress/editor';
-import { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
 import { useSelect, useDispatch } from '@wordpress/data';
 import { registerPlugin } from '@wordpress/plugins';
+import { SelectControl } from '@wordpress/components';
 
 const validPostTypes = ['page'];
 
@@ -21,54 +21,58 @@ let CustomLayoutPanel = () => {
 	const { main_offset, side_padding } = metaValues || {};
 	const { editPost } = useDispatch('core/editor');
 
+	const mainOffset = Array.isArray(main_offset) ? main_offset[0] : main_offset;
+	const sidePadding = Array.isArray(side_padding) ? side_padding[0] : side_padding;
+
 	const handleMainOffsetChange = (offsetValue) => {
 		editPost({ meta: { main_offset: offsetValue } });
 	};
 
 	const handleSidePaddingChange = (paddingValue) => {
+		console.log('Padding value changed:', paddingValue);
 		editPost({ meta: { side_padding: paddingValue } });
 	};
 
 	const sizes = [
 		{
-			name: __('None'),
-			slug: 'none',
+			label: __('None'),
+			value: 'none',
 		},
 		{
-			name: __('Small'),
-			slug: 'small',
+			label: __('Small'),
+			value: 'small',
 		},
 		{
-			name: __('Regular'),
-			slug: 'regular',
+			label: __('Regular'),
+			value: 'regular',
 		},
 		{
-			name: __('Medium'),
-			slug: 'medium',
+			label: __('Medium'),
+			value: 'medium',
 		},
 		{
-			name: __('Large'),
-			slug: 'large',
+			label: __('Large'),
+			value: 'large',
 		},
 		{
-			name: __('Extra large'),
-			slug: 'xlarge',
+			label: __('Extra large'),
+			value: 'xlarge',
 		},
 	];
 
 	return (
 		<PluginDocumentSettingPanel title={_x('Custom layout options', 'Editor sidebar panel title', 'latrigg')} initialOpen={true}>
-			<DimensionControl
+			<SelectControl
 				label={'Main content offset'}
-				value={main_offset}
 				onChange={(value) => handleMainOffsetChange(value)}
-				sizes={sizes}
+				value={mainOffset}
+				options={sizes}
 			/>
-			<DimensionControl
+			<SelectControl
 				label={'Page side padding'}
-				value={side_padding}
-				onChange={(value) => handleSidePaddingChange(value || '')}
-				sizes={sizes}
+				onChange={(value) => handleSidePaddingChange(value)}
+				value={sidePadding}
+				options={sizes}
 			/>
 		</PluginDocumentSettingPanel>
 	);
