@@ -1,9 +1,13 @@
-<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<!-- wp:group {"backgroundColor":"xlight-gray","layout":{"type":"default"}} -->
+<div class="wp-block-group has-xlight-gray-background-color has-background">
+	<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","className":"c-main","style":{"spacing":{"blockGap":"var:preset|spacing|large"}}} -->
-<main class="wp-block-group c-main">
-	<!-- wp:post-content {"metadata":{"ignoredHookedBlocks":["jetpack/subscriptions"]},"layout":{"inherit":true}} /-->
-</main>
+	<!-- wp:group {"tagName":"main","className":"c-main","style":{"spacing":{"blockGap":"var:preset|spacing|large"}}} -->
+	<main class="wp-block-group c-main">
+		<!-- wp:post-content {"metadata":{"ignoredHookedBlocks":["jetpack/subscriptions"]},"layout":{"inherit":true}} /-->
+	</main>
+	<!-- /wp:group -->
+
+	<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
+</div>
 <!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

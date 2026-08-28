@@ -1,19 +1,4 @@
 <?php
-
-if (!defined('DISALLOW_FILE_EDIT')) {
-	define('DISALLOW_FILE_EDIT', true);
-}
-
-if (!function_exists('dump')) {
-	function dump($var, $exit = false)
-	{
-		echo '<pre>' . print_r($var, true) . '</pre>';
-		if ($exit) {
-			exit;
-		}
-	}
-}
-
 /*
 	 * This lot auto-loads a class or trait just when you need it. You don't need to
 	 * use require, include or anything to get the class/trait files, as long

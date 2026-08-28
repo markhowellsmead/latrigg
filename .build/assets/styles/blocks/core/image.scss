@@ -41,3 +41,9 @@
 		opacity: 1 !important;
 	}
 }
+
+body.post-template-single-image-left-text-right .wp-block-image:not(.alignwide):not(.alignfull) img {
+	@media screen and (min-width: 50rem) {
+		transform: translateX(0) !important;
+	}
+}

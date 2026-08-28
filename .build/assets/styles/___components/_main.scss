@@ -36,6 +36,14 @@
 		--masthead--height: var(--wp--preset--spacing--regular);
 	}
 
+	body.post-template-single-image-left-text-right & {
+		.wp-block-column:nth-child(2) {
+			@media screen and (min-width: 48.875em) {
+				padding-block-start: calc(35svh - var(--masthead--height));
+			}
+		}
+	}
+
 	@media print {
 		--main--offset: 0;
 	}

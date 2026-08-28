@@ -8,6 +8,16 @@
 		}
 	}
 
+	.wp-block-column:first-child {
+		body.post-template-single-image-left-text-right & {
+			@media screen and (min-width: 48.875em) {
+				position: sticky;
+				top: 0;
+			}
+		}
+	}
+
+
 	&__figure {
 		position: relative;
 
@@ -19,6 +29,23 @@
 				display: block;
 				@include flood;
 				text-indent: -999rem;
+			}
+		}
+
+		body.post-template-single-image-left-text-right & {
+			@media screen and (min-width: 48.875em) {
+				width: 100%;
+				height: calc(100svh - var(--masthead--height));
+				object-fit: contain;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		body.post-template-single-image-left-text-right.admin-bar & {
+			@media screen and (min-width: 48.875em) {
+				height: calc(100svh - var(--masthead--height) - var(--wp-admin--admin-bar--height));
 			}
 		}
 	}
@@ -43,14 +70,3 @@
 .wp-block-group:has(> .wp-block-sht-primary-media:empty) {
 	display: none;
 }
-
-// CHECK THIS WITH VARIOUS IMAGE AND BLOG POST CONTENT HEIGHTS
-// @media screen and (min-height: 67.5em) {
-// 	.wp-block-sht-primary-media {
-// 		body.single-post.post-template-single-image-left-text-right & {
-// 			position: sticky;
-// 			top: 50%;
-// 			transform: translateY(calc(-50% + var(--masthead--height) / 2));
-// 		}
-// 	}
-// }
