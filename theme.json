@@ -337,7 +337,7 @@
 		"spacing": {
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
-				{""
+				{
 					"name": "XS",
 					"size": "0.25rem",
 					"slug": "xsmall"
@@ -485,7 +485,7 @@
 						"min": "3rem"
 					},
 					"name": "Slammer",
-					"size": "64",
+					"size": "64px",
 					"slug": "slammer"
 				}
 			]
