@@ -120,6 +120,10 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"background": true,
+			"text": true,
+			"link": true,
+			"border": true,
 			"duotone": [
 				{
 					"colors": ["#0073aa", "#ffffff"],
@@ -333,7 +337,7 @@
 		"spacing": {
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
-				{
+				{""
 					"name": "XS",
 					"size": "0.25rem",
 					"slug": "xsmall"
