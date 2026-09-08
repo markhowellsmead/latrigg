@@ -121,9 +121,6 @@
 		"appearanceTools": true,
 		"color": {
 			"background": true,
-			"text": true,
-			"link": true,
-			"border": true,
 			"duotone": [
 				{
 					"colors": ["#0073aa", "#ffffff"],
@@ -299,7 +296,8 @@
 					"name": "Body background",
 					"slug": "body-background"
 				}
-			]
+			],
+			"text": true
 		},
 		"dimensions": {
 			"aspectRatios": [
