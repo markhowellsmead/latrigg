@@ -33,5 +33,19 @@
 }
 
 .wp-block-column {
-	@extend .h-stack;
+	&--sidebar {
+		body.post-template-single-image-left-text-right & {
+			@media screen and (min-width: 48.875em) {
+				flex-basis: 60% !important;
+			}
+
+			// @media screen and (min-width: 90em) {
+			// 	flex-basis: 45% !important;
+			// }
+
+			@media screen and (min-width: 100em) {
+				flex-basis: 0 !important;
+			}
+		}
+	}
 }

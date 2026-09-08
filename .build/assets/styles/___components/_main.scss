@@ -31,6 +31,12 @@
 		--main--offset: 1px;
 	}
 
+	body.post-template-single-image-left-text-right & {
+		@media screen and (min-width: 48.875em) {
+			--main--offset: 0;
+		}
+	}
+
 	body.is-overlapping-nav & {
 		--main--offset: 2px;
 		--masthead--height: var(--wp--preset--spacing--regular);
