@@ -8,15 +8,12 @@
 		}
 	}
 
-	.wp-block-column:first-child {
-		body.post-template-single-image-left-text-right & {
-			@media screen and (min-width: 48.875em) {
-				position: sticky;
-				top: 0;
-			}
+	body.post-template-single-image-left-text-right & {
+		@media screen and (min-width: 48.875em) {
+			position: sticky;
+			top: var(--masthead--height, 0);
 		}
 	}
-
 
 	&__figure {
 		position: relative;
