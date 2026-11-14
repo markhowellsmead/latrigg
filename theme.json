@@ -38,9 +38,9 @@
 			"title": "Tall/square primary image"
 		},
 		{
-			"name": "single-mhm-explore",
-			"postTypes": ["mhm-explore"],
-			"title": "Single place / explore"
+			"name": "single-mhm_feature",
+			"postTypes": ["mhm_feature"],
+			"title": "Single feature"
 		},
 		{
 			"name": "single-post-with-video-header",
@@ -105,8 +105,8 @@
 			"title": "Photo archive"
 		},
 		{
-			"name": "archive-mhm-explore",
-			"title": "Explore archive"
+			"name": "archive-mhm_feature",
+			"title": "Features archive"
 		},
 		{
 			"name": "taxonomy-album",
