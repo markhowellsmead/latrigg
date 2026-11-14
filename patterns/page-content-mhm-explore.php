@@ -5,7 +5,7 @@
  * Slug: latrigg/page-content-mhm-explore
  * Categories: latrigg/post-content
  * Block Types: core/post-content
- * Post Types: mhm-explore, wp_template
+ * Post Types: mhm_feature, wp_template
  * Viewport width: 1440
  */
 ?>
