@@ -41,6 +41,21 @@
 	}
 }
 
+// Single feature template: 1/1 on mobile, 3/2 on tablet, 80vh high on desktop.
+.wp-block-cover.is-feature-cover {
+	min-height: 0;
+	aspect-ratio: 1 / 1;
+
+	@media screen and (min-width: 48em) {
+		aspect-ratio: 3 / 2;
+	}
+
+	@media screen and (min-width: 64em) {
+		aspect-ratio: auto;
+		min-height: 80vh;
+	}
+}
+
 .wp-block-post-content>.wp-block-cover.alignfull:first-child {
 	margin-top: calc(var(--main--offset) * -1 + 1px);
 }
