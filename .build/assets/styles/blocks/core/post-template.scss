@@ -38,3 +38,22 @@
 		}
 	}
 }
+
+// Responsive grid for default-styled grid Post Templates. Replaces the fixed
+// column count (and core's single jump from 1 column at <=600px) with columns
+// that never get narrower than --post-template-grid-min and never exceed the
+// number of columns set in the block.
+.wp-block-post-template.is-layout-grid.is-style-default[class*="columns-"] {
+	--post-template-grid-columns: 3;
+	--post-template-grid-min: 16rem;
+	--post-template-grid-gap: clamp(1rem, 0.8rem + 1vw, 1.70455rem);
+
+	gap: var(--post-template-grid-gap);
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, max(var(--post-template-grid-min), calc((100% - (var(--post-template-grid-columns) - 1) * var(--post-template-grid-gap)) / var(--post-template-grid-columns)))), 1fr));
+
+	@for $i from 2 through 6 {
+		&.columns-#{$i} {
+			--post-template-grid-columns: #{$i};
+		}
+	}
+}

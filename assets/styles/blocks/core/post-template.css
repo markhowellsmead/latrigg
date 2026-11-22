@@ -33,4 +33,27 @@
     --latest-explore-card--aspect-ratio: 1;
   }
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3Bvc3QtdGVtcGxhdGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHRztFQUREO0lBRUU7OztBQUtEO0VBREQ7SUFFRTs7O0FBT0Y7RUFGRDtJQUdFOzs7QUFHRDtFQU5EO0lBT0U7OztBQUdEO0VBQ0M7RUFDQTtFQUNBOztBQUVBO0VBTEQ7SUFNRTs7O0FBR0Q7RUFURDtJQVVFIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL3Bvc3QtdGVtcGxhdGUuY3NzIn0= */
+
+.wp-block-post-template.is-layout-grid.is-style-default[class*=columns-] {
+  --post-template-grid-columns: 3;
+  --post-template-grid-min: 16rem;
+  --post-template-grid-gap: clamp(1rem, 0.8rem + 1vw, 1.70455rem);
+  gap: var(--post-template-grid-gap);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(var(--post-template-grid-min), (100% - (var(--post-template-grid-columns) - 1) * var(--post-template-grid-gap)) / var(--post-template-grid-columns))), 1fr));
+}
+.wp-block-post-template.is-layout-grid.is-style-default[class*=columns-].columns-2 {
+  --post-template-grid-columns: 2;
+}
+.wp-block-post-template.is-layout-grid.is-style-default[class*=columns-].columns-3 {
+  --post-template-grid-columns: 3;
+}
+.wp-block-post-template.is-layout-grid.is-style-default[class*=columns-].columns-4 {
+  --post-template-grid-columns: 4;
+}
+.wp-block-post-template.is-layout-grid.is-style-default[class*=columns-].columns-5 {
+  --post-template-grid-columns: 5;
+}
+.wp-block-post-template.is-layout-grid.is-style-default[class*=columns-].columns-6 {
+  --post-template-grid-columns: 6;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3Bvc3QtdGVtcGxhdGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHRztFQUREO0lBRUU7OztBQUtEO0VBREQ7SUFFRTs7O0FBT0Y7RUFGRDtJQUdFOzs7QUFHRDtFQU5EO0lBT0U7OztBQUdEO0VBQ0M7RUFDQTtFQUNBOztBQUVBO0VBTEQ7SUFNRTs7O0FBR0Q7RUFURDtJQVVFOzs7O0FBVUo7RUFDQztFQUNBO0VBQ0E7RUFFQTtFQUNBOztBQUdDO0VBQ0M7O0FBREQ7RUFDQzs7QUFERDtFQUNDOztBQUREO0VBQ0M7O0FBREQ7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9wb3N0LXRlbXBsYXRlLmNzcyJ9 */
