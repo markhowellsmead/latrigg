@@ -60,6 +60,22 @@
 .wp-block-cover.has-custom-content-position .wp-block-cover__inner-container {
   width: 100% !important;
 }
+.wp-block-cover.is-feature-cover {
+  min-height: 0;
+  aspect-ratio: 1/1;
+}
+@media screen and (min-width: 48em) {
+  .wp-block-cover.is-feature-cover {
+    aspect-ratio: 3/2;
+  }
+}
+@media screen and (min-width: 64em) {
+  .wp-block-cover.is-feature-cover {
+    aspect-ratio: auto;
+    min-height: 80vh;
+  }
+}
+
 .wp-block-post-content > .wp-block-cover.alignfull:first-child {
   margin-top: calc(var(--main--offset) * -1 + 1px);
 }
@@ -79,4 +95,4 @@
 .wp-block-cover.is-style-cover-post-header .wp-block-cover__background {
   opacity: 0.5 !important;
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fZWxlbWVudHMvX3N0YWNrLnNjc3MiLCJibG9ja3MvY29yZS9jb3Zlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUlBO0VBQ0M7O0FBRUE7RUFDQztFQUNBOztBQUVBO0VBQ0M7O0FBS0Q7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7O0FDcERIO0VBQ0M7RUFDQTs7QUFFQTtFQUNDOztBQUdEO0VBQ0M7O0FBRUE7RUFDQzs7QUFJRjtFQUNDOztBQUVBO0VBQ0M7O0FBS0Q7RUFERDtJQUVFOzs7QUFLRDtFQUNDOztBQVNIO0VBQ0M7OztBQUtBO0FBQUE7RUFDQztFQUNBOztBQUdEO0VBUEQ7QUFBQTtJQVFFOzs7O0FBS0Q7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9jb3Zlci5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fZWxlbWVudHMvX3N0YWNrLnNjc3MiLCJibG9ja3MvY29yZS9jb3Zlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUlBO0VBQ0M7O0FBRUE7RUFDQztFQUNBOztBQUVBO0VBQ0M7O0FBS0Q7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7QUFLRDtFQUNDOztBQUtEO0VBQ0M7O0FBS0Q7RUFDQzs7O0FDcERIO0VBQ0M7RUFDQTs7QUFFQTtFQUNDOztBQUdEO0VBQ0M7O0FBRUE7RUFDQzs7QUFJRjtFQUNDOztBQUVBO0VBQ0M7O0FBS0Q7RUFERDtJQUVFOzs7QUFLRDtFQUNDOztBQVVIO0VBQ0M7RUFDQTs7QUFFQTtFQUpEO0lBS0U7OztBQUdEO0VBUkQ7SUFTRTtJQUNBOzs7O0FBSUY7RUFDQzs7O0FBS0E7QUFBQTtFQUNDO0VBQ0E7O0FBR0Q7RUFQRDtBQUFBO0lBUUU7Ozs7QUFLRDtFQUNDIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL2NvdmVyLmNzcyJ9 */
