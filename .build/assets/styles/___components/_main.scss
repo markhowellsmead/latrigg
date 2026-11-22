@@ -1,10 +1,11 @@
 .c-main {
 	--main--offset: clamp(3rem, 2.296rem + 3.005vw, 5rem);
+	--main--padding-inline: var(--wp--preset--spacing--regular);
 
 	margin-top: calc(var(--masthead--height) + var(--main--offset)) !important;
 	flex: 1;
-	padding-left: var(--wp--preset--spacing--regular);
-	padding-right: var(--wp--preset--spacing--regular);
+	padding-left: var(--main--padding-inline);
+	padding-right: var(--main--padding-inline);
 	width: 100%;
 	max-width: none;
 	margin-left: auto;
@@ -29,6 +30,10 @@
 	body.single-mhm_feature &,
 	body.post-type-archive-mhm_feature & {
 		--main--offset: 1px;
+	}
+
+	body.single-mhm_feature & {
+		--main--padding-inline: 0;
 	}
 
 	body.post-template-single-image-left-text-right & {
